@@ -25,7 +25,7 @@ function Alerts() {
   const fetchExpired = async () => {
     try {
       const data = await api.get("/expired-medicines");
-      setExpired(data);
+      setExpired(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error("Error fetching expired medicines", error);
       toast.error("Failed to load expired medicines");
@@ -35,7 +35,7 @@ function Alerts() {
   const fetchLowStock = async () => {
     try {
       const data = await api.get("/low-stock");
-      setLowStock(data);
+      setLowStock(Array.isArray(data) ? data : []);
     } catch (error) {
       console.error("Error fetching low stock medicines", error);
       toast.error("Failed to load low stock medicines");
@@ -62,14 +62,14 @@ function Alerts() {
   };
 
   return (
-    <div className="space-y-6 max-w-5xl">
+    <div className="space-y-6 max-w-5xl w-full">
       {/* Page Header (Notion standard) */}
-      <div className="pb-2 border-b border-[var(--notion-border)]">
-        <div className="text-3xl mb-2 select-none">🔔</div>
+      <div className="pb-3 border-b border-[var(--notion-border)]">
+        <div className="text-2xl sm:text-3xl mb-1.5 select-none">🔔</div>
         <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--notion-text)]">
           System Alerts
         </h1>
-        <p className="text-sm text-[var(--notion-text-muted)] mt-1">
+        <p className="text-xs sm:text-sm text-[var(--notion-text-muted)] mt-1">
           Review batches requiring disposal or inventory items nearing depletion.
         </p>
       </div>
@@ -80,12 +80,12 @@ function Alerts() {
           <span className="text-xs">Checking inventory alerts...</span>
         </div>
       ) : (
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8 w-full">
           {/* Section 1: Expired Medicines Database */}
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
+          <div className="space-y-2 w-full">
+            <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-1">
               <div className="flex items-center gap-2">
-                <AlertOctagon size={16} className="text-[#EB5757]" />
+                <AlertOctagon size={16} className="text-[#EB5757] shrink-0" />
                 <h2 className="text-sm font-semibold text-[var(--notion-text)]">
                   Expired Medicines
                 </h2>
@@ -93,12 +93,12 @@ function Alerts() {
                   {expired.length} {expired.length === 1 ? "item" : "items"}
                 </NotionTag>
               </div>
-              <span className="text-xs text-[var(--notion-text-muted)]">Action required: Dispose & remove</span>
+              <span className="text-[11px] text-[var(--notion-text-muted)]">Action required: Dispose & remove</span>
             </div>
 
-            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden">
+            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden w-full">
               {expired.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)]">
+                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)] px-4">
                   <CheckCircle2 size={24} className="text-emerald-500 mb-2 opacity-80" />
                   <p className="text-sm font-medium text-[var(--notion-text)]">No expired medicines</p>
                   <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
@@ -106,8 +106,8 @@ function Alerts() {
                   </p>
                 </div>
               ) : (
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse text-xs">
+                <div className="overflow-x-auto w-full">
+                  <table className="w-full min-w-[500px] text-left border-collapse text-xs">
                     <thead>
                       <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
                         <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[45%]">
@@ -136,7 +136,7 @@ function Alerts() {
                             {med.name}
                           </td>
                           <td className="px-4 py-2.5 border-r border-[var(--notion-border)] font-mono text-[var(--notion-text-muted)]">
-                            {med.expiryDate?.split("T")[0]}
+                            {med.expiryDate ? String(med.expiryDate).split("T")[0] : "—"}
                           </td>
                           <td className="px-4 py-2.5 border-r border-[var(--notion-border)]">
                             <NotionTag variant="red">Expired</NotionTag>
@@ -148,6 +148,7 @@ function Alerts() {
                               disabled={deletingId === med._id}
                               icon={deletingId === med._id ? Loader2 : Trash2}
                               onClick={() => removeExpiredMedicine(med._id)}
+                              className="min-h-[36px]"
                             >
                               Remove
                             </NotionButton>
@@ -162,10 +163,10 @@ function Alerts() {
           </div>
 
           {/* Section 2: Low Stock Warnings Database */}
-          <div className="space-y-2">
-            <div className="flex items-center justify-between">
+          <div className="space-y-2 w-full">
+            <div className="flex flex-col xs:flex-row xs:items-center justify-between gap-1">
               <div className="flex items-center gap-2">
-                <AlertTriangle size={16} className="text-[#E29A23]" />
+                <AlertTriangle size={16} className="text-[#E29A23] shrink-0" />
                 <h2 className="text-sm font-semibold text-[var(--notion-text)]">
                   Low Stock Warnings
                 </h2>
@@ -173,12 +174,12 @@ function Alerts() {
                   {lowStock.length} {lowStock.length === 1 ? "item" : "items"}
                 </NotionTag>
               </div>
-              <span className="text-xs text-[var(--notion-text-muted)]">Threshold: Under 10 units</span>
+              <span className="text-[11px] text-[var(--notion-text-muted)]">Threshold: Under 10 units</span>
             </div>
 
-            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden">
+            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden w-full">
               {lowStock.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)]">
+                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)] px-4">
                   <CheckCircle2 size={24} className="text-emerald-500 mb-2 opacity-80" />
                   <p className="text-sm font-medium text-[var(--notion-text)]">Stock levels are healthy</p>
                   <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
@@ -186,8 +187,8 @@ function Alerts() {
                   </p>
                 </div>
               ) : (
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse text-xs">
+                <div className="overflow-x-auto w-full">
+                  <table className="w-full min-w-[480px] text-left border-collapse text-xs">
                     <thead>
                       <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
                         <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[50%]">

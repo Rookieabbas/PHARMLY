@@ -12,7 +12,6 @@ import {
   ChevronsLeft,
   ChevronsRight,
   Loader2,
-  AlertCircle
 } from "lucide-react";
 import { api } from "../utils/api";
 import { invalidateMedicineCache } from "../utils/medicineCache";
@@ -183,25 +182,26 @@ function Inventory() {
   };
 
   return (
-    <div className="space-y-6 max-w-5xl">
+    <div className="space-y-6 max-w-5xl w-full">
       {/* Page Header (Notion standard) */}
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-2 border-b border-[var(--notion-border)]">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-3 border-b border-[var(--notion-border)]">
         <div>
-          <div className="text-3xl mb-2 select-none">📦</div>
+          <div className="text-2xl sm:text-3xl mb-1.5 select-none">📦</div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--notion-text)]">
             Inventory
           </h1>
-          <p className="text-sm text-[var(--notion-text-muted)] mt-1">
+          <p className="text-xs sm:text-sm text-[var(--notion-text-muted)] mt-1">
             Database of pharmacy medicines, stock levels, pricing, and expiration dates.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 pt-2 sm:pt-6">
+        <div className="flex items-center gap-2 pt-1 sm:pt-4">
           <NotionButton
             variant={showAddForm ? "secondary" : "primary"}
             size="md"
             icon={showAddForm ? X : Plus}
             onClick={() => setShowAddForm(!showAddForm)}
+            className="w-full sm:w-auto min-h-[40px]"
           >
             {showAddForm ? "Cancel" : "New Medicine"}
           </NotionButton>
@@ -212,7 +212,7 @@ function Inventory() {
       {showAddForm && (
         <form
           onSubmit={addMedicine}
-          className="p-5 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] space-y-4 animate-in fade-in duration-150"
+          className="p-4 sm:p-5 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] space-y-4 animate-in fade-in duration-150 w-full"
         >
           <div className="flex items-center justify-between pb-3 border-b border-[var(--notion-border)]">
             <span className="text-sm font-semibold text-[var(--notion-text)] flex items-center gap-2">
@@ -222,14 +222,14 @@ function Inventory() {
             <span className="text-xs text-[var(--notion-text-muted)]">* Required fields</span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            <div className="lg:col-span-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 sm:gap-4">
+            <div className="sm:col-span-2">
               <label className="block text-xs font-medium text-[var(--notion-text-muted)] mb-1">
                 Medicine Name *
               </label>
               <input
                 type="text"
-                className="w-full px-3 py-1.5 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors"
+                className="w-full px-3 py-2 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors min-h-[40px]"
                 placeholder="e.g. Paracetamol 500mg"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -243,7 +243,7 @@ function Inventory() {
               </label>
               <input
                 type="text"
-                className="w-full px-3 py-1.5 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors uppercase font-mono"
+                className="w-full px-3 py-2 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors uppercase font-mono min-h-[40px]"
                 placeholder="e.g. PCM500"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
@@ -258,7 +258,7 @@ function Inventory() {
                 type="number"
                 min="0.01"
                 step="0.01"
-                className="w-full px-3 py-1.5 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors"
+                className="w-full px-3 py-2 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors min-h-[40px]"
                 placeholder="0.00"
                 value={price}
                 onChange={(e) => setPrice(e.target.value)}
@@ -273,20 +273,20 @@ function Inventory() {
                 type="number"
                 min="0"
                 step="1"
-                className="w-full px-3 py-1.5 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors"
+                className="w-full px-3 py-2 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors min-h-[40px]"
                 placeholder="0"
                 value={quantity}
                 onChange={(e) => setQuantity(e.target.value)}
               />
             </div>
 
-            <div className="lg:col-span-2">
+            <div className="sm:col-span-2">
               <label className="block text-xs font-medium text-[var(--notion-text-muted)] mb-1">
                 Expiry Date *
               </label>
               <input
                 type="date"
-                className="w-full px-3 py-1.5 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors"
+                className="w-full px-3 py-2 text-sm bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors min-h-[40px]"
                 value={expiryDate}
                 onChange={(e) => setExpiryDate(e.target.value)}
               />
@@ -297,17 +297,19 @@ function Inventory() {
             <NotionButton
               type="button"
               variant="secondary"
-              size="sm"
+              size="md"
               onClick={() => setShowAddForm(false)}
+              className="min-h-[40px]"
             >
               Cancel
             </NotionButton>
             <NotionButton
               type="submit"
               variant="primary"
-              size="sm"
+              size="md"
               disabled={submitting}
               icon={submitting ? Loader2 : Plus}
+              className="min-h-[40px]"
             >
               {submitting ? "Saving..." : "Add to Database"}
             </NotionButton>
@@ -316,13 +318,13 @@ function Inventory() {
       )}
 
       {/* Database Toolbar (Filter, Search, Row count) */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1">
-        <div className="flex items-center gap-2">
-          <div className="relative">
-            <Search size={14} className="absolute left-2.5 top-2 text-[var(--notion-text-light)]" />
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-1 w-full">
+        <div className="flex items-center gap-2 w-full sm:w-auto">
+          <div className="relative flex-1 min-w-0 sm:w-64">
+            <Search size={14} className="absolute left-2.5 top-3 text-[var(--notion-text-light)] pointer-events-none" />
             <input
               type="text"
-              className="pl-8 pr-3 py-1 text-xs bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors w-48 sm:w-64"
+              className="w-full pl-8 pr-3 py-2 text-xs bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors min-h-[40px]"
               placeholder="Search by name or code..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
@@ -330,7 +332,7 @@ function Inventory() {
             />
           </div>
 
-          <NotionButton size="sm" variant="secondary" onClick={searchMedicine}>
+          <NotionButton size="sm" variant="secondary" onClick={searchMedicine} className="min-h-[40px] px-3.5 shrink-0">
             Search
           </NotionButton>
 
@@ -342,43 +344,44 @@ function Inventory() {
                 setSearch("");
                 fetchMedicines();
               }}
+              className="min-h-[40px] px-2.5 shrink-0"
             >
               Clear
             </NotionButton>
           )}
         </div>
 
-        <div className="flex items-center gap-3 text-xs text-[var(--notion-text-muted)]">
+        <div className="flex items-center justify-between sm:justify-end gap-2 text-[11px] sm:text-xs text-[var(--notion-text-muted)] select-none">
           <span>
             {medicines.length === 0
               ? "0 medicines"
-              : `Showing ${startIndex + 1}–${endIndex} of ${medicines.length} medicines`}
+              : `Showing ${startIndex + 1}–${endIndex} of ${medicines.length}`}
           </span>
           <span className="text-[var(--notion-border)]">|</span>
           <span>Page {currentPage} of {totalPages}</span>
         </div>
       </div>
 
-      {/* Notion Database Table View */}
-      <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden">
+      {/* Notion Database Table View (Horizontal scroll inside container) */}
+      <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden w-full">
         {loading ? (
           <div className="flex flex-col items-center justify-center py-20 text-[var(--notion-text-muted)] gap-2">
             <div className="w-5 h-5 border-2 border-[var(--notion-border)] border-t-[var(--notion-blue)] rounded-full animate-spin"></div>
             <span className="text-xs">Loading medicines from database...</span>
           </div>
         ) : medicines.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-16 text-center text-[var(--notion-text-muted)]">
+          <div className="flex flex-col items-center justify-center py-16 text-center text-[var(--notion-text-muted)] px-4">
             <Package size={28} className="text-[var(--notion-text-light)] mb-2 opacity-60" />
             <p className="text-sm font-medium text-[var(--notion-text)]">No medicines found</p>
             <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
               {search
-                ? "No items match your filter query. Click 'Clear' to restore the full list."
+                ? "No items match your search. Click 'Clear' to restore the full list."
                 : "Database is empty. Click '+ New Medicine' above to record stock."}
             </p>
           </div>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left border-collapse text-xs">
+          <div className="overflow-x-auto w-full">
+            <table className="w-full min-w-[620px] text-left border-collapse text-xs">
               <thead>
                 <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
                   <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[32%]">
@@ -455,8 +458,8 @@ function Inventory() {
 
         {/* Notion Pagination Controls Footer */}
         {medicines.length > 0 && (
-          <div className="px-4 py-2.5 border-t border-[var(--notion-border)] bg-[var(--notion-surface)] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
-            <div className="text-[var(--notion-text-muted)] select-none">
+          <div className="px-3 sm:px-4 py-2.5 border-t border-[var(--notion-border)] bg-[var(--notion-surface)] flex flex-col sm:flex-row items-center justify-between gap-3 text-xs w-full">
+            <div className="text-[var(--notion-text-muted)] select-none text-center sm:text-left text-[11px] sm:text-xs">
               Showing <span className="font-semibold text-[var(--notion-text)]">{startIndex + 1}</span> to{" "}
               <span className="font-semibold text-[var(--notion-text)]">{endIndex}</span> of{" "}
               <span className="font-semibold text-[var(--notion-text)]">{medicines.length}</span> medicines
@@ -467,8 +470,9 @@ function Inventory() {
                 type="button"
                 onClick={() => goToPage(1)}
                 disabled={currentPage === 1}
-                className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                className="min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                 title="First page"
+                aria-label="First page"
               >
                 <ChevronsLeft size={16} />
               </button>
@@ -477,22 +481,24 @@ function Inventory() {
                 type="button"
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage === 1}
-                className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                className="min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                 title="Previous page"
+                aria-label="Previous page"
               >
                 <ChevronLeft size={16} />
               </button>
 
-              <span className="px-2 py-0.5 text-xs font-medium text-[var(--notion-text)] bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded">
-                Page {currentPage} of {totalPages}
+              <span className="px-2.5 py-1.5 text-xs font-medium text-[var(--notion-text)] bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded min-h-[32px] flex items-center justify-center">
+                {currentPage} / {totalPages}
               </span>
 
               <button
                 type="button"
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={currentPage === totalPages}
-                className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                className="min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                 title="Next page"
+                aria-label="Next page"
               >
                 <ChevronRight size={16} />
               </button>
@@ -501,8 +507,9 @@ function Inventory() {
                 type="button"
                 onClick={() => goToPage(totalPages)}
                 disabled={currentPage === totalPages}
-                className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
+                className="min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
                 title="Last page"
+                aria-label="Last page"
               >
                 <ChevronsRight size={16} />
               </button>
@@ -513,9 +520,9 @@ function Inventory() {
         {/* Notion-style bottom row: "+ New" */}
         <div
           onClick={() => setShowAddForm(true)}
-          className="flex items-center gap-2 px-4 py-2 text-xs text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] cursor-pointer border-t border-[var(--notion-border)] transition-colors select-none"
+          className="flex items-center gap-2 px-4 py-2.5 text-xs text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] cursor-pointer border-t border-[var(--notion-border)] transition-colors select-none min-h-[40px]"
         >
-          <Plus size={14} />
+          <Plus size={15} />
           <span>New row</span>
         </div>
       </div>

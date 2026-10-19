@@ -70,20 +70,21 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[var(--notion-bg)] text-[var(--notion-text)] flex flex-col justify-center py-12 px-4 sm:px-6 font-sans relative">
-      {/* Top right theme toggle */}
+    <div className="min-h-screen bg-[var(--notion-bg)] text-[var(--notion-text)] flex flex-col justify-center py-10 px-4 sm:px-6 font-sans relative w-full">
+      {/* Top right theme toggle (>= 40px tap target) */}
       <div className="absolute top-4 right-4">
         <button
           type="button"
           onClick={toggleTheme}
-          className="p-1.5 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors"
+          className="min-h-[40px] min-w-[40px] flex items-center justify-center p-2 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors"
           title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+          aria-label="Toggle theme"
         >
-          {isDark ? <Sun size={16} /> : <Moon size={16} />}
+          {isDark ? <Sun size={17} /> : <Moon size={17} />}
         </button>
       </div>
 
-      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div className="sm:mx-auto w-full max-w-sm">
         {/* Logo / Header */}
         <div className="flex items-center gap-2 mb-3">
           <span className="w-7 h-7 flex items-center justify-center rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-base select-none">
@@ -102,7 +103,7 @@ const Login = () => {
         </p>
 
         {/* Form */}
-        <form className="space-y-4" onSubmit={handleLogin}>
+        <form className="space-y-4 w-full" onSubmit={handleLogin}>
           <div>
             <label
               htmlFor="email"
@@ -118,7 +119,7 @@ const Login = () => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-3 py-1.5 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors"
+              className="w-full px-3 py-2 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors min-h-[42px]"
               placeholder="admin@gmail.com"
             />
           </div>
@@ -140,7 +141,7 @@ const Login = () => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full px-3 py-1.5 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors"
+              className="w-full px-3 py-2 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors min-h-[42px]"
               placeholder="••••••••"
             />
           </div>
@@ -149,11 +150,11 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-1.5 px-3 rounded text-sm font-medium text-white bg-[var(--notion-blue)] hover:bg-[var(--notion-blue-hover)] focus:outline-none disabled:opacity-60 transition-colors flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full py-2.5 px-4 rounded text-sm font-medium text-white bg-[var(--notion-blue)] hover:bg-[var(--notion-blue-hover)] focus:outline-none disabled:opacity-60 transition-colors flex items-center justify-center gap-2 cursor-pointer min-h-[44px]"
             >
               {loading ? (
                 <>
-                  <Loader2 size={15} className="animate-spin" />
+                  <Loader2 size={16} className="animate-spin" />
                   <span>Signing in...</span>
                 </>
               ) : (
@@ -173,14 +174,14 @@ const Login = () => {
             <button
               type="button"
               onClick={fillDemoCredentials}
-              className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--notion-blue)] hover:underline cursor-pointer"
+              className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--notion-blue)] hover:underline cursor-pointer min-h-[36px] px-2"
             >
-              <Sparkles size={12} />
+              <Sparkles size={13} />
               Auto-fill
             </button>
           </div>
 
-          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px] bg-[var(--notion-bg)] p-2 rounded border border-[var(--notion-border-subtle)]">
+          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px] bg-[var(--notion-bg)] p-2.5 rounded border border-[var(--notion-border-subtle)]">
             <p>
               Email: <span className="text-[var(--notion-text)] font-semibold">admin@gmail.com</span>
             </p>

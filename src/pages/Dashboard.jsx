@@ -26,9 +26,9 @@ function Dashboard() {
         api.get("/expired-medicines"),
       ]);
 
-      setTotalMedicines(medicinesData.length || 0);
-      setLowStockCount(lowStockData.length || 0);
-      setExpiredCount(expiredData.length || 0);
+      setTotalMedicines(Array.isArray(medicinesData) ? medicinesData.length : 0);
+      setLowStockCount(Array.isArray(lowStockData) ? lowStockData.length : 0);
+      setExpiredCount(Array.isArray(expiredData) ? expiredData.length : 0);
     } catch (err) {
       console.error("Error fetching dashboard data:", err);
       setError(true);
@@ -61,7 +61,7 @@ function Dashboard() {
               Check server connection and MongoDB status, then try again.
             </p>
             <div className="mt-3">
-              <NotionButton size="sm" variant="secondary" onClick={fetchDashboardData} icon={RefreshCw}>
+              <NotionButton size="sm" variant="secondary" onClick={fetchDashboardData} icon={RefreshCw} className="min-h-[40px]">
                 Retry Connection
               </NotionButton>
             </div>
@@ -126,38 +126,39 @@ function Dashboard() {
   ];
 
   return (
-    <div className="space-y-8 max-w-4xl">
+    <div className="space-y-6 sm:space-y-8 max-w-4xl w-full">
       {/* Page Header (Notion standard: big title + optional icon + brief subtitle) */}
-      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-2 border-b border-[var(--notion-border)]">
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-3 border-b border-[var(--notion-border)]">
         <div>
-          <div className="text-3xl mb-2 select-none">📊</div>
+          <div className="text-2xl sm:text-3xl mb-1.5 select-none">📊</div>
           <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--notion-text)]">
             Dashboard
           </h1>
-          <p className="text-sm text-[var(--notion-text-muted)] mt-1">
+          <p className="text-xs sm:text-sm text-[var(--notion-text-muted)] mt-1">
             Overview of pharmacy inventory, active alerts, and dispensary operations.
           </p>
         </div>
 
-        <div className="flex items-center gap-2 pt-2 sm:pt-6">
+        <div className="flex items-center gap-2 pt-1 sm:pt-4">
           <NotionButton
             variant="primary"
             size="md"
             icon={Plus}
             onClick={() => navigate("/billing")}
+            className="w-full sm:w-auto min-h-[40px]"
           >
             New Sale
           </NotionButton>
         </div>
       </div>
 
-      {/* Notion Stat Blocks (flat, 1px border, calm text, pastel tag) */}
+      {/* Notion Stat Blocks (Stacks to 1 column on phone screens <= 640px) */}
       <div>
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-2.5">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-[var(--notion-text-muted)]">
             Key Metrics
           </h2>
-          <span className="text-xs text-[var(--notion-text-light)]">Updated real-time</span>
+          <span className="text-[11px] text-[var(--notion-text-light)]">Updated real-time</span>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -171,20 +172,20 @@ function Dashboard() {
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-2">
-                    <span className="text-xs font-medium text-[var(--notion-text-muted)] flex items-center gap-1.5">
-                      <Icon size={14} className="text-[var(--notion-text-muted)]" />
-                      {stat.title}
+                    <span className="text-xs font-medium text-[var(--notion-text-muted)] flex items-center gap-1.5 truncate">
+                      <Icon size={14} className="text-[var(--notion-text-muted)] shrink-0" />
+                      <span className="truncate">{stat.title}</span>
                     </span>
                     <NotionTag variant={stat.tagVariant}>{stat.tag}</NotionTag>
                   </div>
-                  <div className="text-3xl font-semibold tracking-tight text-[var(--notion-text)]">
+                  <div className="text-2xl sm:text-3xl font-semibold tracking-tight text-[var(--notion-text)]">
                     {stat.value}
                   </div>
                 </div>
 
-                <div className="mt-4 pt-2 border-t border-[var(--notion-border-subtle)] flex items-center justify-between text-xs text-[var(--notion-text-muted)] group-hover:text-[var(--notion-text)]">
-                  <span>{stat.description}</span>
-                  <ArrowRight size={12} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="mt-3 sm:mt-4 pt-2 border-t border-[var(--notion-border-subtle)] flex items-center justify-between text-xs text-[var(--notion-text-muted)] group-hover:text-[var(--notion-text)]">
+                  <span className="truncate pr-1">{stat.description}</span>
+                  <ArrowRight size={12} className="opacity-60 group-hover:opacity-100 shrink-0 transition-opacity" />
                 </div>
               </div>
             );
@@ -194,7 +195,7 @@ function Dashboard() {
 
       {/* Operations Directory (Notion-style linked database rows) */}
       <div>
-        <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center justify-between mb-2.5">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-[var(--notion-text-muted)]">
             Quick Operations
           </h2>
@@ -207,18 +208,18 @@ function Dashboard() {
               <div
                 key={idx}
                 onClick={() => navigate(item.link)}
-                className="flex items-center justify-between p-3.5 hover:bg-[var(--notion-hover)] transition-colors duration-100 cursor-pointer group"
+                className="flex items-center justify-between p-3 sm:p-3.5 hover:bg-[var(--notion-hover)] transition-colors duration-100 cursor-pointer group min-h-[48px]"
               >
-                <div className="flex items-center gap-3">
-                  <div className="w-7 h-7 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] flex items-center justify-center text-[var(--notion-text-muted)] group-hover:text-[var(--notion-text)] shrink-0">
-                    <ItemIcon size={15} />
+                <div className="flex items-center gap-3 min-w-0 pr-2">
+                  <div className="w-8 h-8 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] flex items-center justify-center text-[var(--notion-text-muted)] group-hover:text-[var(--notion-text)] shrink-0">
+                    <ItemIcon size={16} />
                   </div>
-                  <div>
-                    <div className="text-sm font-medium text-[var(--notion-text)] flex items-center gap-2">
-                      {item.title}
-                      <NotionTag variant="gray">{item.tag}</NotionTag>
+                  <div className="min-w-0">
+                    <div className="text-sm font-medium text-[var(--notion-text)] flex items-center gap-2 truncate">
+                      <span className="truncate">{item.title}</span>
+                      <NotionTag variant="gray" className="hidden xs:inline-flex">{item.tag}</NotionTag>
                     </div>
-                    <div className="text-xs text-[var(--notion-text-muted)]">
+                    <div className="text-xs text-[var(--notion-text-muted)] truncate">
                       {item.description}
                     </div>
                   </div>
@@ -226,7 +227,7 @@ function Dashboard() {
 
                 <ArrowRight
                   size={15}
-                  className="text-[var(--notion-text-light)] group-hover:text-[var(--notion-text)] group-hover:translate-x-0.5 transition-all"
+                  className="text-[var(--notion-text-light)] group-hover:text-[var(--notion-text)] group-hover:translate-x-0.5 transition-all shrink-0"
                 />
               </div>
             );
