@@ -1,9 +1,17 @@
-const API_URL =
+const RAW_API_URL =
   import.meta.env.VITE_API_URL !== undefined && import.meta.env.VITE_API_URL !== ""
     ? import.meta.env.VITE_API_URL
     : import.meta.env.DEV
     ? "http://localhost:5000"
     : "";
+
+// Strip any trailing slash so `${API_URL}/${endpoint}` never forms double slashes like `//api/auth/login`
+const API_URL = RAW_API_URL.replace(/\/+$/, "");
+
+const buildUrl = (endpoint) => {
+  const cleanEndpoint = endpoint.startsWith("/") ? endpoint : `/${endpoint}`;
+  return `${API_URL}${cleanEndpoint}`;
+};
 
 const handleResponse = async (response, endpoint) => {
   if (!response.ok) {
@@ -28,7 +36,7 @@ const handleResponse = async (response, endpoint) => {
 export const api = {
   get: async (endpoint) => {
     try {
-      const response = await fetch(`${API_URL}${endpoint}`);
+      const response = await fetch(buildUrl(endpoint));
       return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`GET ${endpoint} failed:`, error);
@@ -38,7 +46,7 @@ export const api = {
 
   post: async (endpoint, data) => {
     try {
-      const response = await fetch(`${API_URL}${endpoint}`, {
+      const response = await fetch(buildUrl(endpoint), {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -54,7 +62,7 @@ export const api = {
 
   put: async (endpoint, data) => {
     try {
-      const response = await fetch(`${API_URL}${endpoint}`, {
+      const response = await fetch(buildUrl(endpoint), {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -70,7 +78,7 @@ export const api = {
 
   delete: async (endpoint) => {
     try {
-      const response = await fetch(`${API_URL}${endpoint}`, {
+      const response = await fetch(buildUrl(endpoint), {
         method: "DELETE",
       });
       return await handleResponse(response, endpoint);

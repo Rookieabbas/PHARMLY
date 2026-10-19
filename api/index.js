@@ -11,6 +11,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Normalize leading double slashes in requests
+app.use((req, res, next) => {
+  if (req.url.startsWith("//")) {
+    req.url = req.url.replace(/^\/+/, "/");
+  }
+  next();
+});
+
 const MONGO_URI =
   process.env.MONGO_URI ||
   process.env.MONGODB_URI ||
