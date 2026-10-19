@@ -1,9 +1,27 @@
-import React from "react";
-import { Outlet, NavLink, useNavigate } from "react-router-dom";
-import { LayoutDashboard, ShoppingCart, Package, Bell, LogOut, Activity } from "lucide-react";
+import React, { useState } from "react";
+import { Outlet, NavLink, useLocation, useNavigate } from "react-router-dom";
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Package,
+  Bell,
+  LogOut,
+  Moon,
+  Sun,
+  Menu,
+  X,
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink,
+} from "lucide-react";
+import { useTheme } from "../utils/themeContext";
 
 const Layout = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { theme, toggleTheme, isDark } = useTheme();
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
@@ -11,76 +29,208 @@ const Layout = () => {
   };
 
   const navItems = [
-    { name: "Dashboard", path: "/dashboard", icon: <LayoutDashboard size={20} /> },
-    { name: "Billing", path: "/billing", icon: <ShoppingCart size={20} /> },
-    { name: "Inventory", path: "/inventory", icon: <Package size={20} /> },
-    { name: "Alerts", path: "/alerts", icon: <Bell size={20} /> },
+    { name: "Dashboard", path: "/dashboard", icon: LayoutDashboard, emoji: "📊" },
+    { name: "Point of Sale", path: "/billing", icon: ShoppingCart, emoji: "🧾" },
+    { name: "Inventory", path: "/inventory", icon: Package, emoji: "📦" },
+    { name: "Alerts", path: "/alerts", icon: Bell, emoji: "🔔" },
   ];
 
+  // Derive current page title for breadcrumb
+  const currentNav = navItems.find((item) => item.path === location.pathname) || {
+    name: "Dashboard",
+    emoji: "📊",
+  };
+
   return (
-    <div className="flex h-screen bg-zinc-950 font-sans text-zinc-200">
+    <div className="flex h-screen w-full bg-[var(--notion-bg)] text-[var(--notion-text)] overflow-hidden font-sans">
+      {/* Mobile Drawer Backdrop */}
+      {mobileMenuOpen && (
+        <div
+          className="fixed inset-0 bg-black/30 backdrop-blur-xs z-40 lg:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
+
       {/* Sidebar */}
-      <aside className="w-64 bg-zinc-900/90 backdrop-blur-xl border-r border-zinc-800/80 flex flex-col shadow-[4px_0_24px_-10px_rgba(0,0,0,0.8)] z-20">
-        <div className="h-16 flex items-center px-6 border-b border-zinc-800/80">
-          <div className="flex items-center gap-2">
-            <Activity className="text-emerald-500" size={24} />
-            <h1 className="text-xl font-bold text-emerald-400 tracking-tight">Pharmly</h1>
+      <aside
+        className={`fixed lg:static top-0 bottom-0 left-0 z-50 flex flex-col w-60 bg-[var(--notion-sidebar)] border-r border-[var(--notion-border)] transition-transform duration-150 ease-in-out ${
+          sidebarOpen ? "translate-x-0" : "-translate-x-full lg:-translate-x-60 lg:w-0 lg:border-r-0"
+        } ${mobileMenuOpen ? "translate-x-0" : ""}`}
+      >
+        {/* Workspace Switcher / Brand Header */}
+        <div className="h-12 flex items-center justify-between px-3.5 border-b border-[var(--notion-border)] shrink-0">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="w-5 h-5 flex items-center justify-center rounded bg-[var(--notion-border)] text-xs font-bold select-none">
+              🏥
+            </span>
+            <span className="font-semibold text-sm tracking-tight truncate text-[var(--notion-text)]">
+              Pharmly
+            </span>
+            <span className="text-[10px] font-medium text-[var(--notion-text-muted)] bg-[var(--notion-border)] px-1.5 py-0.5 rounded">
+              v1.0
+            </span>
+          </div>
+
+          <button
+            type="button"
+            onClick={() => {
+              setSidebarOpen(false);
+              setMobileMenuOpen(false);
+            }}
+            className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)]"
+            title="Collapse sidebar"
+          >
+            <ChevronLeft size={16} />
+          </button>
+        </div>
+
+        {/* Navigation Sections */}
+        <div className="flex-1 overflow-y-auto px-2 py-3 space-y-6">
+          <div>
+            <div className="px-2 pb-1.5 text-[11px] font-semibold text-[var(--notion-text-muted)] uppercase tracking-wider select-none">
+              Workspace
+            </div>
+            <nav className="space-y-0.5">
+              {navItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <NavLink
+                    key={item.name}
+                    to={item.path}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={({ isActive }) =>
+                      `flex items-center gap-2.5 px-2.5 py-1.5 rounded text-sm transition-colors duration-100 select-none ${
+                        isActive
+                          ? "bg-[var(--notion-active)] font-medium text-[var(--notion-text)]"
+                          : "text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)]"
+                      }`
+                    }
+                  >
+                    <Icon size={16} className="shrink-0" />
+                    <span className="truncate">{item.name}</span>
+                  </NavLink>
+                );
+              })}
+            </nav>
+          </div>
+
+          <div>
+            <div className="px-2 pb-1.5 text-[11px] font-semibold text-[var(--notion-text-muted)] uppercase tracking-wider select-none">
+              Quick Resources
+            </div>
+            <div className="space-y-0.5">
+              <a
+                href="https://github.com/Rookieabbas/PHARMLY"
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between px-2.5 py-1.5 rounded text-sm text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors select-none"
+              >
+                <span className="truncate">GitHub Repo</span>
+                <ExternalLink size={13} className="shrink-0 opacity-60" />
+              </a>
+            </div>
           </div>
         </div>
-        
-        <nav className="flex-1 py-6 px-4 space-y-2">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.name}
-              to={item.path}
-              className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
-                  isActive
-                    ? "bg-emerald-500/10 text-emerald-400 font-semibold shadow-inner shadow-emerald-500/5 border border-emerald-500/20"
-                    : "text-zinc-400 hover:bg-zinc-800/80 hover:text-zinc-200 border border-transparent"
-                }`
-              }
-            >
-              {item.icon}
-              <span>{item.name}</span>
-            </NavLink>
-          ))}
-        </nav>
 
-        <div className="p-4 border-t border-zinc-800/80 space-y-4">
-          <div className="flex items-center gap-3 px-4 py-3 text-sm text-zinc-400 bg-zinc-800/40 rounded-xl border border-zinc-700/50">
-            <div className="w-8 h-8 rounded-full bg-emerald-900 flex items-center justify-center text-emerald-400 font-bold shadow-lg shadow-emerald-900/20 border border-emerald-700/50">
-              A
-            </div>
-            <span className="font-medium text-zinc-300">Admin User</span>
-          </div>
-          <button 
-            onClick={handleLogout}
-            className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-red-400 bg-red-500/10 hover:bg-red-500/20 rounded-lg transition-colors border border-red-500/10 hover:border-red-500/20"
+        {/* Sidebar Footer */}
+        <div className="p-3 border-t border-[var(--notion-border)] shrink-0 space-y-2">
+          {/* Dark / Light Toggle */}
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="w-full flex items-center justify-between px-2 py-1.5 rounded text-xs text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors select-none"
           >
-            <LogOut size={18} />
-            Logout
+            <span className="flex items-center gap-2">
+              {isDark ? <Sun size={14} /> : <Moon size={14} />}
+              <span>{isDark ? "Light mode" : "Dark mode"}</span>
+            </span>
+            <span className="text-[10px] font-mono opacity-60">
+              {isDark ? "Ctrl+L" : "Ctrl+D"}
+            </span>
           </button>
+
+          {/* User info & Logout */}
+          <div className="flex items-center justify-between pt-1 border-t border-[var(--notion-border-subtle)]">
+            <div className="flex items-center gap-2 min-w-0 pr-2">
+              <div className="w-6 h-6 rounded bg-[var(--notion-border)] flex items-center justify-center text-xs font-semibold select-none shrink-0">
+                A
+              </div>
+              <div className="min-w-0">
+                <p className="text-xs font-medium text-[var(--notion-text)] truncate">
+                  Admin User
+                </p>
+                <p className="text-[11px] text-[var(--notion-text-muted)] truncate">
+                  admin@gmail.com
+                </p>
+              </div>
+            </div>
+            <button
+              type="button"
+              onClick={handleLogout}
+              className="p-1.5 rounded text-[var(--notion-text-muted)] hover:text-[#EB5757] hover:bg-[var(--tag-red-bg)] transition-colors shrink-0"
+              title="Log out"
+            >
+              <LogOut size={15} />
+            </button>
+          </div>
         </div>
       </aside>
 
-      {/* Main Content Area */}
-      <main className="flex-1 flex flex-col overflow-hidden relative z-10">
-        {/* Top Navbar */}
-        <header className="h-16 bg-zinc-900/60 backdrop-blur-md border-b border-zinc-800/80 flex items-center justify-between px-8 shadow-sm shrink-0">
-          <h2 className="text-xl font-semibold text-zinc-100">
-            Overview
-          </h2>
-          <div className="flex items-center gap-4 text-zinc-400">
-            <span className="text-sm font-medium bg-zinc-800/80 px-3 py-1 rounded-full border border-zinc-700/50">Admin Session</span>
+      {/* Main Column */}
+      <div className="flex-1 flex flex-col min-w-0 overflow-hidden">
+        {/* Slim Top Bar */}
+        <header className="h-11 border-b border-[var(--notion-border)] flex items-center justify-between px-4 sm:px-6 bg-[var(--notion-bg)] shrink-0 select-none">
+          <div className="flex items-center gap-2 text-xs text-[var(--notion-text-muted)]">
+            {/* Desktop un-collapse button */}
+            {!sidebarOpen && (
+              <button
+                type="button"
+                onClick={() => setSidebarOpen(true)}
+                className="hidden lg:flex p-1 rounded hover:bg-[var(--notion-hover)] text-[var(--notion-text)] mr-1"
+                title="Expand sidebar"
+              >
+                <ChevronRight size={16} />
+              </button>
+            )}
+
+            {/* Mobile menu toggle */}
+            <button
+              type="button"
+              onClick={() => setMobileMenuOpen(true)}
+              className="lg:hidden p-1 rounded hover:bg-[var(--notion-hover)] text-[var(--notion-text)] mr-1"
+            >
+              <Menu size={16} />
+            </button>
+
+            <span className="hover:text-[var(--notion-text)] cursor-pointer">
+              Pharmly
+            </span>
+            <span>/</span>
+            <span className="font-medium text-[var(--notion-text)] flex items-center gap-1.5">
+              <span>{currentNav.emoji}</span>
+              <span>{currentNav.name}</span>
+            </span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={toggleTheme}
+              className="p-1 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors"
+              title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+            >
+              {isDark ? <Sun size={15} /> : <Moon size={15} />}
+            </button>
           </div>
         </header>
 
-        {/* Page Content - Scrollable */}
-        <div className="flex-1 overflow-auto p-8 custom-scrollbar">
-          <Outlet />
-        </div>
-      </main>
+        {/* Scrollable Page Body */}
+        <main className="flex-1 overflow-y-auto">
+          <div className="max-w-5xl mx-auto py-8 px-6 sm:px-10">
+            <Outlet />
+          </div>
+        </main>
+      </div>
     </div>
   );
 };

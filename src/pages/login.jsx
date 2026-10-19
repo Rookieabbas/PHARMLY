@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../utils/api";
 import toast from "react-hot-toast";
-import { Activity, Loader2 } from "lucide-react";
+import { Loader2, Sun, Moon } from "lucide-react";
+import { useTheme } from "../utils/themeContext";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { toggleTheme, isDark } = useTheme();
 
   // If already logged in, redirect to dashboard
   useEffect(() => {
@@ -29,7 +31,7 @@ const Login = () => {
     setLoading(true);
     try {
       const response = await api.post("/api/auth/login", { email, password });
-      
+
       if (response.success) {
         localStorage.setItem("adminToken", response.token);
         toast.success("Welcome back, Admin!");
@@ -46,111 +48,108 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-zinc-950 flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md flex flex-col items-center">
-        <div className="w-16 h-16 bg-zinc-900 border border-zinc-800 rounded-2xl flex items-center justify-center text-emerald-400 mb-6 shadow-lg shadow-emerald-900/20">
-          <Activity size={36} className="drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
-        </div>
-        <h2 className="text-center text-3xl font-extrabold text-zinc-100 tracking-tight">
-          Pharmly
-        </h2>
-        <p className="mt-2 text-center text-sm text-zinc-400">
-          Sign in to your administration panel
-        </p>
+    <div className="min-h-screen bg-[var(--notion-bg)] text-[var(--notion-text)] flex flex-col justify-center py-12 px-4 sm:px-6 font-sans relative">
+      {/* Top right theme toggle */}
+      <div className="absolute top-4 right-4">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="p-1.5 rounded text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover)] transition-colors"
+          title={isDark ? "Switch to light mode" : "Switch to dark mode"}
+        >
+          {isDark ? <Sun size={16} /> : <Moon size={16} />}
+        </button>
       </div>
 
-      <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-zinc-900/80 backdrop-blur-xl py-8 px-4 shadow-2xl sm:rounded-2xl sm:px-10 border border-zinc-800">
-          <form className="space-y-6" onSubmit={handleLogin}>
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-zinc-300"
-              >
-                Email address
-              </label>
-              <div className="mt-1">
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  autoComplete="email"
-                  required
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="appearance-none block w-full px-4 py-3 bg-zinc-950/50 border border-zinc-800 rounded-xl shadow-sm text-zinc-200 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm transition-all"
-                  placeholder="admin@gmail.com"
-                />
-              </div>
-            </div>
+      <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+        {/* Logo / Header */}
+        <div className="flex items-center gap-2 mb-3">
+          <span className="w-7 h-7 flex items-center justify-center rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-base select-none">
+            🏥
+          </span>
+          <span className="text-xl font-bold tracking-tight text-[var(--notion-text)]">
+            Pharmly
+          </span>
+        </div>
 
-            <div>
+        <h1 className="text-2xl font-bold tracking-tight text-[var(--notion-text)] mb-1">
+          Log in
+        </h1>
+        <p className="text-xs text-[var(--notion-text-muted)] mb-6">
+          Access your pharmacy dashboard, point of sale, and inventory.
+        </p>
+
+        {/* Form */}
+        <form className="space-y-4" onSubmit={handleLogin}>
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-xs font-medium text-[var(--notion-text)] mb-1"
+            >
+              Email address
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full px-3 py-1.5 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors"
+              placeholder="admin@gmail.com"
+            />
+          </div>
+
+          <div>
+            <div className="flex items-center justify-between mb-1">
               <label
                 htmlFor="password"
-                className="block text-sm font-medium text-zinc-300"
+                className="block text-xs font-medium text-[var(--notion-text)]"
               >
                 Password
               </label>
-              <div className="mt-1">
-                <input
-                  id="password"
-                  name="password"
-                  type="password"
-                  autoComplete="current-password"
-                  required
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="appearance-none block w-full px-4 py-3 bg-zinc-950/50 border border-zinc-800 rounded-xl shadow-sm text-zinc-200 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 sm:text-sm transition-all"
-                  placeholder="••••••••"
-                />
-              </div>
             </div>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autoComplete="current-password"
+              required
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full px-3 py-1.5 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors"
+              placeholder="••••••••"
+            />
+          </div>
 
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <input
-                  id="remember-me"
-                  name="remember-me"
-                  type="checkbox"
-                  className="h-4 w-4 bg-zinc-950 border-zinc-800 text-emerald-500 focus:ring-emerald-500 focus:ring-offset-zinc-950 rounded cursor-pointer"
-                />
-                <label
-                  htmlFor="remember-me"
-                  className="ml-2 block text-sm text-zinc-400 cursor-pointer select-none"
-                >
-                  Remember me
-                </label>
-              </div>
-            </div>
+          <div className="pt-1">
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full py-1.5 px-3 rounded text-sm font-medium text-white bg-[var(--notion-blue)] hover:bg-[var(--notion-blue-hover)] focus:outline-none disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
+            >
+              {loading ? (
+                <>
+                  <Loader2 size={15} className="animate-spin" />
+                  <span>Signing in...</span>
+                </>
+              ) : (
+                "Continue"
+              )}
+            </button>
+          </div>
+        </form>
 
-            <div>
-              <button
-                type="submit"
-                disabled={loading}
-                className="w-full flex justify-center py-3 px-4 border border-transparent rounded-xl shadow-[0_0_15px_rgba(16,185,129,0.2)] text-sm font-semibold text-zinc-950 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-950 focus:ring-emerald-500 transition-all hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
-              >
-                {loading ? (
-                  <>
-                    <Loader2 size={20} className="animate-spin mr-2" />
-                    Authenticating...
-                  </>
-                ) : (
-                  "Sign in to Dashboard"
-                )}
-              </button>
-            </div>
-          </form>
-          
-          <div className="mt-8 border-t border-zinc-800 pt-6">
-             <div className="rounded-xl bg-zinc-800/50 border border-zinc-700/50 p-4">
-               <div className="flex flex-col items-center">
-                 <h3 className="text-sm font-semibold text-emerald-400 mb-2">Test Credentials</h3>
-                 <div className="text-sm text-zinc-400 space-y-1 text-center">
-                   <p><span className="text-zinc-500 mr-2">Email:</span> <span className="text-zinc-300 font-mono bg-zinc-950 px-2 py-0.5 rounded">admin@gmail.com</span></p>
-                   <p><span className="text-zinc-500 mr-2">Pass:</span> <span className="text-zinc-300 font-mono bg-zinc-950 px-2 py-0.5 rounded">123456</span></p>
-                 </div>
-               </div>
-             </div>
+        {/* Demo Credentials Callout */}
+        <div className="mt-8 p-3 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-xs text-[var(--notion-text)]">
+          <p className="font-semibold text-[var(--notion-text)] mb-1 flex items-center gap-1.5">
+            <span>🔑</span>
+            <span>Demo Credentials</span>
+          </p>
+          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px]">
+            <p>Email: <span className="text-[var(--notion-text)]">admin@gmail.com</span></p>
+            <p>Password: <span className="text-[var(--notion-text)]">123456</span></p>
           </div>
         </div>
       </div>
