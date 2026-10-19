@@ -197,9 +197,6 @@ const Login = () => {
               Password: <span className="text-[var(--notion-text)] font-semibold">demo123</span>
             </p>
           </div>
-          <p className="text-[10px] text-[var(--notion-text-muted)] pt-0.5">
-            Admin account: <span className="font-mono">admin@gmail.com</span> / <span className="font-mono">123456</span>
-          </p>
         </div>
       </div>
     </div>
