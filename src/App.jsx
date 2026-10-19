@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 import Login from "./pages/login";
 import Dashboard from "./pages/Dashboard";
 import Billing from "./pages/Billing";
@@ -7,38 +6,56 @@ import Inventory from "./pages/Inventory";
 import Alerts from "./pages/Alerts";
 import Layout from "./components/Layout";
 import ProtectedRoute from "./components/ProtectedRoute";
-
+import { ThemeProvider } from "./utils/themeContext";
 import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
-    <Router>
-      <Toaster 
-        position="top-right" 
-        reverseOrder={false} 
-        toastOptions={{
-          className: '',
-          style: {
-            background: '#27272a', // zinc-800
-            color: '#e4e4e7', // zinc-200
-            border: '1px solid #3f3f46', // zinc-700
-            boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -1px rgba(0, 0, 0, 0.3)',
-          },
-        }}
-      />
-      <Routes>
-        <Route path="/" element={<Login />} />
+    <ThemeProvider>
+      <Router>
+        <Toaster
+          position="bottom-right"
+          reverseOrder={false}
+          toastOptions={{
+            duration: 3500,
+            className: "notion-toast",
+            style: {
+              background: "var(--notion-bg)",
+              color: "var(--notion-text)",
+              border: "1px solid var(--notion-border)",
+              boxShadow: "var(--notion-shadow-popover)",
+              borderRadius: "6px",
+              fontSize: "13px",
+              padding: "10px 14px",
+            },
+            success: {
+              iconTheme: {
+                primary: "#2383E2",
+                secondary: "#ffffff",
+              },
+            },
+            error: {
+              iconTheme: {
+                primary: "#EB5757",
+                secondary: "#ffffff",
+              },
+            },
+          }}
+        />
+        <Routes>
+          <Route path="/" element={<Login />} />
 
-        <Route element={<ProtectedRoute />}>
-          <Route element={<Layout />}>
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/billing" element={<Billing />} />
-            <Route path="/inventory" element={<Inventory />} />
-            <Route path="/alerts" element={<Alerts />} />
+          <Route element={<ProtectedRoute />}>
+            <Route element={<Layout />}>
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/billing" element={<Billing />} />
+              <Route path="/inventory" element={<Inventory />} />
+              <Route path="/alerts" element={<Alerts />} />
+            </Route>
           </Route>
-        </Route>
-      </Routes>
-    </Router>
+        </Routes>
+      </Router>
+    </ThemeProvider>
   );
 }
 
