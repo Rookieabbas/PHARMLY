@@ -1,0 +1,8498 @@
+[
+ {
+  "name": "A to Z Tablet",
+  "code": "ATZT",
+  "price": 36,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2027-05-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acarbose 100mg",
+  "code": "ACB100",
+  "price": 85,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2028-03-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acarbose 25mg",
+  "code": "ACB25",
+  "price": 45,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2026-09-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acarbose 50mg",
+  "code": "ACB50",
+  "price": 66,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2028-11-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aceclofenac 100mg",
+  "code": "ACF100",
+  "price": 26,
+  "quantity": 119,
+  "expiryDate": {
+   "$date": "2029-06-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aceclofenac 200mg",
+  "code": "ACF200",
+  "price": 35,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2028-09-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aciloc 150",
+  "code": "ACL150",
+  "price": 28,
+  "quantity": 79,
+  "expiryDate": {
+   "$date": "2028-10-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aciloc 300",
+  "code": "ACL300",
+  "price": 41,
+  "quantity": 116,
+  "expiryDate": {
+   "$date": "2028-01-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acivir 200",
+  "code": "ACI200",
+  "price": 68,
+  "quantity": 95,
+  "expiryDate": {
+   "$date": "2027-03-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acivir 400",
+  "code": "ACI400",
+  "price": 90,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-03-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acivir 800",
+  "code": "ACI800",
+  "price": 120,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2026-10-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acyclovir 200mg",
+  "code": "ACV200",
+  "price": 60,
+  "quantity": 99,
+  "expiryDate": {
+   "$date": "2027-01-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acyclovir 400mg",
+  "code": "ACV400",
+  "price": 82,
+  "quantity": 148,
+  "expiryDate": {
+   "$date": "2029-01-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Acyclovir 800mg",
+  "code": "ACV800",
+  "price": 108,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-01-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Adapalene Gel 15g",
+  "code": "ADP15",
+  "price": 156,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2028-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Adhesive Bandage Pack of 20",
+  "code": "ADBPACKOF20",
+  "price": 35,
+  "quantity": 98,
+  "expiryDate": {
+   "$date": "2026-10-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Albendazole 400mg",
+  "code": "ALB400",
+  "price": 12,
+  "quantity": 60,
+  "expiryDate": {
+   "$date": "2028-06-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aldactone 25",
+  "code": "ALD25",
+  "price": 59,
+  "quantity": 110,
+  "expiryDate": {
+   "$date": "2028-09-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aldactone 50",
+  "code": "ALD50",
+  "price": 86,
+  "quantity": 106,
+  "expiryDate": {
+   "$date": "2028-05-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Alerid 10",
+  "code": "ALR10",
+  "price": 26,
+  "quantity": 10,
+  "expiryDate": {
+   "$date": "2027-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Alex 100ml",
+  "code": "ALX100",
+  "price": 101,
+  "quantity": 26,
+  "expiryDate": {
+   "$date": "2028-05-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Alex 200ml",
+  "code": "ALX200",
+  "price": 151,
+  "quantity": 198,
+  "expiryDate": {
+   "$date": "2026-12-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Allegra 120",
+  "code": "ALG120",
+  "price": 128,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-01-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Allegra 180",
+  "code": "ALG180",
+  "price": 187,
+  "quantity": 136,
+  "expiryDate": {
+   "$date": "2027-07-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Allopurinol 100mg",
+  "code": "ALP100",
+  "price": 15,
+  "quantity": 16,
+  "expiryDate": {
+   "$date": "2027-11-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Allopurinol 300mg",
+  "code": "ALP300",
+  "price": 21,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2027-03-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Althrocin 250",
+  "code": "ALT250",
+  "price": 80,
+  "quantity": 161,
+  "expiryDate": {
+   "$date": "2027-02-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Althrocin 500",
+  "code": "ALT500",
+  "price": 107,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2027-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amaryl 1",
+  "code": "AMR1",
+  "price": 111,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2028-06-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amaryl 2",
+  "code": "AMR2",
+  "price": 156,
+  "quantity": 74,
+  "expiryDate": {
+   "$date": "2028-08-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amaryl 3",
+  "code": "AMR3",
+  "price": 207,
+  "quantity": 180,
+  "expiryDate": {
+   "$date": "2028-08-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ambrodil 100ml",
+  "code": "ABD100",
+  "price": 61,
+  "quantity": 194,
+  "expiryDate": {
+   "$date": "2027-12-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ambroxol 30mg",
+  "code": "AMB30",
+  "price": 25,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2027-12-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ambroxol 75mg",
+  "code": "AMB75",
+  "price": 35,
+  "quantity": 83,
+  "expiryDate": {
+   "$date": "2028-04-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amikacin Injection 250mg",
+  "code": "AMI250",
+  "price": 44,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2028-06-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amikacin Injection 500mg",
+  "code": "AMI500",
+  "price": 62,
+  "quantity": 156,
+  "expiryDate": {
+   "$date": "2026-08-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amitriptyline 10mg",
+  "code": "AMT10",
+  "price": 15,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2027-04-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amitriptyline 25mg",
+  "code": "AMT25",
+  "price": 21,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2028-12-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlodipine 10mg",
+  "code": "AML10",
+  "price": 22,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2027-04-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlodipine 2.5mg",
+  "code": "AML25",
+  "price": 12,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2029-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlodipine 5mg",
+  "code": "AML5",
+  "price": 17,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2029-06-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlodipine Syrup 60ml",
+  "code": "AMS60",
+  "price": 61,
+  "quantity": 73,
+  "expiryDate": {
+   "$date": "2029-03-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlokind 2.5",
+  "code": "AMLK25",
+  "price": 21,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2027-12-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlokind 5",
+  "code": "AMLK5",
+  "price": 28,
+  "quantity": 82,
+  "expiryDate": {
+   "$date": "2027-10-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlokind-AT Tablet",
+  "code": "AATT",
+  "price": 58,
+  "quantity": 37,
+  "expiryDate": {
+   "$date": "2027-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlong 10",
+  "code": "AMLG10",
+  "price": 57,
+  "quantity": 192,
+  "expiryDate": {
+   "$date": "2028-02-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlong 2.5",
+  "code": "AMLG25",
+  "price": 29,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2028-01-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amlong 5",
+  "code": "AMLG5",
+  "price": 43,
+  "quantity": 30,
+  "expiryDate": {
+   "$date": "2028-11-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin 250mg",
+  "code": "AMX250",
+  "price": 60,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-03-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin 500mg",
+  "code": "AMX500",
+  "price": 82,
+  "quantity": 12,
+  "expiryDate": {
+   "$date": "2028-11-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin Clavulanate 1000mg",
+  "code": "AMC1000",
+  "price": 235,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2028-10-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin Clavulanate 375mg",
+  "code": "AMC375",
+  "price": 136,
+  "quantity": 184,
+  "expiryDate": {
+   "$date": "2027-09-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin Clavulanate 625mg",
+  "code": "AMC625",
+  "price": 191,
+  "quantity": 130,
+  "expiryDate": {
+   "$date": "2027-07-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin Syrup 30ml",
+  "code": "AMXS30",
+  "price": 55,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-08-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amoxicillin Syrup 60ml",
+  "code": "AMXS60",
+  "price": 75,
+  "quantity": 162,
+  "expiryDate": {
+   "$date": "2027-10-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amrutanjan Balm 15g",
+  "code": "AMJ15",
+  "price": 73,
+  "quantity": 192,
+  "expiryDate": {
+   "$date": "2027-03-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amrutanjan Balm 25g",
+  "code": "AMJ25",
+  "price": 88,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-05-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Amrutanjan Balm 8g",
+  "code": "AMJ8",
+  "price": 49,
+  "quantity": 53,
+  "expiryDate": {
+   "$date": "2029-03-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ascoril D 100ml",
+  "code": "ASD100",
+  "price": 118,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2026-11-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ascoril D 200ml",
+  "code": "ASD200",
+  "price": 172,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2027-10-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ascoril LS 100ml",
+  "code": "ASC100",
+  "price": 159,
+  "quantity": 128,
+  "expiryDate": {
+   "$date": "2027-03-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ascoril LS 200ml",
+  "code": "ASC200",
+  "price": 216,
+  "quantity": 174,
+  "expiryDate": {
+   "$date": "2028-09-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ascoril LS 60ml",
+  "code": "ASC60",
+  "price": 120,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2029-05-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aspirin 150mg",
+  "code": "ASP150",
+  "price": 11,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2029-06-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aspirin 325mg",
+  "code": "ASP325",
+  "price": 15,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2026-06-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aspirin 75mg",
+  "code": "ASP75",
+  "price": 8,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2027-04-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Asthalin Inhaler 100mcg",
+  "code": "ASI100",
+  "price": 152,
+  "quantity": 103,
+  "expiryDate": {
+   "$date": "2027-12-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aten 25",
+  "code": "ATEN25",
+  "price": 19,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2027-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Aten 50",
+  "code": "ATEN50",
+  "price": 24,
+  "quantity": 33,
+  "expiryDate": {
+   "$date": "2028-12-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atenolol 100mg",
+  "code": "ATN100",
+  "price": 21,
+  "quantity": 52,
+  "expiryDate": {
+   "$date": "2028-07-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atenolol 25mg",
+  "code": "ATN25",
+  "price": 12,
+  "quantity": 154,
+  "expiryDate": {
+   "$date": "2029-04-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atenolol 50mg",
+  "code": "ATN50",
+  "price": 17,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2027-07-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atocor 10",
+  "code": "ATC10",
+  "price": 92,
+  "quantity": 156,
+  "expiryDate": {
+   "$date": "2027-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atocor 20",
+  "code": "ATC20",
+  "price": 131,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2029-06-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atocor 40",
+  "code": "ATC40",
+  "price": 169,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2027-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorva 10",
+  "code": "ATR10",
+  "price": 61,
+  "quantity": 155,
+  "expiryDate": {
+   "$date": "2028-11-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorva 20",
+  "code": "ATR20",
+  "price": 85,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2026-07-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorva 40",
+  "code": "ATR40",
+  "price": 106,
+  "quantity": 196,
+  "expiryDate": {
+   "$date": "2027-12-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorvastatin 10mg",
+  "code": "ATV10",
+  "price": 69,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2027-02-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorvastatin 20mg",
+  "code": "ATV20",
+  "price": 90,
+  "quantity": 163,
+  "expiryDate": {
+   "$date": "2028-05-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorvastatin 40mg",
+  "code": "ATV40",
+  "price": 109,
+  "quantity": 161,
+  "expiryDate": {
+   "$date": "2026-11-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorvastatin 5mg",
+  "code": "ATV5",
+  "price": 48,
+  "quantity": 125,
+  "expiryDate": {
+   "$date": "2029-04-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Atorvastatin 80mg",
+  "code": "ATV80",
+  "price": 124,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2028-12-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Augmentin 1000",
+  "code": "AUG1000",
+  "price": 335,
+  "quantity": 67,
+  "expiryDate": {
+   "$date": "2028-04-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Augmentin 375",
+  "code": "AUG375",
+  "price": 191,
+  "quantity": 169,
+  "expiryDate": {
+   "$date": "2029-03-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Augmentin 625",
+  "code": "AUG625",
+  "price": 271,
+  "quantity": 146,
+  "expiryDate": {
+   "$date": "2026-12-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Autrin Capsule",
+  "code": "AUTC",
+  "price": 86,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2027-09-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Avil 25",
+  "code": "AVL25",
+  "price": 8,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2027-08-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Avil 50",
+  "code": "AVL50",
+  "price": 11,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2029-03-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azee 250",
+  "code": "AZE250",
+  "price": 101,
+  "quantity": 143,
+  "expiryDate": {
+   "$date": "2028-11-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azee 500",
+  "code": "AZE500",
+  "price": 139,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2027-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithral 250",
+  "code": "AZL250",
+  "price": 91,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-07-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithral 500",
+  "code": "AZL500",
+  "price": 135,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-04-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithromycin 250mg",
+  "code": "AZM250",
+  "price": 88,
+  "quantity": 84,
+  "expiryDate": {
+   "$date": "2027-04-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithromycin 500mg",
+  "code": "AZM500",
+  "price": 123,
+  "quantity": 177,
+  "expiryDate": {
+   "$date": "2028-07-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithromycin Syrup 15ml",
+  "code": "AZMS15",
+  "price": 71,
+  "quantity": 15,
+  "expiryDate": {
+   "$date": "2028-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Azithromycin Syrup 30ml",
+  "code": "AZMS30",
+  "price": 101,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2027-11-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Baclofen 10mg",
+  "code": "BCF10",
+  "price": 30,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-03-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Baclofen 25mg",
+  "code": "BCF25",
+  "price": 40,
+  "quantity": 170,
+  "expiryDate": {
+   "$date": "2027-02-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Becadexamin Capsule",
+  "code": "BCDC",
+  "price": 54,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2027-05-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Becosules Capsule",
+  "code": "BECC",
+  "price": 43,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2027-04-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Benadryl 100ml",
+  "code": "BND100",
+  "price": 102,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2029-04-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Benadryl 150ml",
+  "code": "BND150",
+  "price": 128,
+  "quantity": 105,
+  "expiryDate": {
+   "$date": "2027-09-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Benadryl 50ml",
+  "code": "BND50",
+  "price": 71,
+  "quantity": 39,
+  "expiryDate": {
+   "$date": "2028-07-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Benzoyl Peroxide Gel 10g",
+  "code": "BPG10",
+  "price": 62,
+  "quantity": 98,
+  "expiryDate": {
+   "$date": "2029-06-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Benzoyl Peroxide Gel 20g",
+  "code": "BPG20",
+  "price": 86,
+  "quantity": 11,
+  "expiryDate": {
+   "$date": "2028-04-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Gargle 100ml",
+  "code": "BTG100",
+  "price": 126,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2029-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Gargle 50ml",
+  "code": "BTG50",
+  "price": 93,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Mouthwash 100ml",
+  "code": "BMW100",
+  "price": 121,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2027-02-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Mouthwash 50ml",
+  "code": "BMW50",
+  "price": 83,
+  "quantity": 114,
+  "expiryDate": {
+   "$date": "2027-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Ointment 15g",
+  "code": "BTD15",
+  "price": 82,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-06-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Ointment 20g",
+  "code": "BTD20",
+  "price": 113,
+  "quantity": 94,
+  "expiryDate": {
+   "$date": "2028-02-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Ointment 5g",
+  "code": "BTD5",
+  "price": 58,
+  "quantity": 119,
+  "expiryDate": {
+   "$date": "2027-10-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Solution 100ml",
+  "code": "BTS100",
+  "price": 115,
+  "quantity": 121,
+  "expiryDate": {
+   "$date": "2028-10-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Solution 500ml",
+  "code": "BTS500",
+  "price": 143,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2027-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betadine Solution 50ml",
+  "code": "BTS50",
+  "price": 78,
+  "quantity": 24,
+  "expiryDate": {
+   "$date": "2028-07-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betahistine 16mg",
+  "code": "BHT16",
+  "price": 74,
+  "quantity": 128,
+  "expiryDate": {
+   "$date": "2028-02-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betahistine 24mg",
+  "code": "BHT24",
+  "price": 104,
+  "quantity": 138,
+  "expiryDate": {
+   "$date": "2027-04-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betahistine 8mg",
+  "code": "BHT8",
+  "price": 56,
+  "quantity": 194,
+  "expiryDate": {
+   "$date": "2027-03-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betaloc 100",
+  "code": "BTL100",
+  "price": 104,
+  "quantity": 186,
+  "expiryDate": {
+   "$date": "2027-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betaloc 25",
+  "code": "BTL25",
+  "price": 57,
+  "quantity": 71,
+  "expiryDate": {
+   "$date": "2028-07-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betaloc 50",
+  "code": "BTL50",
+  "price": 81,
+  "quantity": 191,
+  "expiryDate": {
+   "$date": "2027-12-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betnovate 20g",
+  "code": "BTV20",
+  "price": 29,
+  "quantity": 160,
+  "expiryDate": {
+   "$date": "2028-11-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Betnovate-N 20g",
+  "code": "BTN20",
+  "price": 34,
+  "quantity": 84,
+  "expiryDate": {
+   "$date": "2029-02-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Biotin 10mg",
+  "code": "BIO10",
+  "price": 166,
+  "quantity": 32,
+  "expiryDate": {
+   "$date": "2027-04-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Biotin 5mg",
+  "code": "BIO5",
+  "price": 119,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2029-01-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Bisoprolol 10mg",
+  "code": "BSP10",
+  "price": 70,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2027-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Bisoprolol 2.5mg",
+  "code": "BSP25",
+  "price": 39,
+  "quantity": 130,
+  "expiryDate": {
+   "$date": "2028-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Bisoprolol 5mg",
+  "code": "BSP5",
+  "price": 56,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-12-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "BP Monitor Standard",
+  "code": "BPMS",
+  "price": 1441,
+  "quantity": 169,
+  "expiryDate": {
+   "$date": "2029-01-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Brilinta 60",
+  "code": "BRL60",
+  "price": 184,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2028-12-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Brilinta 90",
+  "code": "BRL90",
+  "price": 260,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2027-12-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Brufen 200",
+  "code": "BRF200",
+  "price": 22,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2027-03-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Brufen 400",
+  "code": "BRF400",
+  "price": 32,
+  "quantity": 25,
+  "expiryDate": {
+   "$date": "2027-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Brufen 600",
+  "code": "BRF600",
+  "price": 40,
+  "quantity": 22,
+  "expiryDate": {
+   "$date": "2028-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Budecort Inhaler 100mcg",
+  "code": "BDC100",
+  "price": 212,
+  "quantity": 45,
+  "expiryDate": {
+   "$date": "2027-07-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Budecort Inhaler 200mcg",
+  "code": "BDC200",
+  "price": 296,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2028-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calamine Lotion 100ml",
+  "code": "CML100",
+  "price": 94,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2028-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calamine Lotion 60ml",
+  "code": "CML60",
+  "price": 69,
+  "quantity": 195,
+  "expiryDate": {
+   "$date": "2028-01-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calcimax Tablet",
+  "code": "CMXT",
+  "price": 143,
+  "quantity": 42,
+  "expiryDate": {
+   "$date": "2028-03-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calcium Syrup 200ml",
+  "code": "CAS200",
+  "price": 130,
+  "quantity": 113,
+  "expiryDate": {
+   "$date": "2027-04-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calcium Vitamin D3 500mg",
+  "code": "CVD500",
+  "price": 101,
+  "quantity": 59,
+  "expiryDate": {
+   "$date": "2029-01-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calpol 250",
+  "code": "CLP250",
+  "price": 26,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2028-09-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calpol 500",
+  "code": "CLP500",
+  "price": 35,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-10-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calpol 650",
+  "code": "CLP650",
+  "price": 46,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2027-01-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calpol Syrup 100ml",
+  "code": "CLPS100",
+  "price": 54,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2028-09-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Calpol Syrup 60ml",
+  "code": "CLPS60",
+  "price": 42,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2028-03-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Candid 15g",
+  "code": "CND15",
+  "price": 93,
+  "quantity": 194,
+  "expiryDate": {
+   "$date": "2027-03-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Candid 30g",
+  "code": "CND30",
+  "price": 125,
+  "quantity": 15,
+  "expiryDate": {
+   "$date": "2029-06-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Candid-B 15g",
+  "code": "CDB15",
+  "price": 107,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2026-11-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carbamazepine 100mg",
+  "code": "CBM100",
+  "price": 25,
+  "quantity": 21,
+  "expiryDate": {
+   "$date": "2027-11-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carbamazepine 200mg",
+  "code": "CBM200",
+  "price": 34,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2028-10-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carbamazepine 400mg",
+  "code": "CBM400",
+  "price": 44,
+  "quantity": 159,
+  "expiryDate": {
+   "$date": "2028-06-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cardace 10",
+  "code": "CRD10",
+  "price": 126,
+  "quantity": 150,
+  "expiryDate": {
+   "$date": "2028-03-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cardace 2.5",
+  "code": "CRD25",
+  "price": 73,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2028-12-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cardace 5",
+  "code": "CRD5",
+  "price": 94,
+  "quantity": 189,
+  "expiryDate": {
+   "$date": "2027-07-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carvedilol 12.5mg",
+  "code": "CRV125",
+  "price": 61,
+  "quantity": 162,
+  "expiryDate": {
+   "$date": "2028-04-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carvedilol 25mg",
+  "code": "CRV25",
+  "price": 81,
+  "quantity": 164,
+  "expiryDate": {
+   "$date": "2026-10-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carvedilol 3.125mg",
+  "code": "CRV3125",
+  "price": 34,
+  "quantity": 140,
+  "expiryDate": {
+   "$date": "2028-07-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Carvedilol 6.25mg",
+  "code": "CRV625",
+  "price": 50,
+  "quantity": 59,
+  "expiryDate": {
+   "$date": "2029-04-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefadroxil 250mg",
+  "code": "CAD250",
+  "price": 90,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2027-09-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefadroxil 500mg",
+  "code": "CAD500",
+  "price": 132,
+  "quantity": 192,
+  "expiryDate": {
+   "$date": "2029-06-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefixime 100mg",
+  "code": "CFX100",
+  "price": 115,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2027-07-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefixime 200mg",
+  "code": "CFX200",
+  "price": 150,
+  "quantity": 75,
+  "expiryDate": {
+   "$date": "2028-06-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefixime 400mg",
+  "code": "CFX400",
+  "price": 198,
+  "quantity": 113,
+  "expiryDate": {
+   "$date": "2029-02-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefixime Syrup 30ml",
+  "code": "CFXS30",
+  "price": 88,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2027-08-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefixime Syrup 50ml",
+  "code": "CFXS50",
+  "price": 114,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2028-02-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefpodoxime 100mg",
+  "code": "CPX100",
+  "price": 118,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2027-06-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefpodoxime 200mg",
+  "code": "CPX200",
+  "price": 175,
+  "quantity": 174,
+  "expiryDate": {
+   "$date": "2027-07-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Injection 1000mg",
+  "code": "CTI1000",
+  "price": 102,
+  "quantity": 45,
+  "expiryDate": {
+   "$date": "2028-04-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Injection 250mg",
+  "code": "CTI250",
+  "price": 54,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2029-04-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Injection 500mg",
+  "code": "CTI500",
+  "price": 76,
+  "quantity": 128,
+  "expiryDate": {
+   "$date": "2028-07-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Sulbactam Injection 1500mg",
+  "code": "CSI1500",
+  "price": 207,
+  "quantity": 192,
+  "expiryDate": {
+   "$date": "2027-07-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Sulbactam Injection 375mg",
+  "code": "CSI375",
+  "price": 110,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-04-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftriaxone Sulbactam Injection 750mg",
+  "code": "CSI750",
+  "price": 159,
+  "quantity": 14,
+  "expiryDate": {
+   "$date": "2027-01-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftum 250",
+  "code": "CFT250",
+  "price": 154,
+  "quantity": 32,
+  "expiryDate": {
+   "$date": "2029-05-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ceftum 500",
+  "code": "CFT500",
+  "price": 210,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2029-01-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefuroxime 250mg",
+  "code": "CFR250",
+  "price": 173,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2029-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cefuroxime 500mg",
+  "code": "CFR500",
+  "price": 257,
+  "quantity": 118,
+  "expiryDate": {
+   "$date": "2028-07-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cephalexin 250mg",
+  "code": "CPL250",
+  "price": 84,
+  "quantity": 94,
+  "expiryDate": {
+   "$date": "2029-05-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cephalexin 500mg",
+  "code": "CPL500",
+  "price": 116,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2028-04-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cetirizine 10mg",
+  "code": "CTZ10",
+  "price": 16,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2029-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cetirizine 5mg",
+  "code": "CTZ5",
+  "price": 12,
+  "quantity": 189,
+  "expiryDate": {
+   "$date": "2029-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cetirizine Syrup 30ml",
+  "code": "CTS30",
+  "price": 33,
+  "quantity": 162,
+  "expiryDate": {
+   "$date": "2027-04-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cetirizine Syrup 60ml",
+  "code": "CTS60",
+  "price": 48,
+  "quantity": 70,
+  "expiryDate": {
+   "$date": "2026-11-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cetzine 10",
+  "code": "CZN10",
+  "price": 16,
+  "quantity": 122,
+  "expiryDate": {
+   "$date": "2029-04-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cheston Cold Tablet",
+  "code": "CHCT",
+  "price": 45,
+  "quantity": 171,
+  "expiryDate": {
+   "$date": "2028-12-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorhexidine Mouthwash 100ml",
+  "code": "CHM100",
+  "price": 90,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2029-02-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorhexidine Mouthwash 200ml",
+  "code": "CHM200",
+  "price": 124,
+  "quantity": 74,
+  "expiryDate": {
+   "$date": "2029-06-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorhexidine Mouthwash 300ml",
+  "code": "CHM300",
+  "price": 161,
+  "quantity": 19,
+  "expiryDate": {
+   "$date": "2027-06-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chloroquine 250mg",
+  "code": "CHQ250",
+  "price": 8,
+  "quantity": 147,
+  "expiryDate": {
+   "$date": "2027-10-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorthalidone 12.5mg",
+  "code": "CTD125",
+  "price": 50,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2028-11-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorthalidone 25mg",
+  "code": "CTD25",
+  "price": 62,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2028-09-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorthalidone 6.25mg",
+  "code": "CTD625",
+  "price": 35,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2028-07-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorzoxazone 250mg",
+  "code": "CZX250",
+  "price": 34,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2029-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Chlorzoxazone 500mg",
+  "code": "CZX500",
+  "price": 47,
+  "quantity": 181,
+  "expiryDate": {
+   "$date": "2026-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cifran 250",
+  "code": "CFN250",
+  "price": 50,
+  "quantity": 171,
+  "expiryDate": {
+   "$date": "2026-12-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cifran 500",
+  "code": "CFN500",
+  "price": 67,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2029-06-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cifran 750",
+  "code": "CFN750",
+  "price": 92,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2028-03-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cilnidipine 10mg",
+  "code": "CLN10",
+  "price": 78,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2028-11-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cilnidipine 20mg",
+  "code": "CLN20",
+  "price": 95,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2026-09-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cilnidipine 5mg",
+  "code": "CLN5",
+  "price": 55,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2027-10-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cinnarizine 25mg",
+  "code": "CNZ25",
+  "price": 19,
+  "quantity": 63,
+  "expiryDate": {
+   "$date": "2026-10-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cinnarizine 75mg",
+  "code": "CNZ75",
+  "price": 28,
+  "quantity": 125,
+  "expiryDate": {
+   "$date": "2028-05-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplar 10",
+  "code": "CPR10",
+  "price": 12,
+  "quantity": 49,
+  "expiryDate": {
+   "$date": "2027-01-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplar 40",
+  "code": "CPR40",
+  "price": 16,
+  "quantity": 183,
+  "expiryDate": {
+   "$date": "2027-03-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplox 250",
+  "code": "CPLX250",
+  "price": 48,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2027-02-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplox 500",
+  "code": "CPLX500",
+  "price": 67,
+  "quantity": 43,
+  "expiryDate": {
+   "$date": "2027-11-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplox 750",
+  "code": "CPLX750",
+  "price": 82,
+  "quantity": 91,
+  "expiryDate": {
+   "$date": "2027-09-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplox Eye Drops 10ml",
+  "code": "CPE10",
+  "price": 67,
+  "quantity": 94,
+  "expiryDate": {
+   "$date": "2029-02-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciplox Eye Drops 5ml",
+  "code": "CPE5",
+  "price": 51,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2026-08-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciprofloxacin 250mg",
+  "code": "CIP250",
+  "price": 45,
+  "quantity": 194,
+  "expiryDate": {
+   "$date": "2027-11-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciprofloxacin 500mg",
+  "code": "CIP500",
+  "price": 60,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2027-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ciprofloxacin 750mg",
+  "code": "CIP750",
+  "price": 79,
+  "quantity": 194,
+  "expiryDate": {
+   "$date": "2027-10-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cital Syrup 100ml",
+  "code": "CTL100",
+  "price": 106,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2027-04-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cital Syrup 200ml",
+  "code": "CTL200",
+  "price": 150,
+  "quantity": 180,
+  "expiryDate": {
+   "$date": "2027-12-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Citicoline 500mg",
+  "code": "CTC500",
+  "price": 145,
+  "quantity": 37,
+  "expiryDate": {
+   "$date": "2027-10-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clarithromycin 250mg",
+  "code": "CLR250",
+  "price": 132,
+  "quantity": 33,
+  "expiryDate": {
+   "$date": "2029-03-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clarithromycin 500mg",
+  "code": "CLR500",
+  "price": 190,
+  "quantity": 125,
+  "expiryDate": {
+   "$date": "2029-06-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clavam 1000",
+  "code": "CLV1000",
+  "price": 323,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-11-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clavam 375",
+  "code": "CLV375",
+  "price": 185,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2027-06-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clavam 625",
+  "code": "CLV625",
+  "price": 252,
+  "quantity": 110,
+  "expiryDate": {
+   "$date": "2028-12-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clindac A 15g",
+  "code": "CLA15",
+  "price": 144,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-01-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clindamycin 150mg",
+  "code": "CLD150",
+  "price": 107,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2026-04-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clindamycin 300mg",
+  "code": "CLD300",
+  "price": 155,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-04-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clobetasol Cream 10g",
+  "code": "CLB10",
+  "price": 78,
+  "quantity": 127,
+  "expiryDate": {
+   "$date": "2028-03-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clobetasol Cream 20g",
+  "code": "CLB20",
+  "price": 112,
+  "quantity": 42,
+  "expiryDate": {
+   "$date": "2027-02-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clopidogrel 150mg",
+  "code": "CPG150",
+  "price": 69,
+  "quantity": 115,
+  "expiryDate": {
+   "$date": "2028-09-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clopidogrel 75mg",
+  "code": "CPG75",
+  "price": 52,
+  "quantity": 150,
+  "expiryDate": {
+   "$date": "2026-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clopitab 75",
+  "code": "CPT75",
+  "price": 57,
+  "quantity": 101,
+  "expiryDate": {
+   "$date": "2027-11-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clotrimazole Cream 15g",
+  "code": "CLC15",
+  "price": 57,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-03-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clotrimazole Cream 30g",
+  "code": "CLC30",
+  "price": 83,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2027-10-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Clotrimazole Ear Drops 10ml",
+  "code": "CLE10",
+  "price": 59,
+  "quantity": 20,
+  "expiryDate": {
+   "$date": "2028-11-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cobadex CZS Capsule",
+  "code": "CBDC",
+  "price": 44,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2027-07-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Colchicine 0.5mg",
+  "code": "CCH05",
+  "price": 15,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-11-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Colimex Drops 10ml",
+  "code": "CLM10",
+  "price": 57,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2029-05-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Combiflam Tablet",
+  "code": "CMBT",
+  "price": 36,
+  "quantity": 75,
+  "expiryDate": {
+   "$date": "2028-06-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Concor 10",
+  "code": "CNC10",
+  "price": 243,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2027-02-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Concor 2.5",
+  "code": "CNC25",
+  "price": 131,
+  "quantity": 81,
+  "expiryDate": {
+   "$date": "2028-05-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Concor 5",
+  "code": "CNC5",
+  "price": 176,
+  "quantity": 67,
+  "expiryDate": {
+   "$date": "2028-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cotrimoxazole 480mg",
+  "code": "COT480",
+  "price": 26,
+  "quantity": 137,
+  "expiryDate": {
+   "$date": "2027-06-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cotrimoxazole 960mg",
+  "code": "COT960",
+  "price": 36,
+  "quantity": 168,
+  "expiryDate": {
+   "$date": "2028-08-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cotton Roll 100g",
+  "code": "CTR100",
+  "price": 40,
+  "quantity": 136,
+  "expiryDate": {
+   "$date": "2029-02-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cotton Roll 200g",
+  "code": "CTR200",
+  "price": 56,
+  "quantity": 46,
+  "expiryDate": {
+   "$date": "2027-05-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cotton Roll 50g",
+  "code": "CTR50",
+  "price": 30,
+  "quantity": 166,
+  "expiryDate": {
+   "$date": "2027-12-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cough Lozenges Strip",
+  "code": "CLZS",
+  "price": 30,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2029-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cough Syrup 100ml",
+  "code": "CGS100",
+  "price": 87,
+  "quantity": 170,
+  "expiryDate": {
+   "$date": "2028-10-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cough Syrup 200ml",
+  "code": "CGS200",
+  "price": 108,
+  "quantity": 154,
+  "expiryDate": {
+   "$date": "2028-08-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cough Syrup 50ml",
+  "code": "CGS50",
+  "price": 59,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-07-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cremaffin 225ml",
+  "code": "CRF225",
+  "price": 183,
+  "quantity": 148,
+  "expiryDate": {
+   "$date": "2029-05-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Crepe Bandage 10cm",
+  "code": "CPB10",
+  "price": 62,
+  "quantity": 164,
+  "expiryDate": {
+   "$date": "2026-12-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Crepe Bandage 15cm",
+  "code": "CPB15",
+  "price": 82,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2028-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Crepe Bandage 5cm",
+  "code": "CPB5",
+  "price": 45,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2027-02-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Crocin 500",
+  "code": "CRN500",
+  "price": 28,
+  "quantity": 50,
+  "expiryDate": {
+   "$date": "2027-07-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Crocin 650",
+  "code": "CRN650",
+  "price": 39,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2026-11-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cyclopam Syrup 60ml",
+  "code": "CYS60",
+  "price": 52,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2028-09-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Cyclopam Tablet",
+  "code": "CYPT",
+  "price": 29,
+  "quantity": 12,
+  "expiryDate": {
+   "$date": "2027-02-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "D-Cold Total Tablet",
+  "code": "DCTT",
+  "price": 40,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2028-06-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dapagliflozin 10mg",
+  "code": "DPG10",
+  "price": 271,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2027-08-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dapagliflozin 5mg",
+  "code": "DPG5",
+  "price": 202,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2029-02-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Defcort 12",
+  "code": "DFC12",
+  "price": 161,
+  "quantity": 170,
+  "expiryDate": {
+   "$date": "2029-03-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Defcort 6",
+  "code": "DFC6",
+  "price": 115,
+  "quantity": 11,
+  "expiryDate": {
+   "$date": "2027-11-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deflazacort 12mg",
+  "code": "DFZ12",
+  "price": 204,
+  "quantity": 80,
+  "expiryDate": {
+   "$date": "2029-01-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deflazacort 30mg",
+  "code": "DFZ30",
+  "price": 258,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2026-11-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deflazacort 6mg",
+  "code": "DFZ6",
+  "price": 134,
+  "quantity": 140,
+  "expiryDate": {
+   "$date": "2027-04-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deplatt 150",
+  "code": "DPT150",
+  "price": 81,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2027-12-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deplatt 75",
+  "code": "DPT75",
+  "price": 60,
+  "quantity": 136,
+  "expiryDate": {
+   "$date": "2029-06-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deriphyllin 150",
+  "code": "DRP150",
+  "price": 25,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2028-09-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Deriphyllin 300",
+  "code": "DRP300",
+  "price": 34,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-11-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dettol Antiseptic 125ml",
+  "code": "DTL125",
+  "price": 99,
+  "quantity": 141,
+  "expiryDate": {
+   "$date": "2027-03-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dettol Antiseptic 250ml",
+  "code": "DTL250",
+  "price": 127,
+  "quantity": 56,
+  "expiryDate": {
+   "$date": "2029-04-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dettol Antiseptic 500ml",
+  "code": "DTL500",
+  "price": 161,
+  "quantity": 103,
+  "expiryDate": {
+   "$date": "2028-04-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dettol Antiseptic 60ml",
+  "code": "DTL60",
+  "price": 70,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2029-04-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexamethasone 0.5mg",
+  "code": "DXM05",
+  "price": 3,
+  "quantity": 36,
+  "expiryDate": {
+   "$date": "2026-05-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexamethasone 4mg",
+  "code": "DXM4",
+  "price": 4,
+  "quantity": 79,
+  "expiryDate": {
+   "$date": "2027-02-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexamethasone Injection 4mg",
+  "code": "DXI4",
+  "price": 14,
+  "quantity": 70,
+  "expiryDate": {
+   "$date": "2028-02-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexamethasone Injection 8mg",
+  "code": "DXI8",
+  "price": 21,
+  "quantity": 195,
+  "expiryDate": {
+   "$date": "2028-01-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexona 0.5",
+  "code": "DXN05",
+  "price": 3,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2027-06-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dexorange 200ml",
+  "code": "DXG200",
+  "price": 188,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2029-03-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac 100mg",
+  "code": "DCF100",
+  "price": 28,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2028-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac 50mg",
+  "code": "DCF50",
+  "price": 15,
+  "quantity": 37,
+  "expiryDate": {
+   "$date": "2027-06-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac 75mg",
+  "code": "DCF75",
+  "price": 20,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-09-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac Gel 30g",
+  "code": "DFG30",
+  "price": 94,
+  "quantity": 115,
+  "expiryDate": {
+   "$date": "2027-12-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac Gel 50g",
+  "code": "DFG50",
+  "price": 129,
+  "quantity": 178,
+  "expiryDate": {
+   "$date": "2027-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Diclofenac Injection 75mg",
+  "code": "DCI75",
+  "price": 15,
+  "quantity": 173,
+  "expiryDate": {
+   "$date": "2028-03-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dicyclomine 10mg",
+  "code": "DCY10",
+  "price": 12,
+  "quantity": 23,
+  "expiryDate": {
+   "$date": "2027-12-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dicyclomine 20mg",
+  "code": "DCY20",
+  "price": 17,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-01-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Digene Gel 110ml",
+  "code": "DGG110",
+  "price": 85,
+  "quantity": 135,
+  "expiryDate": {
+   "$date": "2029-03-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Digene Gel 200ml",
+  "code": "DGG200",
+  "price": 114,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2027-10-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Digital Thermometer Standard",
+  "code": "THMS",
+  "price": 151,
+  "quantity": 157,
+  "expiryDate": {
+   "$date": "2028-03-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Disprin 325",
+  "code": "DSP325",
+  "price": 5,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2027-03-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dolo 1000",
+  "code": "DOLO1000",
+  "price": 53,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dolo 500",
+  "code": "DOLO500",
+  "price": 31,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2028-01-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dolo 650",
+  "code": "DOLO650",
+  "price": 40,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2027-01-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dolonex 10",
+  "code": "DLN10",
+  "price": 70,
+  "quantity": 147,
+  "expiryDate": {
+   "$date": "2028-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dolonex 20",
+  "code": "DLN20",
+  "price": 102,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2026-12-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Domperidone 10mg",
+  "code": "DMP10",
+  "price": 25,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2026-10-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Domstal 10",
+  "code": "DMS10",
+  "price": 30,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2027-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Domstal Drops 10ml",
+  "code": "DMD10",
+  "price": 38,
+  "quantity": 182,
+  "expiryDate": {
+   "$date": "2028-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Doxt-SL 100",
+  "code": "DXS100",
+  "price": 39,
+  "quantity": 60,
+  "expiryDate": {
+   "$date": "2028-08-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Doxycycline 100mg",
+  "code": "DOX100",
+  "price": 36,
+  "quantity": 15,
+  "expiryDate": {
+   "$date": "2029-02-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Doxycycline 200mg",
+  "code": "DOX200",
+  "price": 50,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-03-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Drotaverine 40mg",
+  "code": "DRT40",
+  "price": 25,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2027-08-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Drotaverine 80mg",
+  "code": "DRT80",
+  "price": 37,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2029-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Drotin 40",
+  "code": "DRO40",
+  "price": 30,
+  "quantity": 52,
+  "expiryDate": {
+   "$date": "2029-05-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Drotin 80",
+  "code": "DRO80",
+  "price": 41,
+  "quantity": 37,
+  "expiryDate": {
+   "$date": "2026-09-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dulcolax 5",
+  "code": "DLX5",
+  "price": 15,
+  "quantity": 117,
+  "expiryDate": {
+   "$date": "2028-11-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Duolin Respules 2.5ml",
+  "code": "DUO25",
+  "price": 20,
+  "quantity": 197,
+  "expiryDate": {
+   "$date": "2029-05-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Duphaston 10",
+  "code": "DPH10",
+  "price": 593,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2029-03-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dutasteride 0.5mg",
+  "code": "DTS05",
+  "price": 147,
+  "quantity": 177,
+  "expiryDate": {
+   "$date": "2028-07-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dytor 10",
+  "code": "DTR10",
+  "price": 108,
+  "quantity": 196,
+  "expiryDate": {
+   "$date": "2027-02-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dytor 20",
+  "code": "DTR20",
+  "price": 148,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2028-11-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Dytor 5",
+  "code": "DTR5",
+  "price": 79,
+  "quantity": 38,
+  "expiryDate": {
+   "$date": "2029-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ecosprin 150",
+  "code": "ECO150",
+  "price": 8,
+  "quantity": 83,
+  "expiryDate": {
+   "$date": "2028-01-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ecosprin 75",
+  "code": "ECO75",
+  "price": 6,
+  "quantity": 153,
+  "expiryDate": {
+   "$date": "2029-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ecosprin AV 150",
+  "code": "EAV150",
+  "price": 129,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2028-07-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ecosprin AV 75",
+  "code": "EAV75",
+  "price": 90,
+  "quantity": 122,
+  "expiryDate": {
+   "$date": "2027-02-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Eldoper 2",
+  "code": "ELD2",
+  "price": 12,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-06-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Electral ORS 21.8g",
+  "code": "ELC218",
+  "price": 21,
+  "quantity": 50,
+  "expiryDate": {
+   "$date": "2029-05-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Elocon 15g",
+  "code": "ELN15",
+  "price": 181,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2027-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Elocon 5g",
+  "code": "ELN5",
+  "price": 130,
+  "quantity": 118,
+  "expiryDate": {
+   "$date": "2028-10-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Emeset 4",
+  "code": "EMS4",
+  "price": 34,
+  "quantity": 155,
+  "expiryDate": {
+   "$date": "2026-07-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Emeset 8",
+  "code": "EMS8",
+  "price": 49,
+  "quantity": 64,
+  "expiryDate": {
+   "$date": "2028-02-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Enalapril 10mg",
+  "code": "ENP10",
+  "price": 37,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2027-10-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Enalapril 2.5mg",
+  "code": "ENP25",
+  "price": 20,
+  "quantity": 137,
+  "expiryDate": {
+   "$date": "2026-10-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Enalapril 5mg",
+  "code": "ENP5",
+  "price": 29,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-01-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Encorate 200",
+  "code": "ENC200",
+  "price": 63,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2027-08-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Encorate 300",
+  "code": "ENC300",
+  "price": 83,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2027-01-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Encorate 500",
+  "code": "ENC500",
+  "price": 103,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2027-10-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Eno 100g",
+  "code": "ENO100",
+  "price": 14,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2027-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Eno 5g",
+  "code": "ENO5",
+  "price": 10,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2029-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Enterogermina 5ml",
+  "code": "ENT5",
+  "price": 122,
+  "quantity": 57,
+  "expiryDate": {
+   "$date": "2028-06-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Eptoin 100",
+  "code": "EPT100",
+  "price": 17,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-02-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Eptoin 50",
+  "code": "EPT50",
+  "price": 12,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2028-01-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Erythromycin 250mg",
+  "code": "ERY250",
+  "price": 78,
+  "quantity": 123,
+  "expiryDate": {
+   "$date": "2029-06-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Erythromycin 500mg",
+  "code": "ERY500",
+  "price": 109,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2027-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Escitalopram 10mg",
+  "code": "ESC10",
+  "price": 64,
+  "quantity": 33,
+  "expiryDate": {
+   "$date": "2028-07-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Escitalopram 20mg",
+  "code": "ESC20",
+  "price": 81,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2028-09-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Escitalopram 5mg",
+  "code": "ESC5",
+  "price": 43,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-02-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Esomeprazole 20mg",
+  "code": "ESM20",
+  "price": 85,
+  "quantity": 112,
+  "expiryDate": {
+   "$date": "2026-10-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Esomeprazole 40mg",
+  "code": "ESM40",
+  "price": 123,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-07-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Etoricoxib 120mg",
+  "code": "ETR120",
+  "price": 100,
+  "quantity": 168,
+  "expiryDate": {
+   "$date": "2027-04-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Etoricoxib 60mg",
+  "code": "ETR60",
+  "price": 55,
+  "quantity": 191,
+  "expiryDate": {
+   "$date": "2027-07-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Etoricoxib 90mg",
+  "code": "ETR90",
+  "price": 79,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-02-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Evecare 100ml",
+  "code": "EVC100",
+  "price": 128,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2027-04-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Evecare 200ml",
+  "code": "EVC200",
+  "price": 183,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-02-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Evion 200mg",
+  "code": "EVN200",
+  "price": 31,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2027-04-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Evion 400mg",
+  "code": "EVN400",
+  "price": 44,
+  "quantity": 114,
+  "expiryDate": {
+   "$date": "2027-04-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Examination Gloves Pack of 50",
+  "code": "EGLPACKOF50",
+  "price": 455,
+  "quantity": 53,
+  "expiryDate": {
+   "$date": "2028-05-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Famotidine 20mg",
+  "code": "FMT20",
+  "price": 17,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-11-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Famotidine 40mg",
+  "code": "FMT40",
+  "price": 26,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2026-03-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Febrex Plus Tablet",
+  "code": "FBXT",
+  "price": 30,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-07-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Febuxostat 40mg",
+  "code": "FBU40",
+  "price": 71,
+  "quantity": 173,
+  "expiryDate": {
+   "$date": "2027-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Febuxostat 80mg",
+  "code": "FBU80",
+  "price": 94,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2027-03-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fenofibrate 145mg",
+  "code": "FNF145",
+  "price": 109,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2026-05-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fenofibrate 160mg",
+  "code": "FNF160",
+  "price": 139,
+  "quantity": 73,
+  "expiryDate": {
+   "$date": "2027-03-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fenofibrate 200mg",
+  "code": "FNF200",
+  "price": 182,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2027-09-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fenofibrate 67mg",
+  "code": "FNF67",
+  "price": 76,
+  "quantity": 146,
+  "expiryDate": {
+   "$date": "2029-05-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ferrous Sulphate 200mg",
+  "code": "FSL200",
+  "price": 15,
+  "quantity": 91,
+  "expiryDate": {
+   "$date": "2026-12-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fexofenadine 120mg",
+  "code": "FXF120",
+  "price": 86,
+  "quantity": 181,
+  "expiryDate": {
+   "$date": "2029-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fexofenadine 180mg",
+  "code": "FXF180",
+  "price": 124,
+  "quantity": 105,
+  "expiryDate": {
+   "$date": "2027-07-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Finasteride 1mg",
+  "code": "FNS1",
+  "price": 68,
+  "quantity": 157,
+  "expiryDate": {
+   "$date": "2028-05-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Finasteride 5mg",
+  "code": "FNS5",
+  "price": 87,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2026-12-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Flavoxate 200mg",
+  "code": "FLX200",
+  "price": 91,
+  "quantity": 61,
+  "expiryDate": {
+   "$date": "2029-03-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fluconazole 150mg",
+  "code": "FLZ150",
+  "price": 34,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2026-10-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fluconazole 200mg",
+  "code": "FLZ200",
+  "price": 45,
+  "quantity": 67,
+  "expiryDate": {
+   "$date": "2026-10-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fluconazole 50mg",
+  "code": "FLZ50",
+  "price": 26,
+  "quantity": 184,
+  "expiryDate": {
+   "$date": "2027-03-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Flunarizine 10mg",
+  "code": "FLN10",
+  "price": 51,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2028-11-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Flunarizine 5mg",
+  "code": "FLN5",
+  "price": 34,
+  "quantity": 118,
+  "expiryDate": {
+   "$date": "2027-02-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Folic Acid 1mg",
+  "code": "FLC1",
+  "price": 5,
+  "quantity": 45,
+  "expiryDate": {
+   "$date": "2027-04-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Folic Acid 5mg",
+  "code": "FLC5",
+  "price": 7,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-12-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Folvite 5",
+  "code": "FLV5",
+  "price": 12,
+  "quantity": 166,
+  "expiryDate": {
+   "$date": "2027-10-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Foracort Inhaler 200mcg",
+  "code": "FRC200",
+  "price": 325,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2028-03-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Foracort Inhaler 400mcg",
+  "code": "FRC400",
+  "price": 469,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2026-05-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Forxiga 10",
+  "code": "FXG10",
+  "price": 749,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2027-08-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Forxiga 5",
+  "code": "FXG5",
+  "price": 519,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2028-05-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fourderm 15g",
+  "code": "FDM15",
+  "price": 107,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2027-05-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fucidin 15g",
+  "code": "FCD15",
+  "price": 195,
+  "quantity": 33,
+  "expiryDate": {
+   "$date": "2028-09-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Furosemide 20mg",
+  "code": "FRS20",
+  "price": 8,
+  "quantity": 56,
+  "expiryDate": {
+   "$date": "2026-12-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Furosemide 40mg",
+  "code": "FRS40",
+  "price": 11,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2029-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fusidic Acid Cream 10g",
+  "code": "FSD10",
+  "price": 96,
+  "quantity": 168,
+  "expiryDate": {
+   "$date": "2028-12-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Fusidic Acid Cream 15g",
+  "code": "FSD15",
+  "price": 138,
+  "quantity": 183,
+  "expiryDate": {
+   "$date": "2028-11-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapentin 100mg",
+  "code": "GBP100",
+  "price": 87,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2028-09-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapentin 300mg",
+  "code": "GBP300",
+  "price": 128,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2028-06-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapentin 400mg",
+  "code": "GBP400",
+  "price": 162,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2029-02-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapin 100",
+  "code": "GBN100",
+  "price": 111,
+  "quantity": 182,
+  "expiryDate": {
+   "$date": "2029-03-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapin 300",
+  "code": "GBN300",
+  "price": 147,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2028-08-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gabapin 400",
+  "code": "GBN400",
+  "price": 192,
+  "quantity": 168,
+  "expiryDate": {
+   "$date": "2029-01-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Galvus 50",
+  "code": "GLV50",
+  "price": 301,
+  "quantity": 113,
+  "expiryDate": {
+   "$date": "2029-03-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gas-O-Fast Sachet",
+  "code": "GOFS",
+  "price": 8,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2026-08-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gauze Pad Pack of 10",
+  "code": "GZPPACKOF10",
+  "price": 26,
+  "quantity": 55,
+  "expiryDate": {
+   "$date": "2028-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gelusil MPS 170ml",
+  "code": "GLM170",
+  "price": 93,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2027-06-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gelusil MPS 200ml",
+  "code": "GLM200",
+  "price": 130,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-11-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gemcal Tablet",
+  "code": "GMCT",
+  "price": 141,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-04-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gentamicin Eye Drops 10ml",
+  "code": "GED10",
+  "price": 41,
+  "quantity": 128,
+  "expiryDate": {
+   "$date": "2026-10-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gentamicin Eye Drops 5ml",
+  "code": "GED5",
+  "price": 30,
+  "quantity": 131,
+  "expiryDate": {
+   "$date": "2028-12-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gentamicin Injection 40mg",
+  "code": "GNI40",
+  "price": 19,
+  "quantity": 185,
+  "expiryDate": {
+   "$date": "2028-12-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gentamicin Injection 80mg",
+  "code": "GNI80",
+  "price": 28,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2029-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gliclazide 40mg",
+  "code": "GLC40",
+  "price": 41,
+  "quantity": 195,
+  "expiryDate": {
+   "$date": "2028-12-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gliclazide 80mg",
+  "code": "GLC80",
+  "price": 55,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2028-10-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimepiride 1mg",
+  "code": "GLI1",
+  "price": 25,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2027-05-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimepiride 2mg",
+  "code": "GLI2",
+  "price": 37,
+  "quantity": 95,
+  "expiryDate": {
+   "$date": "2027-01-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimepiride 3mg",
+  "code": "GLI3",
+  "price": 45,
+  "quantity": 182,
+  "expiryDate": {
+   "$date": "2028-10-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimepiride 4mg",
+  "code": "GLI4",
+  "price": 57,
+  "quantity": 167,
+  "expiryDate": {
+   "$date": "2028-03-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimestar 1",
+  "code": "GMS1",
+  "price": 70,
+  "quantity": 148,
+  "expiryDate": {
+   "$date": "2029-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimestar 2",
+  "code": "GMS2",
+  "price": 102,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2029-01-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimestar 3",
+  "code": "GMS3",
+  "price": 127,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-05-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimestar-M 1",
+  "code": "GMM1",
+  "price": 72,
+  "quantity": 178,
+  "expiryDate": {
+   "$date": "2028-08-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glimestar-M 2",
+  "code": "GMM2",
+  "price": 110,
+  "quantity": 180,
+  "expiryDate": {
+   "$date": "2027-11-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glipizide 2.5mg",
+  "code": "GPZ25",
+  "price": 20,
+  "quantity": 25,
+  "expiryDate": {
+   "$date": "2029-01-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glipizide 5mg",
+  "code": "GPZ5",
+  "price": 27,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2028-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucometer Strips 25",
+  "code": "GST25",
+  "price": 676,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-05-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucometer Strips 50",
+  "code": "GST50",
+  "price": 877,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2028-12-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucon-D 100g",
+  "code": "GCD100",
+  "price": 36,
+  "quantity": 161,
+  "expiryDate": {
+   "$date": "2028-09-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucon-D 200g",
+  "code": "GCD200",
+  "price": 48,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2028-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucon-D 450g",
+  "code": "GCD450",
+  "price": 65,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-05-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gluconorm G 1",
+  "code": "GNG1",
+  "price": 73,
+  "quantity": 61,
+  "expiryDate": {
+   "$date": "2027-10-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Gluconorm G 2",
+  "code": "GNG2",
+  "price": 100,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2027-03-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucosamine 1500mg",
+  "code": "GLU1500",
+  "price": 223,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2027-08-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucosamine 500mg",
+  "code": "GLU500",
+  "price": 123,
+  "quantity": 52,
+  "expiryDate": {
+   "$date": "2027-05-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glucosamine 750mg",
+  "code": "GLU750",
+  "price": 172,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2028-09-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycerin 100ml",
+  "code": "GLN100",
+  "price": 38,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2027-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycerin 200ml",
+  "code": "GLN200",
+  "price": 53,
+  "quantity": 151,
+  "expiryDate": {
+   "$date": "2027-11-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glyciphage 1000",
+  "code": "GLP1000",
+  "price": 49,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2028-12-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glyciphage 500",
+  "code": "GLP500",
+  "price": 27,
+  "quantity": 38,
+  "expiryDate": {
+   "$date": "2029-01-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glyciphage 850",
+  "code": "GLP850",
+  "price": 37,
+  "quantity": 99,
+  "expiryDate": {
+   "$date": "2028-06-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycomet 1000",
+  "code": "GLY1000",
+  "price": 44,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2029-01-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycomet 500",
+  "code": "GLY500",
+  "price": 25,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2027-08-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycomet 850",
+  "code": "GLY850",
+  "price": 35,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-08-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycomet GP 1",
+  "code": "GGP1",
+  "price": 68,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2029-06-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Glycomet GP 2",
+  "code": "GGP2",
+  "price": 91,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2027-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Grilinctus 100ml",
+  "code": "GRL100",
+  "price": 120,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2027-12-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Grilinctus 150ml",
+  "code": "GRL150",
+  "price": 165,
+  "quantity": 73,
+  "expiryDate": {
+   "$date": "2028-10-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Grilinctus 60ml",
+  "code": "GRL60",
+  "price": 89,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2028-01-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hand Sanitizer 100ml",
+  "code": "SNZ100",
+  "price": 56,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2027-03-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hand Sanitizer 500ml",
+  "code": "SNZ500",
+  "price": 71,
+  "quantity": 131,
+  "expiryDate": {
+   "$date": "2029-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hand Sanitizer 50ml",
+  "code": "SNZ50",
+  "price": 41,
+  "quantity": 39,
+  "expiryDate": {
+   "$date": "2027-08-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hexidine Mouthwash 100ml",
+  "code": "HXD100",
+  "price": 87,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2027-08-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hexidine Mouthwash 200ml",
+  "code": "HXD200",
+  "price": 123,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2027-12-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hexigel 15g",
+  "code": "HXG15",
+  "price": 56,
+  "quantity": 182,
+  "expiryDate": {
+   "$date": "2028-06-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hifenac-P Tablet",
+  "code": "HFPT",
+  "price": 101,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2029-03-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Honitus 100ml",
+  "code": "HNT100",
+  "price": 123,
+  "quantity": 166,
+  "expiryDate": {
+   "$date": "2027-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Honitus 50ml",
+  "code": "HNT50",
+  "price": 89,
+  "quantity": 156,
+  "expiryDate": {
+   "$date": "2027-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Human Mixtard 30 100IU",
+  "code": "MXT100",
+  "price": 199,
+  "quantity": 50,
+  "expiryDate": {
+   "$date": "2029-06-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrochlorothiazide 12.5mg",
+  "code": "HCT125",
+  "price": 10,
+  "quantity": 23,
+  "expiryDate": {
+   "$date": "2027-01-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrochlorothiazide 25mg",
+  "code": "HCT25",
+  "price": 14,
+  "quantity": 173,
+  "expiryDate": {
+   "$date": "2027-04-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrocortisone Cream 15g",
+  "code": "HDC15",
+  "price": 56,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2028-01-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrogen Peroxide 100ml",
+  "code": "HPX100",
+  "price": 24,
+  "quantity": 189,
+  "expiryDate": {
+   "$date": "2029-03-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrogen Peroxide 200ml",
+  "code": "HPX200",
+  "price": 34,
+  "quantity": 56,
+  "expiryDate": {
+   "$date": "2028-08-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydrogen Peroxide 500ml",
+  "code": "HPX500",
+  "price": 44,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2029-03-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydroxychloroquine 200mg",
+  "code": "HCQ200",
+  "price": 82,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2026-05-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydroxychloroquine 300mg",
+  "code": "HCQ300",
+  "price": 113,
+  "quantity": 146,
+  "expiryDate": {
+   "$date": "2029-04-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Hydroxychloroquine 400mg",
+  "code": "HCQ400",
+  "price": 139,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-02-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibugesic Plus 60ml",
+  "code": "IBP60",
+  "price": 45,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2028-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibuprofen 200mg",
+  "code": "IBU200",
+  "price": 18,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-04-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibuprofen 400mg",
+  "code": "IBU400",
+  "price": 24,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2028-07-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibuprofen 600mg",
+  "code": "IBU600",
+  "price": 33,
+  "quantity": 118,
+  "expiryDate": {
+   "$date": "2027-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibuprofen Syrup 100ml",
+  "code": "IBS100",
+  "price": 63,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2027-07-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ibuprofen Syrup 60ml",
+  "code": "IBS60",
+  "price": 46,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2029-03-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Iodex 20g",
+  "code": "IDX20",
+  "price": 95,
+  "quantity": 70,
+  "expiryDate": {
+   "$date": "2029-06-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Iodex 40g",
+  "code": "IDX40",
+  "price": 127,
+  "quantity": 104,
+  "expiryDate": {
+   "$date": "2029-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Iodex 9g",
+  "code": "IDX9",
+  "price": 70,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2028-09-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Iron Folic Acid Tablet",
+  "code": "IFAT",
+  "price": 12,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2028-12-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Isabgol Husk 100g",
+  "code": "ISB100",
+  "price": 91,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2028-05-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Isabgol Husk 200g",
+  "code": "ISB200",
+  "price": 127,
+  "quantity": 107,
+  "expiryDate": {
+   "$date": "2028-02-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Isosorbide Mononitrate 10mg",
+  "code": "ISM10",
+  "price": 29,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2028-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Isosorbide Mononitrate 20mg",
+  "code": "ISM20",
+  "price": 43,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2028-01-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Isosorbide Mononitrate 30mg",
+  "code": "ISM30",
+  "price": 55,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2029-01-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Itaspor 100",
+  "code": "ITS100",
+  "price": 130,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2029-06-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Itaspor 200",
+  "code": "ITS200",
+  "price": 182,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2026-06-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Itch Guard Cream 15g",
+  "code": "IGC15",
+  "price": 56,
+  "quantity": 67,
+  "expiryDate": {
+   "$date": "2027-12-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Itch Guard Cream 25g",
+  "code": "IGC25",
+  "price": 78,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2027-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "IV Set Standard",
+  "code": "IVSS",
+  "price": 29,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2029-02-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ivermectin 12mg",
+  "code": "IVM12",
+  "price": 65,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2028-07-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ivermectin 3mg",
+  "code": "IVM3",
+  "price": 35,
+  "quantity": 163,
+  "expiryDate": {
+   "$date": "2029-04-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ivermectin 6mg",
+  "code": "IVM6",
+  "price": 51,
+  "quantity": 95,
+  "expiryDate": {
+   "$date": "2027-11-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Janumet Tablet",
+  "code": "JNMT",
+  "price": 394,
+  "quantity": 91,
+  "expiryDate": {
+   "$date": "2027-05-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Januvia 100",
+  "code": "JNV100",
+  "price": 786,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2029-01-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Januvia 25",
+  "code": "JNV25",
+  "price": 465,
+  "quantity": 198,
+  "expiryDate": {
+   "$date": "2027-07-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Januvia 50",
+  "code": "JNV50",
+  "price": 620,
+  "quantity": 32,
+  "expiryDate": {
+   "$date": "2029-06-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Jardiance 10",
+  "code": "JRD10",
+  "price": 547,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2029-06-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Jardiance 25",
+  "code": "JRD25",
+  "price": 730,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2029-04-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ketoconazole 200mg",
+  "code": "KTC200",
+  "price": 112,
+  "quantity": 131,
+  "expiryDate": {
+   "$date": "2027-01-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ketorolac 10mg",
+  "code": "KTR10",
+  "price": 25,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2027-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ketorolac 30mg",
+  "code": "KTR30",
+  "price": 34,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2027-11-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lacto Calamine 120ml",
+  "code": "LCL120",
+  "price": 182,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2027-10-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lacto Calamine 60ml",
+  "code": "LCL60",
+  "price": 128,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2029-06-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lactulose 100ml",
+  "code": "LCT100",
+  "price": 111,
+  "quantity": 112,
+  "expiryDate": {
+   "$date": "2027-10-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lactulose 200ml",
+  "code": "LCT200",
+  "price": 155,
+  "quantity": 163,
+  "expiryDate": {
+   "$date": "2029-04-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lactulose 450ml",
+  "code": "LCT450",
+  "price": 199,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2027-01-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lansoprazole 15mg",
+  "code": "LNS15",
+  "price": 58,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2029-05-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lansoprazole 30mg",
+  "code": "LNS30",
+  "price": 86,
+  "quantity": 26,
+  "expiryDate": {
+   "$date": "2029-02-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lantus Insulin 100IU",
+  "code": "LNT100",
+  "price": 676,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-10-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lasix 20",
+  "code": "LSX20",
+  "price": 10,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2027-07-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lasix 40",
+  "code": "LSX40",
+  "price": 14,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2028-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Latanoprost Eye Drops 2.5ml",
+  "code": "LTP25",
+  "price": 222,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2028-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levetiracetam 250mg",
+  "code": "LVT250",
+  "price": 79,
+  "quantity": 186,
+  "expiryDate": {
+   "$date": "2026-11-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levetiracetam 500mg",
+  "code": "LVT500",
+  "price": 112,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2029-04-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levetiracetam 750mg",
+  "code": "LVT750",
+  "price": 145,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2027-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levipil 250",
+  "code": "LVP250",
+  "price": 84,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2028-06-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levipil 500",
+  "code": "LVP500",
+  "price": 122,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2027-11-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levipil 750",
+  "code": "LVP750",
+  "price": 154,
+  "quantity": 138,
+  "expiryDate": {
+   "$date": "2029-05-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levocet 5",
+  "code": "LVC5",
+  "price": 23,
+  "quantity": 178,
+  "expiryDate": {
+   "$date": "2027-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levocetirizine 10mg",
+  "code": "LCZ10",
+  "price": 25,
+  "quantity": 86,
+  "expiryDate": {
+   "$date": "2029-03-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levocetirizine 5mg",
+  "code": "LCZ5",
+  "price": 17,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2029-02-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levocetirizine Syrup 30ml",
+  "code": "LCS30",
+  "price": 52,
+  "quantity": 105,
+  "expiryDate": {
+   "$date": "2027-04-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levocetirizine Syrup 60ml",
+  "code": "LCS60",
+  "price": 78,
+  "quantity": 116,
+  "expiryDate": {
+   "$date": "2029-01-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levoflox 250",
+  "code": "LVF250",
+  "price": 72,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2026-12-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levoflox 500",
+  "code": "LVF500",
+  "price": 108,
+  "quantity": 78,
+  "expiryDate": {
+   "$date": "2027-07-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levoflox 750",
+  "code": "LVF750",
+  "price": 132,
+  "quantity": 33,
+  "expiryDate": {
+   "$date": "2028-02-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levofloxacin 250mg",
+  "code": "LVX250",
+  "price": 67,
+  "quantity": 79,
+  "expiryDate": {
+   "$date": "2026-05-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levofloxacin 500mg",
+  "code": "LVX500",
+  "price": 99,
+  "quantity": 154,
+  "expiryDate": {
+   "$date": "2029-03-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levofloxacin 750mg",
+  "code": "LVX750",
+  "price": 131,
+  "quantity": 127,
+  "expiryDate": {
+   "$date": "2029-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levosulpiride 25mg",
+  "code": "LSP25",
+  "price": 90,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2028-12-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levosulpiride 75mg",
+  "code": "LSP75",
+  "price": 124,
+  "quantity": 143,
+  "expiryDate": {
+   "$date": "2028-12-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levothyroxine 100mcg",
+  "code": "LTX100",
+  "price": 235,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2028-04-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levothyroxine 25mcg",
+  "code": "LTX25",
+  "price": 107,
+  "quantity": 152,
+  "expiryDate": {
+   "$date": "2028-02-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levothyroxine 50mcg",
+  "code": "LTX50",
+  "price": 158,
+  "quantity": 56,
+  "expiryDate": {
+   "$date": "2028-08-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Levothyroxine 75mcg",
+  "code": "LTX75",
+  "price": 191,
+  "quantity": 107,
+  "expiryDate": {
+   "$date": "2029-01-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Limcee 500",
+  "code": "LMC500",
+  "price": 24,
+  "quantity": 31,
+  "expiryDate": {
+   "$date": "2028-10-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Linezolid 600mg",
+  "code": "LNZ600",
+  "price": 258,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2027-05-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lipitor 10",
+  "code": "LPT10",
+  "price": 281,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-07-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lipitor 20",
+  "code": "LPT20",
+  "price": 381,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2027-03-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lipitor 40",
+  "code": "LPT40",
+  "price": 497,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2028-09-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Liv 52 100ml",
+  "code": "LIV100",
+  "price": 105,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2028-06-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Liv 52 200ml",
+  "code": "LIV200",
+  "price": 135,
+  "quantity": 137,
+  "expiryDate": {
+   "$date": "2027-01-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Livogen Capsule",
+  "code": "LVGC",
+  "price": 19,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2029-02-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Loratadine 10mg",
+  "code": "LRT10",
+  "price": 20,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-01-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losar 25",
+  "code": "LSA25",
+  "price": 34,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2027-06-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losar 50",
+  "code": "LSA50",
+  "price": 50,
+  "quantity": 138,
+  "expiryDate": {
+   "$date": "2027-08-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losar-H Tablet",
+  "code": "LSHT",
+  "price": 58,
+  "quantity": 49,
+  "expiryDate": {
+   "$date": "2029-05-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losartan 100mg",
+  "code": "LSR100",
+  "price": 45,
+  "quantity": 193,
+  "expiryDate": {
+   "$date": "2028-09-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losartan 25mg",
+  "code": "LSR25",
+  "price": 25,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2028-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Losartan 50mg",
+  "code": "LSR50",
+  "price": 34,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2026-11-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lyrica 150",
+  "code": "LYR150",
+  "price": 243,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2027-04-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Lyrica 75",
+  "code": "LYR75",
+  "price": 184,
+  "quantity": 99,
+  "expiryDate": {
+   "$date": "2027-05-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mala-D Tablet",
+  "code": "MLDT",
+  "price": 24,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2027-10-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Maxepa Omega 3 Capsule",
+  "code": "MXPC",
+  "price": 141,
+  "quantity": 38,
+  "expiryDate": {
+   "$date": "2026-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Medrol 16",
+  "code": "MDR16",
+  "price": 127,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2028-04-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Medrol 4",
+  "code": "MDR4",
+  "price": 70,
+  "quantity": 181,
+  "expiryDate": {
+   "$date": "2028-01-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Medrol 8",
+  "code": "MDR8",
+  "price": 102,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-03-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mefenamic Acid 250mg",
+  "code": "MFA250",
+  "price": 21,
+  "quantity": 165,
+  "expiryDate": {
+   "$date": "2027-04-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mefenamic Acid 500mg",
+  "code": "MFA500",
+  "price": 31,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2028-04-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Meftal-Spas Tablet",
+  "code": "MSPT",
+  "price": 35,
+  "quantity": 155,
+  "expiryDate": {
+   "$date": "2027-01-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Meprate 10",
+  "code": "MPT10",
+  "price": 100,
+  "quantity": 71,
+  "expiryDate": {
+   "$date": "2029-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Meprate 5",
+  "code": "MPT5",
+  "price": 67,
+  "quantity": 74,
+  "expiryDate": {
+   "$date": "2028-11-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Met XL 100",
+  "code": "MXL100",
+  "price": 102,
+  "quantity": 126,
+  "expiryDate": {
+   "$date": "2028-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Met XL 25",
+  "code": "MXL25",
+  "price": 53,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2027-09-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Met XL 50",
+  "code": "MXL50",
+  "price": 80,
+  "quantity": 191,
+  "expiryDate": {
+   "$date": "2029-01-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metformin 1000mg",
+  "code": "MTF1000",
+  "price": 23,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2029-05-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metformin 250mg",
+  "code": "MTF250",
+  "price": 10,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2027-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metformin 500mg",
+  "code": "MTF500",
+  "price": 14,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2028-06-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metformin 850mg",
+  "code": "MTF850",
+  "price": 18,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2027-08-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Methylcobalamin 1500mcg",
+  "code": "MCB1500",
+  "price": 115,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2027-04-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Methylcobalamin 500mcg",
+  "code": "MCB500",
+  "price": 86,
+  "quantity": 174,
+  "expiryDate": {
+   "$date": "2029-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Methylprednisolone 16mg",
+  "code": "MPN16",
+  "price": 100,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2027-10-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Methylprednisolone 4mg",
+  "code": "MPN4",
+  "price": 56,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2027-07-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Methylprednisolone 8mg",
+  "code": "MPN8",
+  "price": 81,
+  "quantity": 32,
+  "expiryDate": {
+   "$date": "2026-03-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metoclopramide 10mg",
+  "code": "MTC10",
+  "price": 12,
+  "quantity": 26,
+  "expiryDate": {
+   "$date": "2028-01-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metolar 100",
+  "code": "MTL100",
+  "price": 65,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2027-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metolar 25",
+  "code": "MTL25",
+  "price": 35,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2027-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metolar 50",
+  "code": "MTL50",
+  "price": 49,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2029-03-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metoprolol 100mg",
+  "code": "MTP100",
+  "price": 55,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2029-02-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metoprolol 25mg",
+  "code": "MTP25",
+  "price": 31,
+  "quantity": 64,
+  "expiryDate": {
+   "$date": "2026-05-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metoprolol 50mg",
+  "code": "MTP50",
+  "price": 40,
+  "quantity": 46,
+  "expiryDate": {
+   "$date": "2028-02-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metrogyl 200",
+  "code": "MTG200",
+  "price": 21,
+  "quantity": 138,
+  "expiryDate": {
+   "$date": "2028-12-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metrogyl 400",
+  "code": "MTG400",
+  "price": 29,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2028-12-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metronidazole 200mg",
+  "code": "MTZ200",
+  "price": 15,
+  "quantity": 61,
+  "expiryDate": {
+   "$date": "2027-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Metronidazole 400mg",
+  "code": "MTZ400",
+  "price": 21,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2027-11-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Micropore Tape 1.25cm",
+  "code": "MCP125",
+  "price": 36,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2027-12-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Micropore Tape 2.5cm",
+  "code": "MCP25",
+  "price": 49,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2028-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Minoxidil 2%",
+  "code": "MNX2",
+  "price": 363,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2027-02-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Minoxidil 5%",
+  "code": "MNX5",
+  "price": 489,
+  "quantity": 123,
+  "expiryDate": {
+   "$date": "2028-08-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mometasone Cream 10g",
+  "code": "MMT10",
+  "price": 79,
+  "quantity": 147,
+  "expiryDate": {
+   "$date": "2028-12-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mometasone Cream 15g",
+  "code": "MMT15",
+  "price": 117,
+  "quantity": 68,
+  "expiryDate": {
+   "$date": "2028-07-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montair 10",
+  "code": "MNT10",
+  "price": 156,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-08-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montair 4",
+  "code": "MNT4",
+  "price": 86,
+  "quantity": 50,
+  "expiryDate": {
+   "$date": "2027-06-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montair 5",
+  "code": "MNT5",
+  "price": 120,
+  "quantity": 32,
+  "expiryDate": {
+   "$date": "2027-07-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montair LC Tablet",
+  "code": "MLCT",
+  "price": 143,
+  "quantity": 135,
+  "expiryDate": {
+   "$date": "2026-10-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montek LC Tablet",
+  "code": "MKLT",
+  "price": 149,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2026-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montelukast 10mg",
+  "code": "MTK10",
+  "price": 103,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2028-03-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montelukast 4mg",
+  "code": "MTK4",
+  "price": 62,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2026-10-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Montelukast 5mg",
+  "code": "MTK5",
+  "price": 83,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2027-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moov Ointment 15g",
+  "code": "MVO15",
+  "price": 75,
+  "quantity": 14,
+  "expiryDate": {
+   "$date": "2027-11-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moov Ointment 30g",
+  "code": "MVO30",
+  "price": 109,
+  "quantity": 141,
+  "expiryDate": {
+   "$date": "2026-12-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moov Ointment 50g",
+  "code": "MVO50",
+  "price": 133,
+  "quantity": 189,
+  "expiryDate": {
+   "$date": "2027-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mox 250",
+  "code": "MOX250",
+  "price": 68,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2027-12-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mox 500",
+  "code": "MOX500",
+  "price": 92,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2027-04-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moxicip Eye Drops 5ml",
+  "code": "MXC5",
+  "price": 86,
+  "quantity": 67,
+  "expiryDate": {
+   "$date": "2028-10-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moxikind-CV 375",
+  "code": "MKC375",
+  "price": 192,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2027-10-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Moxikind-CV 625",
+  "code": "MKC625",
+  "price": 257,
+  "quantity": 189,
+  "expiryDate": {
+   "$date": "2027-02-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mucinac 600",
+  "code": "MCN600",
+  "price": 115,
+  "quantity": 165,
+  "expiryDate": {
+   "$date": "2029-01-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Multivitamin Tablet",
+  "code": "MVTT",
+  "price": 40,
+  "quantity": 94,
+  "expiryDate": {
+   "$date": "2029-02-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mupirocin Ointment 10g",
+  "code": "MPO10",
+  "price": 165,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2029-04-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Mupirocin Ointment 5g",
+  "code": "MPO5",
+  "price": 118,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2028-04-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Myospaz Tablet",
+  "code": "MYST",
+  "price": 86,
+  "quantity": 86,
+  "expiryDate": {
+   "$date": "2028-10-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "N95 Mask Pack of 1",
+  "code": "N95PACKOF1",
+  "price": 79,
+  "quantity": 16,
+  "expiryDate": {
+   "$date": "2028-04-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Naproxen 250mg",
+  "code": "NPX250",
+  "price": 29,
+  "quantity": 123,
+  "expiryDate": {
+   "$date": "2029-04-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Naproxen 500mg",
+  "code": "NPX500",
+  "price": 42,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2029-06-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nasivion 10ml",
+  "code": "NSV10",
+  "price": 83,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2028-05-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nebistar 2.5",
+  "code": "NBS25",
+  "price": 110,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2026-11-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nebistar 5",
+  "code": "NBS5",
+  "price": 160,
+  "quantity": 80,
+  "expiryDate": {
+   "$date": "2027-05-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neomercazole 10",
+  "code": "NMZ10",
+  "price": 139,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2027-09-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neomercazole 5",
+  "code": "NMZ5",
+  "price": 103,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-09-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neosporin Powder 10g",
+  "code": "NSP10",
+  "price": 102,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2026-08-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neosporin Powder 5g",
+  "code": "NSP5",
+  "price": 73,
+  "quantity": 177,
+  "expiryDate": {
+   "$date": "2026-11-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neurobion Forte Tablet",
+  "code": "NBFT",
+  "price": 34,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2029-05-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Neurokind Plus Tablet",
+  "code": "NKPT",
+  "price": 120,
+  "quantity": 21,
+  "expiryDate": {
+   "$date": "2029-03-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nexium 20",
+  "code": "NXM20",
+  "price": 152,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2029-01-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nexium 40",
+  "code": "NXM40",
+  "price": 220,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2027-09-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nexpro 20",
+  "code": "NXP20",
+  "price": 109,
+  "quantity": 186,
+  "expiryDate": {
+   "$date": "2028-09-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nexpro 40",
+  "code": "NXP40",
+  "price": 158,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2027-05-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nifedipine 10mg",
+  "code": "NFD10",
+  "price": 15,
+  "quantity": 75,
+  "expiryDate": {
+   "$date": "2028-07-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nifedipine 20mg",
+  "code": "NFD20",
+  "price": 20,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2029-04-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nifedipine 30mg",
+  "code": "NFD30",
+  "price": 27,
+  "quantity": 64,
+  "expiryDate": {
+   "$date": "2026-12-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nimesulide 100mg",
+  "code": "NIM100",
+  "price": 21,
+  "quantity": 10,
+  "expiryDate": {
+   "$date": "2028-09-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nimesulide 200mg",
+  "code": "NIM200",
+  "price": 29,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2028-10-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nise 100",
+  "code": "NISE100",
+  "price": 25,
+  "quantity": 96,
+  "expiryDate": {
+   "$date": "2028-03-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nitazoxanide 200mg",
+  "code": "NTZ200",
+  "price": 91,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2028-04-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nitazoxanide 500mg",
+  "code": "NTZ500",
+  "price": 126,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2028-07-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nitrofurantoin 100mg",
+  "code": "NTF100",
+  "price": 76,
+  "quantity": 25,
+  "expiryDate": {
+   "$date": "2028-05-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nitrofurantoin 50mg",
+  "code": "NTF50",
+  "price": 54,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2027-07-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nizral Shampoo 100ml",
+  "code": "NZS100",
+  "price": 286,
+  "quantity": 83,
+  "expiryDate": {
+   "$date": "2026-11-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Nizral Shampoo 50ml",
+  "code": "NZS50",
+  "price": 191,
+  "quantity": 61,
+  "expiryDate": {
+   "$date": "2029-02-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Norethisterone 5mg",
+  "code": "NRT5",
+  "price": 117,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2028-10-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Norfloxacin 400mg",
+  "code": "NRF400",
+  "price": 31,
+  "quantity": 20,
+  "expiryDate": {
+   "$date": "2028-10-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Novamox 250",
+  "code": "NVM250",
+  "price": 60,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2028-04-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Novamox 500",
+  "code": "NVM500",
+  "price": 84,
+  "quantity": 45,
+  "expiryDate": {
+   "$date": "2027-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Obimet 500",
+  "code": "OBM500",
+  "price": 30,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Obimet 850",
+  "code": "OBM850",
+  "price": 41,
+  "quantity": 47,
+  "expiryDate": {
+   "$date": "2027-01-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ocid 20",
+  "code": "OCD20",
+  "price": 46,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2027-01-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oflox-OZ Tablet",
+  "code": "OFOT",
+  "price": 53,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2029-01-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ofloxacin 200mg",
+  "code": "OFX200",
+  "price": 46,
+  "quantity": 186,
+  "expiryDate": {
+   "$date": "2026-07-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ofloxacin 400mg",
+  "code": "OFX400",
+  "price": 65,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-10-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ofloxacin Ear Drops 10ml",
+  "code": "OED10",
+  "price": 68,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2027-03-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ofloxacin Ear Drops 5ml",
+  "code": "OED5",
+  "price": 48,
+  "quantity": 183,
+  "expiryDate": {
+   "$date": "2026-11-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Okacet 10",
+  "code": "OKC10",
+  "price": 15,
+  "quantity": 63,
+  "expiryDate": {
+   "$date": "2027-08-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmesartan 10mg",
+  "code": "OLM10",
+  "price": 69,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmesartan 20mg",
+  "code": "OLM20",
+  "price": 96,
+  "quantity": 193,
+  "expiryDate": {
+   "$date": "2028-12-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmesartan 40mg",
+  "code": "OLM40",
+  "price": 120,
+  "quantity": 167,
+  "expiryDate": {
+   "$date": "2029-04-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmezest 10",
+  "code": "OLZ10",
+  "price": 86,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2027-12-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmezest 20",
+  "code": "OLZ20",
+  "price": 122,
+  "quantity": 71,
+  "expiryDate": {
+   "$date": "2027-10-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmezest 40",
+  "code": "OLZ40",
+  "price": 148,
+  "quantity": 88,
+  "expiryDate": {
+   "$date": "2027-03-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olmezest-H Tablet",
+  "code": "OLHT",
+  "price": 104,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2027-09-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Olopatadine Eye Drops 5ml",
+  "code": "OLP5",
+  "price": 128,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2027-02-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omega 3 1000mg",
+  "code": "OM31000",
+  "price": 320,
+  "quantity": 77,
+  "expiryDate": {
+   "$date": "2027-12-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omega 3 500mg",
+  "code": "OM3500",
+  "price": 215,
+  "quantity": 195,
+  "expiryDate": {
+   "$date": "2029-06-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omeprazole 10mg",
+  "code": "OMP10",
+  "price": 35,
+  "quantity": 152,
+  "expiryDate": {
+   "$date": "2027-11-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omeprazole 20mg",
+  "code": "OMP20",
+  "price": 48,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-07-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omeprazole 40mg",
+  "code": "OMP40",
+  "price": 64,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2029-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omez 20",
+  "code": "OMZ20",
+  "price": 56,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2028-01-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Omez 40",
+  "code": "OMZ40",
+  "price": 74,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2027-07-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ondansetron 4mg",
+  "code": "OND4",
+  "price": 35,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-11-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ondansetron 8mg",
+  "code": "OND8",
+  "price": 47,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-05-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ondansetron Injection 4mg",
+  "code": "ODI4",
+  "price": 20,
+  "quantity": 167,
+  "expiryDate": {
+   "$date": "2028-12-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ondem 4",
+  "code": "ODM4",
+  "price": 39,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2028-09-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ondem 8",
+  "code": "ODM8",
+  "price": 55,
+  "quantity": 39,
+  "expiryDate": {
+   "$date": "2027-08-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ornidazole 500mg",
+  "code": "ORN500",
+  "price": 45,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-11-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Orofer XT Tablet",
+  "code": "ORFT",
+  "price": 115,
+  "quantity": 68,
+  "expiryDate": {
+   "$date": "2028-04-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "ORS Liquid 200ml",
+  "code": "ORL200",
+  "price": 35,
+  "quantity": 196,
+  "expiryDate": {
+   "$date": "2026-11-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oseltamivir 30mg",
+  "code": "OST30",
+  "price": 93,
+  "quantity": 169,
+  "expiryDate": {
+   "$date": "2027-01-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oseltamivir 45mg",
+  "code": "OST45",
+  "price": 133,
+  "quantity": 153,
+  "expiryDate": {
+   "$date": "2029-02-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oseltamivir 75mg",
+  "code": "OST75",
+  "price": 179,
+  "quantity": 122,
+  "expiryDate": {
+   "$date": "2029-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Otrivin Nasal Drops 10ml",
+  "code": "OTV10",
+  "price": 74,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-03-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Otrivin Nasal Spray 10ml",
+  "code": "OTS10",
+  "price": 107,
+  "quantity": 95,
+  "expiryDate": {
+   "$date": "2027-10-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oxybutynin 2.5mg",
+  "code": "OXY25",
+  "price": 20,
+  "quantity": 121,
+  "expiryDate": {
+   "$date": "2028-07-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Oxybutynin 5mg",
+  "code": "OXY5",
+  "price": 28,
+  "quantity": 88,
+  "expiryDate": {
+   "$date": "2028-04-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pacimol 500",
+  "code": "PCL500",
+  "price": 23,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2028-11-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pacimol 650",
+  "code": "PCL650",
+  "price": 32,
+  "quantity": 170,
+  "expiryDate": {
+   "$date": "2028-10-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pan 40 Tablet",
+  "code": "PN4T",
+  "price": 83,
+  "quantity": 105,
+  "expiryDate": {
+   "$date": "2027-10-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pan-D Capsule",
+  "code": "PNDC",
+  "price": 130,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2028-06-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Panderm 15g",
+  "code": "PDM15",
+  "price": 110,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2027-09-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantocid 20",
+  "code": "PTC20",
+  "price": 93,
+  "quantity": 16,
+  "expiryDate": {
+   "$date": "2028-11-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantocid 40",
+  "code": "PTC40",
+  "price": 122,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2027-02-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantop 20",
+  "code": "PTP20",
+  "price": 94,
+  "quantity": 49,
+  "expiryDate": {
+   "$date": "2026-05-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantop 40",
+  "code": "PTP40",
+  "price": 127,
+  "quantity": 51,
+  "expiryDate": {
+   "$date": "2028-04-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantoprazole 20mg",
+  "code": "PAN20",
+  "price": 59,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2026-09-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantoprazole 40mg",
+  "code": "PAN40",
+  "price": 81,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2027-11-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pantoprazole Injection 40mg",
+  "code": "PNI40",
+  "price": 46,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2027-06-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Paracetamol 1000mg",
+  "code": "PCM1000",
+  "price": 22,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2028-01-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Paracetamol 500mg",
+  "code": "PCM500",
+  "price": 12,
+  "quantity": 139,
+  "expiryDate": {
+   "$date": "2027-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Paracetamol 650mg",
+  "code": "PCM650",
+  "price": 17,
+  "quantity": 144,
+  "expiryDate": {
+   "$date": "2028-03-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Paracetamol Syrup 100ml",
+  "code": "PCMS100",
+  "price": 50,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2027-01-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Paracetamol Syrup 60ml",
+  "code": "PCMS60",
+  "price": 33,
+  "quantity": 156,
+  "expiryDate": {
+   "$date": "2028-05-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pause 250",
+  "code": "PSE250",
+  "price": 104,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-01-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pause 500",
+  "code": "PSE500",
+  "price": 144,
+  "quantity": 159,
+  "expiryDate": {
+   "$date": "2027-01-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Perinorm 10",
+  "code": "PRN10",
+  "price": 15,
+  "quantity": 197,
+  "expiryDate": {
+   "$date": "2029-01-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Permethrin Cream 30g",
+  "code": "PMC30",
+  "price": 116,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2028-02-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Permethrin Cream 60g",
+  "code": "PMC60",
+  "price": 175,
+  "quantity": 162,
+  "expiryDate": {
+   "$date": "2028-01-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pioglitazone 15mg",
+  "code": "PGZ15",
+  "price": 36,
+  "quantity": 123,
+  "expiryDate": {
+   "$date": "2027-05-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pioglitazone 30mg",
+  "code": "PGZ30",
+  "price": 51,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2028-04-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pip-Taz Injection 2.25g",
+  "code": "PTZ225",
+  "price": 157,
+  "quantity": 153,
+  "expiryDate": {
+   "$date": "2029-05-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pip-Taz Injection 4.5g",
+  "code": "PTZ45",
+  "price": 228,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2027-08-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Piracetam 1200mg",
+  "code": "PRC1200",
+  "price": 72,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2026-08-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Piracetam 400mg",
+  "code": "PRC400",
+  "price": 41,
+  "quantity": 10,
+  "expiryDate": {
+   "$date": "2027-08-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Piracetam 800mg",
+  "code": "PRC800",
+  "price": 55,
+  "quantity": 88,
+  "expiryDate": {
+   "$date": "2027-09-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Plavix 75",
+  "code": "PLV75",
+  "price": 162,
+  "quantity": 155,
+  "expiryDate": {
+   "$date": "2028-05-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Povidone Iodine Solution 100ml",
+  "code": "PVI100",
+  "price": 61,
+  "quantity": 24,
+  "expiryDate": {
+   "$date": "2029-03-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Povidone Iodine Solution 500ml",
+  "code": "PVI500",
+  "price": 80,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2027-05-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Prednisolone 10mg",
+  "code": "PRD10",
+  "price": 14,
+  "quantity": 126,
+  "expiryDate": {
+   "$date": "2028-07-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Prednisolone 20mg",
+  "code": "PRD20",
+  "price": 17,
+  "quantity": 22,
+  "expiryDate": {
+   "$date": "2027-05-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Prednisolone 40mg",
+  "code": "PRD40",
+  "price": 21,
+  "quantity": 174,
+  "expiryDate": {
+   "$date": "2028-08-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Prednisolone 5mg",
+  "code": "PRD5",
+  "price": 10,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2028-02-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pregabalin 150mg",
+  "code": "PGB150",
+  "price": 161,
+  "quantity": 12,
+  "expiryDate": {
+   "$date": "2028-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pregabalin 50mg",
+  "code": "PGB50",
+  "price": 89,
+  "quantity": 106,
+  "expiryDate": {
+   "$date": "2027-08-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pregabalin 75mg",
+  "code": "PGB75",
+  "price": 127,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2026-10-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pregnancy Test Kit Standard",
+  "code": "PTKS",
+  "price": 61,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2027-07-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Propranolol 10mg",
+  "code": "PRP10",
+  "price": 8,
+  "quantity": 36,
+  "expiryDate": {
+   "$date": "2027-06-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Propranolol 20mg",
+  "code": "PRP20",
+  "price": 11,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2027-12-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Propranolol 40mg",
+  "code": "PRP40",
+  "price": 14,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2028-01-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Protinex 200g",
+  "code": "PTX200",
+  "price": 390,
+  "quantity": 80,
+  "expiryDate": {
+   "$date": "2028-09-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Protinex 400g",
+  "code": "PTX400",
+  "price": 520,
+  "quantity": 161,
+  "expiryDate": {
+   "$date": "2027-11-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pudin Hara Pearls",
+  "code": "PDHP",
+  "price": 38,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-06-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Pulse Oximeter Standard",
+  "code": "POXS",
+  "price": 857,
+  "quantity": 182,
+  "expiryDate": {
+   "$date": "2027-08-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Quadriderm 10g",
+  "code": "QDR10",
+  "price": 120,
+  "quantity": 91,
+  "expiryDate": {
+   "$date": "2027-11-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Quadriderm 15g",
+  "code": "QDR15",
+  "price": 168,
+  "quantity": 184,
+  "expiryDate": {
+   "$date": "2026-10-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rabeprazole 10mg",
+  "code": "RBP10",
+  "price": 74,
+  "quantity": 130,
+  "expiryDate": {
+   "$date": "2029-04-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rabeprazole 20mg",
+  "code": "RBP20",
+  "price": 102,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2027-02-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rablet 20",
+  "code": "RBL20",
+  "price": 89,
+  "quantity": 81,
+  "expiryDate": {
+   "$date": "2027-07-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Racecadotril 100mg",
+  "code": "RCD100",
+  "price": 105,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2027-07-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Racecadotril 10mg",
+  "code": "RCD10",
+  "price": 58,
+  "quantity": 149,
+  "expiryDate": {
+   "$date": "2026-12-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Racecadotril 30mg",
+  "code": "RCD30",
+  "price": 82,
+  "quantity": 21,
+  "expiryDate": {
+   "$date": "2029-06-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ramipril 1.25mg",
+  "code": "RMP125",
+  "price": 49,
+  "quantity": 162,
+  "expiryDate": {
+   "$date": "2028-06-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ramipril 10mg",
+  "code": "RMP10",
+  "price": 108,
+  "quantity": 190,
+  "expiryDate": {
+   "$date": "2026-11-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ramipril 2.5mg",
+  "code": "RMP25",
+  "price": 71,
+  "quantity": 120,
+  "expiryDate": {
+   "$date": "2028-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ramipril 5mg",
+  "code": "RMP5",
+  "price": 91,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ranitidine 150mg",
+  "code": "RNT150",
+  "price": 26,
+  "quantity": 23,
+  "expiryDate": {
+   "$date": "2029-04-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ranitidine 300mg",
+  "code": "RNT300",
+  "price": 34,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2029-01-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ranolazine 1000mg",
+  "code": "RNZ1000",
+  "price": 153,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2027-03-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ranolazine 500mg",
+  "code": "RNZ500",
+  "price": 106,
+  "quantity": 174,
+  "expiryDate": {
+   "$date": "2027-02-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rantac 150",
+  "code": "RTC150",
+  "price": 30,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2029-06-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rantac 300",
+  "code": "RTC300",
+  "price": 43,
+  "quantity": 28,
+  "expiryDate": {
+   "$date": "2027-05-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Razo 20",
+  "code": "RZO20",
+  "price": 94,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2026-12-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Razo 40",
+  "code": "RZO40",
+  "price": 120,
+  "quantity": 54,
+  "expiryDate": {
+   "$date": "2026-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Refresh Tears 10ml",
+  "code": "RFT10",
+  "price": 144,
+  "quantity": 142,
+  "expiryDate": {
+   "$date": "2028-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Refresh Tears 15ml",
+  "code": "RFT15",
+  "price": 205,
+  "quantity": 131,
+  "expiryDate": {
+   "$date": "2028-06-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Relispray 35ml",
+  "code": "RLS35",
+  "price": 125,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2028-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Relispray 55ml",
+  "code": "RLS55",
+  "price": 188,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2028-02-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Repace 25",
+  "code": "RPC25",
+  "price": 46,
+  "quantity": 200,
+  "expiryDate": {
+   "$date": "2027-04-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Repace 50",
+  "code": "RPC50",
+  "price": 64,
+  "quantity": 82,
+  "expiryDate": {
+   "$date": "2028-11-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Revital H Capsule",
+  "code": "RVTC",
+  "price": 346,
+  "quantity": 102,
+  "expiryDate": {
+   "$date": "2027-05-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rifaximin 200mg",
+  "code": "RFX200",
+  "price": 146,
+  "quantity": 135,
+  "expiryDate": {
+   "$date": "2029-01-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rifaximin 400mg",
+  "code": "RFX400",
+  "price": 203,
+  "quantity": 113,
+  "expiryDate": {
+   "$date": "2027-10-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rifaximin 550mg",
+  "code": "RFX550",
+  "price": 256,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2026-11-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ring Guard Cream 12g",
+  "code": "RGC12",
+  "price": 57,
+  "quantity": 60,
+  "expiryDate": {
+   "$date": "2027-11-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ring Guard Cream 25g",
+  "code": "RGC25",
+  "price": 77,
+  "quantity": 44,
+  "expiryDate": {
+   "$date": "2027-02-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rivaroxaban 10mg",
+  "code": "RVX10",
+  "price": 269,
+  "quantity": 5,
+  "expiryDate": {
+   "$date": "2028-09-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rivaroxaban 15mg",
+  "code": "RVX15",
+  "price": 377,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2029-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rivaroxaban 20mg",
+  "code": "RVX20",
+  "price": 529,
+  "quantity": 134,
+  "expiryDate": {
+   "$date": "2026-10-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosulip 10",
+  "code": "RSL10",
+  "price": 153,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2026-03-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosulip 20",
+  "code": "RSL20",
+  "price": 204,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-09-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosulip 5",
+  "code": "RSL5",
+  "price": 112,
+  "quantity": 139,
+  "expiryDate": {
+   "$date": "2028-07-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvas 10",
+  "code": "RSS10",
+  "price": 123,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-12-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvas 20",
+  "code": "RSS20",
+  "price": 159,
+  "quantity": 197,
+  "expiryDate": {
+   "$date": "2028-01-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvas 5",
+  "code": "RSS5",
+  "price": 91,
+  "quantity": 125,
+  "expiryDate": {
+   "$date": "2027-02-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvastatin 10mg",
+  "code": "RSV10",
+  "price": 102,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2027-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvastatin 20mg",
+  "code": "RSV20",
+  "price": 129,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2027-02-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvastatin 40mg",
+  "code": "RSV40",
+  "price": 146,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2027-10-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Rosuvastatin 5mg",
+  "code": "RSV5",
+  "price": 69,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2029-06-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Saline Nasal Spray 15ml",
+  "code": "SNS15",
+  "price": 60,
+  "quantity": 125,
+  "expiryDate": {
+   "$date": "2027-07-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Saline Nasal Spray 30ml",
+  "code": "SNS30",
+  "price": 82,
+  "quantity": 152,
+  "expiryDate": {
+   "$date": "2028-02-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Savlon Antiseptic 100ml",
+  "code": "SVL100",
+  "price": 81,
+  "quantity": 143,
+  "expiryDate": {
+   "$date": "2028-12-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Savlon Antiseptic 200ml",
+  "code": "SVL200",
+  "price": 110,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2029-04-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Savlon Antiseptic 500ml",
+  "code": "SVL500",
+  "price": 140,
+  "quantity": 24,
+  "expiryDate": {
+   "$date": "2028-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Secnidazole 1000mg",
+  "code": "SCN1000",
+  "price": 91,
+  "quantity": 131,
+  "expiryDate": {
+   "$date": "2026-07-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Seroflo Inhaler 125mcg",
+  "code": "SRF125",
+  "price": 345,
+  "quantity": 65,
+  "expiryDate": {
+   "$date": "2029-03-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Seroflo Inhaler 250mcg",
+  "code": "SRF250",
+  "price": 454,
+  "quantity": 115,
+  "expiryDate": {
+   "$date": "2027-10-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sertraline 100mg",
+  "code": "SRT100",
+  "price": 107,
+  "quantity": 59,
+  "expiryDate": {
+   "$date": "2027-04-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sertraline 25mg",
+  "code": "SRT25",
+  "price": 63,
+  "quantity": 107,
+  "expiryDate": {
+   "$date": "2026-12-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sertraline 50mg",
+  "code": "SRT50",
+  "price": 81,
+  "quantity": 45,
+  "expiryDate": {
+   "$date": "2027-03-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Shelcal 500",
+  "code": "SHL500",
+  "price": 115,
+  "quantity": 150,
+  "expiryDate": {
+   "$date": "2029-04-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Shelcal HD Tablet",
+  "code": "SHDT",
+  "price": 194,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-03-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sibelium 10",
+  "code": "SBL10",
+  "price": 60,
+  "quantity": 53,
+  "expiryDate": {
+   "$date": "2028-09-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sibelium 5",
+  "code": "SBL5",
+  "price": 46,
+  "quantity": 80,
+  "expiryDate": {
+   "$date": "2029-03-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Silodosin 4mg",
+  "code": "SLD4",
+  "price": 122,
+  "quantity": 81,
+  "expiryDate": {
+   "$date": "2027-12-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Silodosin 8mg",
+  "code": "SLD8",
+  "price": 162,
+  "quantity": 143,
+  "expiryDate": {
+   "$date": "2029-01-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Simethicone 40mg",
+  "code": "SIM40",
+  "price": 12,
+  "quantity": 61,
+  "expiryDate": {
+   "$date": "2028-12-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Simethicone 80mg",
+  "code": "SIM80",
+  "price": 16,
+  "quantity": 107,
+  "expiryDate": {
+   "$date": "2029-03-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sinarest New Tablet",
+  "code": "SNNT",
+  "price": 58,
+  "quantity": 50,
+  "expiryDate": {
+   "$date": "2026-10-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sinarest Syrup",
+  "code": "SNRS",
+  "price": 75,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2028-08-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sinarest Tablet",
+  "code": "SNRT",
+  "price": 54,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2029-02-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sitagliptin 100mg",
+  "code": "STG100",
+  "price": 263,
+  "quantity": 157,
+  "expiryDate": {
+   "$date": "2028-09-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sitagliptin 25mg",
+  "code": "STG25",
+  "price": 157,
+  "quantity": 87,
+  "expiryDate": {
+   "$date": "2028-08-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sitagliptin 50mg",
+  "code": "STG50",
+  "price": 219,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2029-06-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sodium Valproate 200mg",
+  "code": "SVP200",
+  "price": 55,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2027-05-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sodium Valproate 300mg",
+  "code": "SVP300",
+  "price": 77,
+  "quantity": 139,
+  "expiryDate": {
+   "$date": "2028-07-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sodium Valproate 500mg",
+  "code": "SVP500",
+  "price": 94,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2026-10-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Soframycin Cream 20g",
+  "code": "SFM20",
+  "price": 49,
+  "quantity": 157,
+  "expiryDate": {
+   "$date": "2029-06-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Soframycin Cream 30g",
+  "code": "SFM30",
+  "price": 68,
+  "quantity": 81,
+  "expiryDate": {
+   "$date": "2028-08-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sompraz 20",
+  "code": "SMP20",
+  "price": 91,
+  "quantity": 88,
+  "expiryDate": {
+   "$date": "2029-05-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sompraz 40",
+  "code": "SMP40",
+  "price": 128,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2027-12-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sorbitrate 10",
+  "code": "SBR10",
+  "price": 14,
+  "quantity": 9,
+  "expiryDate": {
+   "$date": "2029-05-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sorbitrate 5",
+  "code": "SBR5",
+  "price": 10,
+  "quantity": 12,
+  "expiryDate": {
+   "$date": "2026-12-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Spironolactone 25mg",
+  "code": "SPR25",
+  "price": 29,
+  "quantity": 109,
+  "expiryDate": {
+   "$date": "2027-07-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Spironolactone 50mg",
+  "code": "SPR50",
+  "price": 43,
+  "quantity": 128,
+  "expiryDate": {
+   "$date": "2028-04-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Stamlo 10",
+  "code": "STM10",
+  "price": 46,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2026-09-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Stamlo 2.5",
+  "code": "STM25",
+  "price": 24,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2028-01-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Stamlo 5",
+  "code": "STM5",
+  "price": 35,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2027-05-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Storvas 10",
+  "code": "STV10",
+  "price": 114,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2028-10-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Storvas 20",
+  "code": "STV20",
+  "price": 161,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2027-03-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Storvas 40",
+  "code": "STV40",
+  "price": 201,
+  "quantity": 157,
+  "expiryDate": {
+   "$date": "2029-04-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Strepsils Lozenge",
+  "code": "STRL",
+  "price": 40,
+  "quantity": 104,
+  "expiryDate": {
+   "$date": "2027-08-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sucralfate Suspension 100ml",
+  "code": "SCS100",
+  "price": 115,
+  "quantity": 156,
+  "expiryDate": {
+   "$date": "2029-01-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sucralfate Suspension 200ml",
+  "code": "SCS200",
+  "price": 164,
+  "quantity": 193,
+  "expiryDate": {
+   "$date": "2027-04-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sumatriptan 100mg",
+  "code": "SMT100",
+  "price": 168,
+  "quantity": 79,
+  "expiryDate": {
+   "$date": "2028-03-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sumatriptan 25mg",
+  "code": "SMT25",
+  "price": 90,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2029-03-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sumatriptan 50mg",
+  "code": "SMT50",
+  "price": 124,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2027-07-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Sumo Tablet",
+  "code": "SMOT",
+  "price": 54,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2027-05-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Supradyn Tablet",
+  "code": "SPDT",
+  "price": 57,
+  "quantity": 36,
+  "expiryDate": {
+   "$date": "2029-03-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Surgical Mask Pack of 10",
+  "code": "MSKPACKOF10",
+  "price": 40,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2028-10-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Surgical Spirit 100ml",
+  "code": "SPT100",
+  "price": 29,
+  "quantity": 176,
+  "expiryDate": {
+   "$date": "2026-12-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Surgical Spirit 500ml",
+  "code": "SPT500",
+  "price": 43,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2026-12-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Susten 100mg",
+  "code": "SST100",
+  "price": 279,
+  "quantity": 141,
+  "expiryDate": {
+   "$date": "2029-03-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Susten 200mg",
+  "code": "SST200",
+  "price": 382,
+  "quantity": 148,
+  "expiryDate": {
+   "$date": "2029-06-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Susten 300mg",
+  "code": "SST300",
+  "price": 480,
+  "quantity": 16,
+  "expiryDate": {
+   "$date": "2027-05-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Syringe 10ml",
+  "code": "SYR10",
+  "price": 14,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2029-06-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Syringe 2ml",
+  "code": "SYR2",
+  "price": 8,
+  "quantity": 130,
+  "expiryDate": {
+   "$date": "2027-12-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Syringe 5ml",
+  "code": "SYR5",
+  "price": 11,
+  "quantity": 155,
+  "expiryDate": {
+   "$date": "2027-08-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tacrolimus Ointment 10g",
+  "code": "TCL10",
+  "price": 191,
+  "quantity": 196,
+  "expiryDate": {
+   "$date": "2026-08-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tacrolimus Ointment 30g",
+  "code": "TCL30",
+  "price": 266,
+  "quantity": 167,
+  "expiryDate": {
+   "$date": "2027-03-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tamsulosin 0.2mg",
+  "code": "TMS02",
+  "price": 87,
+  "quantity": 146,
+  "expiryDate": {
+   "$date": "2028-09-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tamsulosin 0.4mg",
+  "code": "TMS04",
+  "price": 128,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Taxim-O 100",
+  "code": "TXO100",
+  "price": 100,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2028-11-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Taxim-O 200",
+  "code": "TXO200",
+  "price": 145,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2029-06-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Taxim-O 325",
+  "code": "TXO325",
+  "price": 186,
+  "quantity": 113,
+  "expiryDate": {
+   "$date": "2028-10-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Teczine 10",
+  "code": "TCZ10",
+  "price": 27,
+  "quantity": 31,
+  "expiryDate": {
+   "$date": "2028-12-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Teczine 5",
+  "code": "TCZ5",
+  "price": 20,
+  "quantity": 8,
+  "expiryDate": {
+   "$date": "2028-04-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tegretol 100",
+  "code": "TGR100",
+  "price": 35,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2027-11-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tegretol 200",
+  "code": "TGR200",
+  "price": 48,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2026-11-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma 20",
+  "code": "TLA20",
+  "price": 60,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2029-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma 40",
+  "code": "TLA40",
+  "price": 85,
+  "quantity": 100,
+  "expiryDate": {
+   "$date": "2027-11-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma 80",
+  "code": "TLA80",
+  "price": 113,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2029-04-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma-AM Tablet",
+  "code": "TAMT",
+  "price": 98,
+  "quantity": 70,
+  "expiryDate": {
+   "$date": "2027-12-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma-H 40",
+  "code": "TMH40",
+  "price": 85,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-01-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telma-H 80",
+  "code": "TMH80",
+  "price": 124,
+  "quantity": 10,
+  "expiryDate": {
+   "$date": "2027-07-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmikind 20",
+  "code": "TMK20",
+  "price": 54,
+  "quantity": 66,
+  "expiryDate": {
+   "$date": "2026-10-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmikind 40",
+  "code": "TMK40",
+  "price": 81,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2027-12-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmikind 80",
+  "code": "TMK80",
+  "price": 99,
+  "quantity": 94,
+  "expiryDate": {
+   "$date": "2027-07-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmisartan 20mg",
+  "code": "TLM20",
+  "price": 33,
+  "quantity": 169,
+  "expiryDate": {
+   "$date": "2027-12-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmisartan 40mg",
+  "code": "TLM40",
+  "price": 48,
+  "quantity": 101,
+  "expiryDate": {
+   "$date": "2029-02-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Telmisartan 80mg",
+  "code": "TLM80",
+  "price": 65,
+  "quantity": 25,
+  "expiryDate": {
+   "$date": "2029-04-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Teneligliptin 20mg",
+  "code": "TNG20",
+  "price": 143,
+  "quantity": 183,
+  "expiryDate": {
+   "$date": "2028-05-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tenglyn 20",
+  "code": "TGL20",
+  "price": 155,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2027-09-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Terbinafine 250mg",
+  "code": "TRB250",
+  "price": 112,
+  "quantity": 69,
+  "expiryDate": {
+   "$date": "2028-01-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tetanus Toxoid Injection 0.5ml",
+  "code": "TTI05",
+  "price": 29,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2027-01-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thiocolchicoside 4mg",
+  "code": "TCC4",
+  "price": 69,
+  "quantity": 58,
+  "expiryDate": {
+   "$date": "2029-04-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thiocolchicoside 8mg",
+  "code": "TCC8",
+  "price": 97,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2027-10-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thyronorm 100mcg",
+  "code": "THY100",
+  "price": 272,
+  "quantity": 173,
+  "expiryDate": {
+   "$date": "2027-08-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thyronorm 25mcg",
+  "code": "THY25",
+  "price": 115,
+  "quantity": 75,
+  "expiryDate": {
+   "$date": "2028-03-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thyronorm 50mcg",
+  "code": "THY50",
+  "price": 169,
+  "quantity": 18,
+  "expiryDate": {
+   "$date": "2027-10-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Thyronorm 75mcg",
+  "code": "THY75",
+  "price": 220,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2028-05-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ticagrelor 60mg",
+  "code": "TCG60",
+  "price": 139,
+  "quantity": 124,
+  "expiryDate": {
+   "$date": "2027-08-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ticagrelor 90mg",
+  "code": "TCG90",
+  "price": 186,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-09-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Timolol Eye Drops 5ml",
+  "code": "TML5",
+  "price": 61,
+  "quantity": 52,
+  "expiryDate": {
+   "$date": "2026-10-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tinidazole 300mg",
+  "code": "TND300",
+  "price": 31,
+  "quantity": 101,
+  "expiryDate": {
+   "$date": "2026-10-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tinidazole 500mg",
+  "code": "TND500",
+  "price": 40,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2027-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tizanidine 2mg",
+  "code": "TZN2",
+  "price": 44,
+  "quantity": 57,
+  "expiryDate": {
+   "$date": "2028-12-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tizanidine 4mg",
+  "code": "TZN4",
+  "price": 63,
+  "quantity": 101,
+  "expiryDate": {
+   "$date": "2028-01-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tobrex Eye Drops 5ml",
+  "code": "TBX5",
+  "price": 114,
+  "quantity": 179,
+  "expiryDate": {
+   "$date": "2028-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tonact 10",
+  "code": "TNC10",
+  "price": 85,
+  "quantity": 62,
+  "expiryDate": {
+   "$date": "2026-12-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tonact 20",
+  "code": "TNC20",
+  "price": 124,
+  "quantity": 137,
+  "expiryDate": {
+   "$date": "2028-05-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tonact 40",
+  "code": "TNC40",
+  "price": 151,
+  "quantity": 4,
+  "expiryDate": {
+   "$date": "2028-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tonoferon 200ml",
+  "code": "TNF200",
+  "price": 117,
+  "quantity": 49,
+  "expiryDate": {
+   "$date": "2026-12-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Torsemide 10mg",
+  "code": "TRS10",
+  "price": 42,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2029-03-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Torsemide 20mg",
+  "code": "TRS20",
+  "price": 57,
+  "quantity": 137,
+  "expiryDate": {
+   "$date": "2028-01-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Torsemide 40mg",
+  "code": "TRS40",
+  "price": 75,
+  "quantity": 92,
+  "expiryDate": {
+   "$date": "2028-11-26T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Trajenta 5",
+  "code": "TRJ5",
+  "price": 476,
+  "quantity": 63,
+  "expiryDate": {
+   "$date": "2028-06-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tramadol 100mg",
+  "code": "TRM100",
+  "price": 55,
+  "quantity": 132,
+  "expiryDate": {
+   "$date": "2026-06-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tramadol 50mg",
+  "code": "TRM50",
+  "price": 40,
+  "quantity": 108,
+  "expiryDate": {
+   "$date": "2029-03-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tranexamic Acid 250mg",
+  "code": "TXA250",
+  "price": 94,
+  "quantity": 152,
+  "expiryDate": {
+   "$date": "2028-03-02T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tranexamic Acid 500mg",
+  "code": "TXA500",
+  "price": 128,
+  "quantity": 76,
+  "expiryDate": {
+   "$date": "2028-10-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Trimetazidine 20mg",
+  "code": "TMZ20",
+  "price": 87,
+  "quantity": 34,
+  "expiryDate": {
+   "$date": "2027-11-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Trimetazidine 35mg",
+  "code": "TMZ35",
+  "price": 121,
+  "quantity": 40,
+  "expiryDate": {
+   "$date": "2029-03-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tryptomer 10",
+  "code": "TRY10",
+  "price": 19,
+  "quantity": 167,
+  "expiryDate": {
+   "$date": "2028-08-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tryptomer 25",
+  "code": "TRY25",
+  "price": 27,
+  "quantity": 169,
+  "expiryDate": {
+   "$date": "2028-08-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Tusq DX 100ml",
+  "code": "TSQ100",
+  "price": 103,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2026-11-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Udiliv 150",
+  "code": "UDL150",
+  "price": 153,
+  "quantity": 170,
+  "expiryDate": {
+   "$date": "2028-03-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Udiliv 300",
+  "code": "UDL300",
+  "price": 203,
+  "quantity": 47,
+  "expiryDate": {
+   "$date": "2028-06-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ultracet Tablet",
+  "code": "ULTT",
+  "price": 151,
+  "quantity": 164,
+  "expiryDate": {
+   "$date": "2026-08-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Unwanted-72 1.5",
+  "code": "UNW15",
+  "price": 99,
+  "quantity": 163,
+  "expiryDate": {
+   "$date": "2027-12-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Urimax 0.2",
+  "code": "URM02",
+  "price": 116,
+  "quantity": 185,
+  "expiryDate": {
+   "$date": "2028-05-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Urimax 0.4",
+  "code": "URM04",
+  "price": 176,
+  "quantity": 146,
+  "expiryDate": {
+   "$date": "2028-10-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ursodeoxycholic Acid 150mg",
+  "code": "UDC150",
+  "price": 143,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2029-04-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ursodeoxycholic Acid 300mg",
+  "code": "UDC300",
+  "price": 201,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2027-01-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Valacyclovir 1000mg",
+  "code": "VLC1000",
+  "price": 155,
+  "quantity": 85,
+  "expiryDate": {
+   "$date": "2027-08-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Valacyclovir 500mg",
+  "code": "VLC500",
+  "price": 112,
+  "quantity": 26,
+  "expiryDate": {
+   "$date": "2029-05-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Ventorlin Syrup 100ml",
+  "code": "VNT100",
+  "price": 44,
+  "quantity": 39,
+  "expiryDate": {
+   "$date": "2026-12-08T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vermox 100",
+  "code": "VRM100",
+  "price": 41,
+  "quantity": 39,
+  "expiryDate": {
+   "$date": "2028-09-21T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vermox 500",
+  "code": "VRM500",
+  "price": 56,
+  "quantity": 71,
+  "expiryDate": {
+   "$date": "2028-02-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vertin 16",
+  "code": "VRT16",
+  "price": 107,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2027-01-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vertin 24",
+  "code": "VRT24",
+  "price": 132,
+  "quantity": 17,
+  "expiryDate": {
+   "$date": "2029-05-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vertin 8",
+  "code": "VRT8",
+  "price": 78,
+  "quantity": 97,
+  "expiryDate": {
+   "$date": "2027-11-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vicks Action 500 Tablet",
+  "code": "VKAT",
+  "price": 42,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2028-12-30T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vicks Vaporub 10g",
+  "code": "VVR10",
+  "price": 70,
+  "quantity": 43,
+  "expiryDate": {
+   "$date": "2028-05-23T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vicks Vaporub 25g",
+  "code": "VVR25",
+  "price": 94,
+  "quantity": 123,
+  "expiryDate": {
+   "$date": "2028-01-27T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vicks Vaporub 50g",
+  "code": "VVR50",
+  "price": 112,
+  "quantity": 104,
+  "expiryDate": {
+   "$date": "2027-10-29T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vicks Vaporub 5g",
+  "code": "VVR5",
+  "price": 49,
+  "quantity": 185,
+  "expiryDate": {
+   "$date": "2027-02-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vildagliptin 50mg",
+  "code": "VDL50",
+  "price": 136,
+  "quantity": 139,
+  "expiryDate": {
+   "$date": "2027-10-12T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin B Complex Tablet",
+  "code": "VBCT",
+  "price": 25,
+  "quantity": 0,
+  "expiryDate": {
+   "$date": "2026-12-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin C 1000mg",
+  "code": "VTC1000",
+  "price": 27,
+  "quantity": 14,
+  "expiryDate": {
+   "$date": "2026-03-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin C 500mg",
+  "code": "VTC500",
+  "price": 20,
+  "quantity": 89,
+  "expiryDate": {
+   "$date": "2027-07-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin D3 1000IU",
+  "code": "VD31000",
+  "price": 60,
+  "quantity": 7,
+  "expiryDate": {
+   "$date": "2028-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin D3 2000IU",
+  "code": "VD32000",
+  "price": 82,
+  "quantity": 1,
+  "expiryDate": {
+   "$date": "2027-12-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin D3 60000IU",
+  "code": "VD360000",
+  "price": 109,
+  "quantity": 172,
+  "expiryDate": {
+   "$date": "2027-08-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Vitamin D3 Drops 400IU",
+  "code": "VDD400",
+  "price": 80,
+  "quantity": 121,
+  "expiryDate": {
+   "$date": "2028-06-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Voglibose 0.2mg",
+  "code": "VGB02",
+  "price": 62,
+  "quantity": 90,
+  "expiryDate": {
+   "$date": "2028-05-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Voglibose 0.3mg",
+  "code": "VGB03",
+  "price": 83,
+  "quantity": 129,
+  "expiryDate": {
+   "$date": "2029-03-28T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Volini Gel 15g",
+  "code": "VLN15",
+  "price": 115,
+  "quantity": 79,
+  "expiryDate": {
+   "$date": "2027-02-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Volini Gel 30g",
+  "code": "VLN30",
+  "price": 152,
+  "quantity": 35,
+  "expiryDate": {
+   "$date": "2029-06-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Volini Gel 50g",
+  "code": "VLN50",
+  "price": 200,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2026-09-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Voveran 100",
+  "code": "VOV100",
+  "price": 58,
+  "quantity": 2,
+  "expiryDate": {
+   "$date": "2028-09-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Voveran 50",
+  "code": "VOV50",
+  "price": 42,
+  "quantity": 187,
+  "expiryDate": {
+   "$date": "2029-02-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Warfarin 1mg",
+  "code": "WRF1",
+  "price": 15,
+  "quantity": 72,
+  "expiryDate": {
+   "$date": "2028-03-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Warfarin 2mg",
+  "code": "WRF2",
+  "price": 22,
+  "quantity": 99,
+  "expiryDate": {
+   "$date": "2028-08-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Warfarin 5mg",
+  "code": "WRF5",
+  "price": 27,
+  "quantity": 84,
+  "expiryDate": {
+   "$date": "2028-06-24T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Waxolve Ear Drops 10ml",
+  "code": "WXV10",
+  "price": 68,
+  "quantity": 48,
+  "expiryDate": {
+   "$date": "2028-12-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Wikoryl Tablet",
+  "code": "WKRT",
+  "price": 29,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2027-02-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Wysolone 10",
+  "code": "WYS10",
+  "price": 41,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2028-06-03T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Wysolone 20",
+  "code": "WYS20",
+  "price": 52,
+  "quantity": 31,
+  "expiryDate": {
+   "$date": "2028-03-14T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Wysolone 40",
+  "code": "WYS40",
+  "price": 69,
+  "quantity": 29,
+  "expiryDate": {
+   "$date": "2027-03-31T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Wysolone 5",
+  "code": "WYS5",
+  "price": 31,
+  "quantity": 140,
+  "expiryDate": {
+   "$date": "2028-02-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zandu Balm 25g",
+  "code": "ZNB25",
+  "price": 60,
+  "quantity": 25,
+  "expiryDate": {
+   "$date": "2029-05-16T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zandu Balm 8g",
+  "code": "ZNB8",
+  "price": 45,
+  "quantity": 27,
+  "expiryDate": {
+   "$date": "2029-05-11T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zentel 400",
+  "code": "ZNT400",
+  "price": 29,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2027-12-01T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zerodol-MR Tablet",
+  "code": "ZMRT",
+  "price": 116,
+  "quantity": 3,
+  "expiryDate": {
+   "$date": "2027-10-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zerodol-P Tablet",
+  "code": "ZDPT",
+  "price": 57,
+  "quantity": 145,
+  "expiryDate": {
+   "$date": "2027-02-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zerodol-SP Tablet",
+  "code": "ZSPT",
+  "price": 93,
+  "quantity": 74,
+  "expiryDate": {
+   "$date": "2027-10-25T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zifi 100",
+  "code": "ZIF100",
+  "price": 106,
+  "quantity": 41,
+  "expiryDate": {
+   "$date": "2027-09-06T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zifi 200",
+  "code": "ZIF200",
+  "price": 153,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2027-08-07T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zifi 400",
+  "code": "ZIF400",
+  "price": 195,
+  "quantity": 185,
+  "expiryDate": {
+   "$date": "2026-03-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zinc Sulphate 20mg",
+  "code": "ZNS20",
+  "price": 36,
+  "quantity": 188,
+  "expiryDate": {
+   "$date": "2028-10-10T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zinc Sulphate 50mg",
+  "code": "ZNS50",
+  "price": 47,
+  "quantity": 6,
+  "expiryDate": {
+   "$date": "2028-06-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zinc Syrup 100ml",
+  "code": "ZNY100",
+  "price": 77,
+  "quantity": 199,
+  "expiryDate": {
+   "$date": "2027-11-13T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zinc Syrup 50ml",
+  "code": "ZNY50",
+  "price": 56,
+  "quantity": 60,
+  "expiryDate": {
+   "$date": "2029-02-20T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zincovit Syrup",
+  "code": "ZNCS",
+  "price": 147,
+  "quantity": 93,
+  "expiryDate": {
+   "$date": "2028-09-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zincovit Tablet",
+  "code": "ZNCT",
+  "price": 102,
+  "quantity": 111,
+  "expiryDate": {
+   "$date": "2028-09-18T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zithromax 250",
+  "code": "ZTX250",
+  "price": 120,
+  "quantity": 183,
+  "expiryDate": {
+   "$date": "2028-05-19T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zithromax 500",
+  "code": "ZTX500",
+  "price": 168,
+  "quantity": 135,
+  "expiryDate": {
+   "$date": "2027-03-05T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zocon 150",
+  "code": "ZCO150",
+  "price": 29,
+  "quantity": 13,
+  "expiryDate": {
+   "$date": "2028-10-22T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zoryl 1",
+  "code": "ZRY1",
+  "price": 90,
+  "quantity": 175,
+  "expiryDate": {
+   "$date": "2028-05-17T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zoryl 2",
+  "code": "ZRY2",
+  "price": 123,
+  "quantity": 119,
+  "expiryDate": {
+   "$date": "2026-06-04T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zoryl 3",
+  "code": "ZRY3",
+  "price": 164,
+  "quantity": 84,
+  "expiryDate": {
+   "$date": "2027-07-15T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zyloric 100",
+  "code": "ZYL100",
+  "price": 24,
+  "quantity": 195,
+  "expiryDate": {
+   "$date": "2027-12-09T00:00:00.000Z"
+  }
+ },
+ {
+  "name": "Zyloric 300",
+  "code": "ZYL300",
+  "price": 35,
+  "quantity": 181,
+  "expiryDate": {
+   "$date": "2029-01-16T00:00:00.000Z"
+  }
+ }
+]
