@@ -12,6 +12,7 @@ import {
   ChevronsLeft,
   ChevronsRight,
   Loader2,
+  Trash2,
 } from "lucide-react";
 import { api } from "../utils/api";
 import { invalidateMedicineCache } from "../utils/medicineCache";
@@ -31,6 +32,7 @@ function Inventory() {
   const [search, setSearch] = useState("");
   const [loading, setLoading] = useState(true);
   const [submitting, setSubmitting] = useState(false);
+  const [deletingId, setDeletingId] = useState(null);
   const [showAddForm, setShowAddForm] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -165,6 +167,25 @@ function Inventory() {
       toast.error("Failed to add medicine");
     } finally {
       setSubmitting(false);
+    }
+  };
+
+  const handleDeleteMedicine = async (med) => {
+    if (!window.confirm(`Are you sure you want to delete "${med.name}"?`)) {
+      return;
+    }
+
+    try {
+      setDeletingId(med._id);
+      await api.delete(`/medicine/${med._id}`);
+      toast.success(`${med.name} deleted`);
+      invalidateMedicineCache();
+      fetchMedicines();
+    } catch (error) {
+      console.error("Failed to delete medicine:", error);
+      toast.error(error.message || "Failed to delete medicine");
+    } finally {
+      setDeletingId(null);
     }
   };
 
@@ -446,7 +467,23 @@ function Inventory() {
                         ${Number(med.price).toFixed(2)}
                       </td>
                       <td className="px-4 py-2.5 text-[var(--notion-text-muted)] font-mono">
-                        {med.expiryDate ? String(med.expiryDate).substring(0, 10) : "—"}
+                        <div className="flex items-center justify-between gap-1">
+                          <span>{med.expiryDate ? String(med.expiryDate).substring(0, 10) : "—"}</span>
+                          <button
+                            type="button"
+                            onClick={() => handleDeleteMedicine(med)}
+                            disabled={deletingId === med._id}
+                            className="opacity-0 group-hover:opacity-100 p-1 rounded hover:bg-[var(--tag-red-bg)] hover:text-[#EB5757] text-[var(--notion-text-light)] transition-opacity duration-150 cursor-pointer shrink-0"
+                            title="Delete medicine record"
+                            aria-label={`Delete ${med.name}`}
+                          >
+                            {deletingId === med._id ? (
+                              <Loader2 size={13} className="animate-spin text-[#EB5757]" />
+                            ) : (
+                              <Trash2 size={13} />
+                            )}
+                          </button>
+                        </div>
                       </td>
                     </tr>
                   );

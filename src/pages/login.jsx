@@ -21,8 +21,8 @@ const Login = () => {
   }, [navigate]);
 
   const fillDemoCredentials = () => {
-    setEmail("admin@gmail.com");
-    setPassword("123456");
+    setEmail("demo@pharmly.com");
+    setPassword("demo123");
     toast("Demo credentials filled", { icon: "✨" });
   };
 
@@ -46,7 +46,15 @@ const Login = () => {
 
       if (response && response.success) {
         localStorage.setItem("adminToken", response.token);
-        toast.success("Welcome back, Admin!");
+        localStorage.setItem(
+          "pharmlyUser",
+          JSON.stringify({
+            email: response.email || cleanEmail,
+            role: response.role || (response.isDemo ? "demo" : "admin"),
+            isDemo: !!response.isDemo,
+          })
+        );
+        toast.success(response.isDemo ? "Welcome to Pharmly Demo!" : "Welcome back, Admin!");
         navigate("/dashboard", { replace: true });
       } else {
         toast.error(response?.message || "Invalid email or password");
@@ -54,7 +62,7 @@ const Login = () => {
     } catch (error) {
       console.error("Login failed:", error);
       if (error.status === 401) {
-        toast.error("Invalid credentials. Try: admin@gmail.com / 123456");
+        toast.error("Invalid credentials. Use demo: demo@pharmly.com / demo123");
       } else if (
         error.name === "TypeError" ||
         error.message?.includes("Failed to fetch") ||
@@ -120,7 +128,7 @@ const Login = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-3 py-2 bg-[var(--notion-bg)] border border-[var(--notion-border)] rounded text-sm text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:outline-none focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] transition-colors min-h-[42px]"
-              placeholder="admin@gmail.com"
+              placeholder="demo@pharmly.com"
             />
           </div>
 
@@ -181,14 +189,17 @@ const Login = () => {
             </button>
           </div>
 
-          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px] bg-[var(--notion-bg)] p-2.5 rounded border border-[var(--notion-border-subtle)]">
+          <div className="space-y-1 text-[var(--notion-text-muted)] font-mono text-[11px] bg-[var(--notion-bg)] p-2.5 rounded border border-[var(--notion-border-subtle)]">
             <p>
-              Email: <span className="text-[var(--notion-text)] font-semibold">admin@gmail.com</span>
+              Email: <span className="text-[var(--notion-text)] font-semibold">demo@pharmly.com</span>
             </p>
             <p>
-              Password: <span className="text-[var(--notion-text)] font-semibold">123456</span>
+              Password: <span className="text-[var(--notion-text)] font-semibold">demo123</span>
             </p>
           </div>
+          <p className="text-[10px] text-[var(--notion-text-muted)] pt-0.5">
+            Admin account: <span className="font-mono">admin@gmail.com</span> / <span className="font-mono">123456</span>
+          </p>
         </div>
       </div>
     </div>

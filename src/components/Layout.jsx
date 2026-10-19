@@ -13,8 +13,12 @@ import {
   ChevronLeft,
   ChevronRight,
   ExternalLink,
+  RotateCcw,
 } from "lucide-react";
 import { useTheme } from "../utils/themeContext";
+import { api } from "../utils/api";
+import { invalidateMedicineCache } from "../utils/medicineCache";
+import toast from "react-hot-toast";
 
 const Layout = () => {
   const navigate = useNavigate();
@@ -26,6 +30,38 @@ const Layout = () => {
 
   // Mobile drawer: ALWAYS starts closed on mobile (< 768px)
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
+
+  // Resetting state for manual reset button
+  const [resetting, setResetting] = useState(false);
+
+  // Identify demo user from localStorage
+  const [isDemoUser, setIsDemoUser] = useState(() => {
+    try {
+      const token = localStorage.getItem("adminToken");
+      if (token === "demo-token") return true;
+      const userStr = localStorage.getItem("pharmlyUser");
+      if (userStr) {
+        const user = JSON.parse(userStr);
+        return !!user.isDemo || user.role === "demo";
+      }
+      return false;
+    } catch (_) {
+      return false;
+    }
+  });
+
+  const [userEmail, setUserEmail] = useState(() => {
+    try {
+      const userStr = localStorage.getItem("pharmlyUser");
+      if (userStr) {
+        const user = JSON.parse(userStr);
+        return user.email || (isDemoUser ? "demo@pharmly.com" : "admin@gmail.com");
+      }
+      return isDemoUser ? "demo@pharmly.com" : "admin@gmail.com";
+    } catch (_) {
+      return "admin@gmail.com";
+    }
+  });
 
   // Close mobile drawer on route change
   useEffect(() => {
@@ -57,7 +93,26 @@ const Layout = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
+    localStorage.removeItem("pharmlyUser");
     navigate("/", { replace: true });
+  };
+
+  const handleManualReset = async () => {
+    try {
+      setResetting(true);
+      const res = await api.post("/api/demo/reset");
+      toast.success(res?.message || "Demo data reset successfully!");
+      invalidateMedicineCache();
+      // Brief delay so toast is visible, then refresh page to re-fetch all active views
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
+    } catch (err) {
+      console.error("Reset error:", err);
+      toast.error(err.message || "Failed to reset demo data");
+    } finally {
+      setResetting(false);
+    }
   };
 
   const navItems = [
@@ -189,7 +244,7 @@ const Layout = () => {
                 <span>{isDark ? "Light mode" : "Dark mode"}</span>
               </span>
               <span className="text-[10px] font-mono opacity-60">
-                {isDark ? "Theme" : "Theme"}
+                Theme
               </span>
             </button>
 
@@ -197,14 +252,19 @@ const Layout = () => {
             <div className="flex items-center justify-between pt-1 border-t border-[var(--notion-border-subtle)]">
               <div className="flex items-center gap-2 min-w-0 pr-2">
                 <div className="w-7 h-7 rounded bg-[var(--notion-border)] flex items-center justify-center text-xs font-semibold select-none shrink-0">
-                  A
+                  {isDemoUser ? "D" : "A"}
                 </div>
                 <div className="min-w-0">
-                  <p className="text-xs font-medium text-[var(--notion-text)] truncate">
-                    Admin User
+                  <p className="text-xs font-medium text-[var(--notion-text)] truncate flex items-center gap-1.5">
+                    <span>{isDemoUser ? "Demo User" : "Admin User"}</span>
+                    {isDemoUser && (
+                      <span className="text-[9px] px-1 py-0.2 rounded bg-[var(--tag-yellow-bg)] text-[var(--tag-yellow-text)] font-semibold uppercase">
+                        Demo
+                      </span>
+                    )}
                   </p>
                   <p className="text-[11px] text-[var(--notion-text-muted)] truncate">
-                    admin@gmail.com
+                    {userEmail}
                   </p>
                 </div>
               </div>
@@ -324,14 +384,19 @@ const Layout = () => {
           <div className="flex items-center justify-between pt-1 border-t border-[var(--notion-border-subtle)]">
             <div className="flex items-center gap-2 min-w-0 pr-2">
               <div className="w-6 h-6 rounded bg-[var(--notion-border)] flex items-center justify-center text-xs font-semibold select-none shrink-0">
-                A
+                {isDemoUser ? "D" : "A"}
               </div>
               <div className="min-w-0">
-                <p className="text-xs font-medium text-[var(--notion-text)] truncate">
-                  Admin User
+                <p className="text-xs font-medium text-[var(--notion-text)] truncate flex items-center gap-1.5">
+                  <span>{isDemoUser ? "Demo User" : "Admin User"}</span>
+                  {isDemoUser && (
+                    <span className="text-[9px] px-1 py-0.2 rounded bg-[var(--tag-yellow-bg)] text-[var(--tag-yellow-text)] font-semibold uppercase">
+                      Demo
+                    </span>
+                  )}
                 </p>
                 <p className="text-[11px] text-[var(--notion-text-muted)] truncate">
-                  admin@gmail.com
+                  {userEmail}
                 </p>
               </div>
             </div>
@@ -403,6 +468,34 @@ const Layout = () => {
             </button>
           </div>
         </header>
+
+        {/* Demo Mode Notice Banner (Requirement 3) */}
+        {isDemoUser && (
+          <div className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] px-3 sm:px-6 py-2 flex flex-wrap items-center justify-between gap-2 text-xs text-[var(--notion-text)] shrink-0 select-none">
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+              <span className="font-semibold text-[var(--notion-text)]">
+                Demo mode:
+              </span>
+              <span className="text-[var(--notion-text-muted)]">
+                data resets automatically
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={handleManualReset}
+              disabled={resetting}
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded border border-[var(--notion-border)] bg-[var(--notion-bg)] hover:bg-[var(--notion-hover)] text-xs font-medium text-[var(--notion-text)] disabled:opacity-60 transition-colors cursor-pointer"
+              title="Restore database to original 944 medicines catalog"
+            >
+              <RotateCcw
+                size={13}
+                className={resetting ? "animate-spin text-[var(--notion-blue)]" : "shrink-0"}
+              />
+              <span>{resetting ? "Resetting data..." : "Reset demo data"}</span>
+            </button>
+          </div>
+        )}
 
         {/* Scrollable Page Body (12-16px padding on mobile) */}
         <main className="flex-1 overflow-y-auto w-full">

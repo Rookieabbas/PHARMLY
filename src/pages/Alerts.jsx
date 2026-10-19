@@ -55,7 +55,7 @@ function Alerts() {
       await fetchExpired(); // Refresh the list
     } catch (error) {
       console.error("Error deleting medicine:", error);
-      toast.error("Failed to delete medicine.");
+      toast.error(error.message || "Failed to delete medicine.");
     } finally {
       setDeletingId(null);
     }

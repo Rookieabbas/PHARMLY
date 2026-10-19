@@ -13,6 +13,30 @@ const buildUrl = (endpoint) => {
   return `${API_URL}${cleanEndpoint}`;
 };
 
+const getAuthHeaders = () => {
+  const headers = {};
+  const token = localStorage.getItem("adminToken");
+  if (token) {
+    headers["Authorization"] = `Bearer ${token}`;
+  }
+  try {
+    const userStr = localStorage.getItem("pharmlyUser");
+    if (userStr) {
+      const user = JSON.parse(userStr);
+      if (user.isDemo || user.role === "demo" || token === "demo-token") {
+        headers["X-Demo-User"] = "true";
+      }
+    } else if (token === "demo-token") {
+      headers["X-Demo-User"] = "true";
+    }
+  } catch (_) {
+    if (token === "demo-token") {
+      headers["X-Demo-User"] = "true";
+    }
+  }
+  return headers;
+};
+
 const handleResponse = async (response, endpoint) => {
   if (!response.ok) {
     let errorData = null;
@@ -36,7 +60,11 @@ const handleResponse = async (response, endpoint) => {
 export const api = {
   get: async (endpoint) => {
     try {
-      const response = await fetch(buildUrl(endpoint));
+      const response = await fetch(buildUrl(endpoint), {
+        headers: {
+          ...getAuthHeaders(),
+        },
+      });
       return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`GET ${endpoint} failed:`, error);
@@ -50,6 +78,7 @@ export const api = {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          ...getAuthHeaders(),
         },
         body: JSON.stringify(data),
       });
@@ -66,6 +95,7 @@ export const api = {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
+          ...getAuthHeaders(),
         },
         body: JSON.stringify(data),
       });
@@ -80,6 +110,9 @@ export const api = {
     try {
       const response = await fetch(buildUrl(endpoint), {
         method: "DELETE",
+        headers: {
+          ...getAuthHeaders(),
+        },
       });
       return await handleResponse(response, endpoint);
     } catch (error) {
