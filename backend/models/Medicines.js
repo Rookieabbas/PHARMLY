@@ -8,4 +8,4 @@ const medicineSchema = new mongoose.Schema({
   expiryDate: Date
 });
 
-export default mongoose.model("Medicine", medicineSchema);
+export default mongoose.models.Medicine || mongoose.model("Medicine", medicineSchema);

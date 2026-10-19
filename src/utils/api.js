@@ -1,13 +1,35 @@
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL =
+  import.meta.env.VITE_API_URL !== undefined && import.meta.env.VITE_API_URL !== ""
+    ? import.meta.env.VITE_API_URL
+    : import.meta.env.DEV
+    ? "http://localhost:5000"
+    : "";
+
+const handleResponse = async (response, endpoint) => {
+  if (!response.ok) {
+    let errorData = null;
+    try {
+      errorData = await response.json();
+    } catch (_) {}
+
+    const errorMsg =
+      errorData?.message ||
+      errorData?.error ||
+      `Error: ${response.status} ${response.statusText}`;
+
+    const error = new Error(errorMsg);
+    error.status = response.status;
+    error.data = errorData;
+    throw error;
+  }
+  return await response.json();
+};
 
 export const api = {
   get: async (endpoint) => {
     try {
       const response = await fetch(`${API_URL}${endpoint}`);
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
-      }
-      return await response.json();
+      return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`GET ${endpoint} failed:`, error);
       throw error;
@@ -23,10 +45,7 @@ export const api = {
         },
         body: JSON.stringify(data),
       });
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
-      }
-      return await response.json();
+      return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`POST ${endpoint} failed:`, error);
       throw error;
@@ -42,10 +61,7 @@ export const api = {
         },
         body: JSON.stringify(data),
       });
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
-      }
-      return await response.json();
+      return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`PUT ${endpoint} failed:`, error);
       throw error;
@@ -57,10 +73,7 @@ export const api = {
       const response = await fetch(`${API_URL}${endpoint}`, {
         method: "DELETE",
       });
-      if (!response.ok) {
-        throw new Error(`Error: ${response.status} ${response.statusText}`);
-      }
-      return await response.json();
+      return await handleResponse(response, endpoint);
     } catch (error) {
       console.error(`DELETE ${endpoint} failed:`, error);
       throw error;

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../utils/api";
 import toast from "react-hot-toast";
-import { Loader2, Sun, Moon } from "lucide-react";
+import { Loader2, Sun, Moon, Sparkles } from "lucide-react";
 import { useTheme } from "../utils/themeContext";
 
 const Login = () => {
@@ -20,28 +20,50 @@ const Login = () => {
     }
   }, [navigate]);
 
+  const fillDemoCredentials = () => {
+    setEmail("admin@gmail.com");
+    setPassword("123456");
+    toast("Demo credentials filled", { icon: "✨" });
+  };
+
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    if (!email || !password) {
+    const cleanEmail = email.trim().toLowerCase();
+    const cleanPassword = password.trim();
+
+    if (!cleanEmail || !cleanPassword) {
       toast.error("Please enter both email and password");
       return;
     }
 
     setLoading(true);
     try {
-      const response = await api.post("/api/auth/login", { email, password });
+      const response = await api.post("/api/auth/login", {
+        email: cleanEmail,
+        password: cleanPassword,
+      });
 
-      if (response.success) {
+      if (response && response.success) {
         localStorage.setItem("adminToken", response.token);
         toast.success("Welcome back, Admin!");
         navigate("/dashboard", { replace: true });
       } else {
-        toast.error(response.message || "Invalid credentials");
+        toast.error(response?.message || "Invalid email or password");
       }
     } catch (error) {
       console.error("Login failed:", error);
-      toast.error("Login failed. Please check your credentials.");
+      if (error.status === 401) {
+        toast.error("Invalid credentials. Try: admin@gmail.com / 123456");
+      } else if (
+        error.name === "TypeError" ||
+        error.message?.includes("Failed to fetch") ||
+        error.message?.includes("NetworkError")
+      ) {
+        toast.error("Cannot connect to server. Please check backend connection.");
+      } else {
+        toast.error(error.message || "Login failed. Please check credentials.");
+      }
     } finally {
       setLoading(false);
     }
@@ -127,7 +149,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full py-1.5 px-3 rounded text-sm font-medium text-white bg-[var(--notion-blue)] hover:bg-[var(--notion-blue-hover)] focus:outline-none disabled:opacity-60 transition-colors flex items-center justify-center gap-2"
+              className="w-full py-1.5 px-3 rounded text-sm font-medium text-white bg-[var(--notion-blue)] hover:bg-[var(--notion-blue-hover)] focus:outline-none disabled:opacity-60 transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               {loading ? (
                 <>
@@ -141,15 +163,30 @@ const Login = () => {
           </div>
         </form>
 
-        {/* Demo Credentials Callout */}
-        <div className="mt-8 p-3 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-xs text-[var(--notion-text)]">
-          <p className="font-semibold text-[var(--notion-text)] mb-1 flex items-center gap-1.5">
-            <span>🔑</span>
-            <span>Demo Credentials</span>
-          </p>
-          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px]">
-            <p>Email: <span className="text-[var(--notion-text)]">admin@gmail.com</span></p>
-            <p>Password: <span className="text-[var(--notion-text)]">123456</span></p>
+        {/* Demo Credentials Callout with One-Click Fill */}
+        <div className="mt-8 p-3.5 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-xs text-[var(--notion-text)] space-y-2">
+          <div className="flex items-center justify-between">
+            <p className="font-semibold text-[var(--notion-text)] flex items-center gap-1.5">
+              <span>🔑</span>
+              <span>Demo Credentials</span>
+            </p>
+            <button
+              type="button"
+              onClick={fillDemoCredentials}
+              className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--notion-blue)] hover:underline cursor-pointer"
+            >
+              <Sparkles size={12} />
+              Auto-fill
+            </button>
+          </div>
+
+          <div className="space-y-0.5 text-[var(--notion-text-muted)] font-mono text-[11px] bg-[var(--notion-bg)] p-2 rounded border border-[var(--notion-border-subtle)]">
+            <p>
+              Email: <span className="text-[var(--notion-text)] font-semibold">admin@gmail.com</span>
+            </p>
+            <p>
+              Password: <span className="text-[var(--notion-text)] font-semibold">123456</span>
+            </p>
           </div>
         </div>
       </div>

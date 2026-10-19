@@ -161,8 +161,9 @@ app.put("/sell/:id", async (req, res) => {
   }
 });
 
-app.post("/api/auth/login", (req, res) => {
-  const { email, password } = req.body;
+app.post(["/api/auth/login", "/auth/login"], (req, res) => {
+  const email = (req.body.email || "").trim().toLowerCase();
+  const password = (req.body.password || "").trim();
   if (email === "admin@gmail.com" && password === "123456") {
     res.json({ success: true, token: "admin-token" });
   } else {
