@@ -2,6 +2,11 @@
 
 A modern, high-performance SaaS platform for pharmacy management. Pharmly streamlines inventory, sales, and user management with a secure, highly-aesthetic, and responsive user interface.
 
+## LIVE ON VERCEL 
+
+https://pharmly-azure.vercel.app/
+
+
 ## 🚀 Features
 
 - **Secure Authentication:** Role-based access control with secure JWT authentication.
