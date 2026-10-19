@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 import {
   Mic,
+  MicOff,
   Search,
   Plus,
   Trash2,
@@ -9,12 +10,16 @@ import {
   Loader2,
   Package,
   Sparkles,
-  AlertCircle
+  AlertCircle,
+  HelpCircle
 } from "lucide-react";
 import { api } from "../utils/api";
 import { useVoiceRecognition } from "../utils/useVoiceRecognition";
 import { parseVoiceInput } from "../utils/voiceParser";
 import { getMedicines } from "../utils/medicineCache";
+import { NotionButton } from "../components/ui/NotionButton";
+import { NotionTag } from "../components/ui/NotionTag";
+import { NotionCallout } from "../components/ui/NotionCallout";
 import toast from "react-hot-toast";
 
 function Billing() {
@@ -49,14 +54,14 @@ function Billing() {
       toast.custom(
         (t) => (
           <div
-            className={`bg-amber-500/10 backdrop-blur-xl border border-amber-500/20 px-4 py-3 rounded-xl shadow-[0_0_15px_rgba(251,191,36,0.2)] flex items-center justify-between ${
-              t.visible ? "animate-enter" : "animate-leave"
+            className={`p-3 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] shadow-sm flex items-center justify-between text-xs ${
+              t.visible ? "opacity-100" : "opacity-0"
             }`}
           >
-            <div className="flex items-center">
-              <span className="text-amber-400 font-bold mr-2">Low Stock:</span>
-              <span className="text-zinc-200">
-                Only {med.quantity} {med.name} left
+            <div className="flex items-center gap-2">
+              <NotionTag variant="yellow">Low Stock</NotionTag>
+              <span className="text-[var(--notion-text)]">
+                Only {med.quantity} {med.name} remaining
               </span>
             </div>
           </div>
@@ -179,7 +184,7 @@ function Billing() {
       // 2. Matched Medicine
       if (parsed.medicine) {
         const med = parsed.medicine;
-        // Search box displays ONLY the matched clean medicine name, never the raw transcript
+        // Search box displays ONLY the matched clean medicine name, never raw transcript
         setCode(med.name);
         setFeedbackMessage(`Matched: ${med.name}`);
 
@@ -187,27 +192,19 @@ function Billing() {
           toast.custom(
             (t) => (
               <div
-                className={`bg-zinc-900 border border-teal-500/30 p-4 rounded-xl shadow-xl flex items-center gap-3 ${
-                  t.visible ? "animate-enter" : "animate-leave"
+                className={`p-3 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] shadow-md flex items-center gap-3 text-xs ${
+                  t.visible ? "opacity-100" : "opacity-0"
                 }`}
               >
-                <div className="p-2 bg-teal-500/20 text-teal-400 rounded-lg">
-                  <Package size={22} />
-                </div>
+                <Package size={18} className="text-[var(--notion-blue)] shrink-0" />
                 <div>
-                  <p className="font-bold text-zinc-100">{med.name}</p>
-                  <p className="text-xs text-zinc-400 mt-0.5">
+                  <p className="font-semibold text-[var(--notion-text)]">{med.name}</p>
+                  <p className="text-[var(--notion-text-muted)] mt-0.5">
                     Stock:{" "}
-                    <span
-                      className={
-                        med.quantity < 10
-                          ? "text-amber-400 font-bold"
-                          : "text-emerald-400 font-bold"
-                      }
-                    >
+                    <span className={med.quantity < 10 ? "text-amber-600 font-semibold" : "text-emerald-600 font-semibold"}>
                       {med.quantity} available
                     </span>{" "}
-                    | Code: <span className="font-mono">{med.code}</span>
+                    {med.code ? `| Code: ${med.code}` : ""}
                   </p>
                 </div>
               </div>
@@ -252,7 +249,7 @@ function Billing() {
       if (!parsed.medicine) {
         setFeedbackMessage("");
         if (parsed.suggestions && parsed.suggestions.length > 0) {
-          toast("Uncertain match. Tap a suggestion below.", { icon: "🔍" });
+          toast("Uncertain match. Choose a suggestion below.", { icon: "🔍" });
         } else {
           toast.error("No medicine found matching speech.");
         }
@@ -297,251 +294,249 @@ function Billing() {
   };
 
   return (
-    <div className="space-y-6 max-w-5xl mx-auto animate-in fade-in duration-500">
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div className="space-y-6 max-w-5xl">
+      {/* Page Header (Notion standard) */}
+      <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pb-2 border-b border-[var(--notion-border)]">
         <div>
-          <h1 className="text-2xl font-bold text-zinc-100 tracking-tight">
+          <div className="text-3xl mb-2 select-none">🧾</div>
+          <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--notion-text)]">
             Point of Sale
           </h1>
-          <p className="text-zinc-400 mt-1">
-            Process sales with real-time AI voice recognition
+          <p className="text-sm text-[var(--notion-text-muted)] mt-1">
+            Scan, type, or speak medicine names to assemble the customer bill.
           </p>
         </div>
 
-        {/* Voice Recognition Status */}
-        <div
-          className={`flex items-center gap-3 px-4 py-2.5 rounded-full border shadow-sm transition-all ${
-            isListening
-              ? "bg-red-500/10 border-red-500/20 text-red-400 shadow-[0_0_15px_rgba(248,113,113,0.2)]"
-              : "bg-zinc-900/80 border-zinc-800 text-zinc-400"
-          }`}
-        >
-          <div
-            className={`w-3 h-3 rounded-full ${
-              isListening
-                ? "bg-red-500 animate-pulse shadow-[0_0_10px_rgba(248,113,113,0.8)]"
-                : "bg-zinc-600"
-            }`}
-          ></div>
-          <span className="font-medium text-sm">
-            {isListening
-              ? interimText
-                ? `Speaking: "${interimText}"`
-                : "Listening (en-IN)..."
-              : "Voice input inactive"}
-          </span>
+        {/* Live Voice Status Pill */}
+        <div className="flex items-center gap-2 pt-2 sm:pt-6">
+          {isListening ? (
+            <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded bg-[var(--tag-red-bg)] text-[var(--tag-red-text)] text-xs font-medium border border-transparent">
+              <span className="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span>
+              <span>{interimText ? `"${interimText}"` : "Listening (en-IN)..."}</span>
+            </div>
+          ) : (
+            <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-[var(--notion-surface)] text-[var(--notion-text-muted)] text-xs border border-[var(--notion-border)]">
+              <span className="w-1.5 h-1.5 rounded-full bg-[var(--notion-text-light)]"></span>
+              <span>Voice offline</span>
+            </div>
+          )}
         </div>
       </div>
 
       {/* Voice Error Notice if any */}
       {voiceError && (
-        <div className="flex items-center gap-2.5 p-3.5 bg-red-500/10 border border-red-500/30 rounded-xl text-red-400 text-sm">
-          <AlertCircle size={18} className="shrink-0" />
-          <span>{voiceError}</span>
-        </div>
+        <NotionCallout icon="⚠️">
+          <span className="text-xs text-[var(--notion-text)]">{voiceError}</span>
+        </NotionCallout>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left Column: Input & Controls */}
-        <div className="lg:col-span-1 space-y-6">
-          <div className="bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-zinc-800 p-6 shadow-lg">
-            <h2 className="text-lg font-bold text-zinc-200 mb-5">Add Item</h2>
-
-            <div className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-zinc-300 mb-2">
-                  Search or Matched Medicine
-                </label>
-                <div className="relative">
-                  <input
-                    ref={inputRef}
-                    type="text"
-                    placeholder="Enter medicine or speak..."
-                    value={code}
-                    onChange={(e) => setCode(e.target.value)}
-                    onKeyDown={(e) => {
-                      if (e.key === "Enter") {
-                        e.preventDefault();
-                        handleManualAdd();
-                      }
-                    }}
-                    className="w-full pl-10 pr-4 py-3 bg-zinc-950/50 border border-zinc-800 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 outline-none transition-all text-zinc-200 placeholder-zinc-500 shadow-inner"
-                  />
-                  <Search
-                    size={18}
-                    className="absolute left-3.5 top-3.5 text-zinc-500"
-                  />
-                </div>
-              </div>
-
-              {/* Feedback text */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        {/* Left Column: Search, Mic & Controls (5 cols) */}
+        <div className="lg:col-span-5 space-y-4">
+          <div className="p-4 rounded bg-[var(--notion-bg)] border border-[var(--notion-border)] space-y-4">
+            <div className="flex items-center justify-between pb-2 border-b border-[var(--notion-border)]">
+              <h2 className="text-xs font-semibold uppercase tracking-wider text-[var(--notion-text-muted)]">
+                Add Medicine
+              </h2>
               {feedbackMessage && (
-                <p className="text-xs font-medium text-emerald-400">
+                <span className="text-xs text-[var(--notion-blue)] font-medium">
                   {feedbackMessage}
-                </p>
+                </span>
               )}
+            </div>
 
-              {/* Suggestions to Tap when confidence is low */}
-              {suggestions.length > 0 && (
-                <div className="p-3 bg-zinc-950/60 border border-zinc-800 rounded-xl space-y-2 animate-in fade-in duration-200">
-                  <p className="text-xs font-semibold text-zinc-400 flex items-center gap-1.5">
-                    <Sparkles size={14} className="text-teal-400" />
-                    Did you mean:
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {suggestions.map((sug) => (
-                      <button
-                        key={sug._id}
-                        type="button"
-                        onClick={() => {
-                          setCode(sug.name);
-                          addMedicineDirect(sug, 1);
-                          setSuggestions([]);
-                          setFeedbackMessage(`Selected: ${sug.name}`);
-                        }}
-                        className="text-xs px-3 py-1.5 bg-zinc-900 hover:bg-emerald-500/10 border border-zinc-700 hover:border-emerald-500/30 text-zinc-200 hover:text-emerald-400 rounded-lg transition-all text-left"
-                      >
-                        {sug.name} (${sug.price})
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+            {/* Input with embedded Mic Icon Button */}
+            <div>
+              <label className="block text-xs font-medium text-[var(--notion-text-muted)] mb-1">
+                Medicine Name or Spoken Phrase
+              </label>
+              <div className="relative flex items-center">
+                <Search
+                  size={14}
+                  className="absolute left-3 text-[var(--notion-text-light)] pointer-events-none"
+                />
+                <input
+                  ref={inputRef}
+                  type="text"
+                  placeholder='e.g. "Paracetamol 500" or tap mic...'
+                  value={code}
+                  onChange={(e) => setCode(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      e.preventDefault();
+                      handleManualAdd();
+                    }
+                  }}
+                  className="w-full pl-9 pr-10 py-2 text-sm bg-[var(--notion-surface)] border border-[var(--notion-border)] rounded text-[var(--notion-text)] placeholder-[var(--notion-text-light)] focus:border-[var(--notion-blue)] focus:ring-1 focus:ring-[var(--notion-blue)] outline-none transition-colors"
+                />
 
-              <div className="grid grid-cols-2 gap-3 pt-1">
-                <button
-                  type="button"
-                  onClick={handleManualAdd}
-                  className="bg-emerald-600 hover:bg-emerald-500 text-zinc-950 py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:-translate-y-0.5 border border-emerald-500/50"
-                >
-                  <Plus size={18} />
-                  Add
-                </button>
+                {/* Embedded Notion mic button */}
                 <button
                   type="button"
                   onClick={toggleListening}
-                  className={`py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 border ${
+                  title={isListening ? "Stop listening" : "Start voice recognition"}
+                  className={`absolute right-2 p-1.5 rounded transition-colors ${
                     isListening
-                      ? "bg-red-600 hover:bg-red-500 text-white shadow-[0_0_15px_rgba(248,113,113,0.3)] border-red-500/50"
-                      : "bg-teal-600 hover:bg-teal-500 text-zinc-950 shadow-[0_0_15px_rgba(20,184,166,0.2)] border-teal-500/50"
+                      ? "text-red-500 bg-[var(--tag-red-bg)] hover:opacity-80"
+                      : "text-[var(--notion-text-muted)] hover:text-[var(--notion-text)] hover:bg-[var(--notion-hover-darker)]"
                   }`}
                 >
-                  <Mic size={18} />
-                  {isListening ? "Stop" : "Speak"}
+                  {isListening ? <MicOff size={16} /> : <Mic size={16} />}
                 </button>
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-zinc-800">
-              <h3 className="text-sm font-semibold text-zinc-300 mb-3">
-                Smart Voice Guide (en-IN)
-              </h3>
-              <ul className="text-xs text-zinc-400 space-y-2.5">
-                <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-1 shrink-0"></div>
-                  <span>
-                    <strong>Add item:</strong> "amx 250" or "please add pcm 500 to the cart"
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-teal-400 mt-1 shrink-0"></div>
-                  <span>
-                    <strong>Check stock:</strong> "check stock of paracetamol five hundred"
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1 shrink-0"></div>
-                  <span>
-                    <strong>Remove:</strong> "remove pcm 650"
-                  </span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <div className="w-1.5 h-1.5 rounded-full bg-red-400 mt-1 shrink-0"></div>
-                  <span>
-                    <strong>Control:</strong> "clear cart" or "generate bill"
-                  </span>
-                </li>
-              </ul>
+            {/* Suggestions list when confidence is low */}
+            {suggestions.length > 0 && (
+              <div className="p-3 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] space-y-2">
+                <p className="text-xs font-medium text-[var(--notion-text-muted)] flex items-center gap-1.5">
+                  <Sparkles size={13} className="text-[var(--notion-blue)]" />
+                  Suggestions:
+                </p>
+                <div className="flex flex-wrap gap-1.5">
+                  {suggestions.map((sug) => (
+                    <button
+                      key={sug._id}
+                      type="button"
+                      onClick={() => {
+                        setCode(sug.name);
+                        addMedicineDirect(sug, 1);
+                        setSuggestions([]);
+                        setFeedbackMessage(`Selected: ${sug.name}`);
+                      }}
+                      className="px-2 py-1 text-xs rounded bg-[var(--notion-bg)] hover:bg-[var(--notion-surface-hover)] border border-[var(--notion-border)] text-[var(--notion-text)] transition-colors text-left"
+                    >
+                      {sug.name} <span className="text-[var(--notion-text-muted)]">(${sug.price})</span>
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Flat Action Buttons */}
+            <div className="flex items-center gap-2 pt-1">
+              <NotionButton
+                type="button"
+                variant="primary"
+                size="md"
+                className="flex-1"
+                icon={Plus}
+                onClick={handleManualAdd}
+              >
+                Add Item
+              </NotionButton>
+
+              <NotionButton
+                type="button"
+                variant={isListening ? "danger" : "secondary"}
+                size="md"
+                icon={isListening ? MicOff : Mic}
+                onClick={toggleListening}
+              >
+                {isListening ? "Stop Mic" : "Speak"}
+              </NotionButton>
             </div>
           </div>
+
+          {/* Smart Voice Guide (Notion style minimal callout) */}
+          <NotionCallout icon="🎙️">
+            <div className="space-y-1.5 text-xs text-[var(--notion-text)]">
+              <p className="font-semibold text-[var(--notion-text)]">Voice Commands (en-IN)</p>
+              <ul className="space-y-1 text-[var(--notion-text-muted)]">
+                <li>• <strong className="text-[var(--notion-text)]">"amx 250"</strong> or <strong className="text-[var(--notion-text)]">"add pcm 500"</strong>: Add item</li>
+                <li>• <strong className="text-[var(--notion-text)]">"check stock of paracetamol 500"</strong>: Check stock</li>
+                <li>• <strong className="text-[var(--notion-text)]">"remove pcm 500"</strong>: Remove from cart</li>
+                <li>• <strong className="text-[var(--notion-text)]">"clear cart"</strong> / <strong className="text-[var(--notion-text)]">"generate bill"</strong>: Actions</li>
+              </ul>
+            </div>
+          </NotionCallout>
         </div>
 
-        {/* Right Column: Cart & Checkout */}
-        <div className="lg:col-span-2">
-          <div className="bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-zinc-800 shadow-lg overflow-hidden flex flex-col h-[520px]">
-            <div className="p-5 border-b border-zinc-800 bg-zinc-900/50 flex items-center justify-between">
-              <h2 className="text-lg font-bold text-zinc-200 flex items-center gap-2">
-                <ShoppingCart size={20} className="text-emerald-400" />
-                Current Cart
-              </h2>
-              <button
-                type="button"
-                onClick={clearCart}
-                disabled={cart.length === 0}
-                className="text-zinc-400 hover:text-red-400 text-sm font-medium transition-colors disabled:opacity-50 flex items-center gap-1 bg-zinc-950/50 hover:bg-red-500/10 px-3 py-1.5 rounded-lg border border-zinc-800 hover:border-red-500/30"
-              >
-                <Trash2 size={16} />
-                Clear All
-              </button>
+        {/* Right Column: Notion Cart Database Table (7 cols) */}
+        <div className="lg:col-span-7">
+          <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden flex flex-col min-h-[460px]">
+            {/* Table Toolbar */}
+            <div className="px-4 py-3 border-b border-[var(--notion-border)] bg-[var(--notion-surface)] flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <ShoppingCart size={15} className="text-[var(--notion-text-muted)]" />
+                <span className="text-xs font-semibold text-[var(--notion-text)] uppercase tracking-wider">
+                  Cart Items
+                </span>
+                <NotionTag variant="gray">{cart.length}</NotionTag>
+              </div>
+
+              {cart.length > 0 && (
+                <NotionButton
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  onClick={clearCart}
+                  icon={Trash2}
+                >
+                  Clear all
+                </NotionButton>
+              )}
             </div>
 
-            <div className="flex-1 overflow-auto custom-scrollbar">
+            {/* Cart Items Table */}
+            <div className="flex-1 overflow-auto">
               {cart.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-full text-zinc-500 bg-zinc-950/20">
-                  <ShoppingCart size={48} className="mb-4 opacity-20" />
-                  <p className="font-medium text-zinc-400">Cart is empty</p>
-                  <p className="text-sm mt-1">
-                    Speak or search medicines to add
+                <div className="flex flex-col items-center justify-center h-64 text-center text-[var(--notion-text-muted)]">
+                  <ShoppingCart size={24} className="text-[var(--notion-text-light)] mb-2 opacity-50" />
+                  <p className="text-sm font-medium text-[var(--notion-text)]">Cart is empty</p>
+                  <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
+                    Search or speak medicine names to build the bill.
                   </p>
                 </div>
               ) : (
-                <table className="w-full text-left border-collapse">
-                  <thead className="bg-zinc-950/50 sticky top-0 border-b border-zinc-800 z-10">
-                    <tr>
-                      <th className="px-5 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider">
-                        Item
+                <table className="w-full text-left border-collapse text-xs">
+                  <thead>
+                    <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
+                      <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[45%]">
+                        <span className="flex items-center gap-1 font-normal">
+                          <span className="text-[11px] opacity-70">Aa</span> Medicine
+                        </span>
                       </th>
-                      <th className="px-5 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-center">
-                        Qty
+                      <th className="px-3 py-2 border-r border-[var(--notion-border)] text-center w-[15%]">
+                        <span className="font-normal">Qty</span>
                       </th>
-                      <th className="px-5 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-right">
-                        Price
+                      <th className="px-3 py-2 border-r border-[var(--notion-border)] text-right w-[18%]">
+                        <span className="font-normal">Price</span>
                       </th>
-                      <th className="px-5 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-right">
-                        Total
+                      <th className="px-3 py-2 border-r border-[var(--notion-border)] text-right w-[18%]">
+                        <span className="font-normal">Total</span>
                       </th>
-                      <th className="px-5 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-center">
-                        Action
-                      </th>
+                      <th className="px-2 py-2 text-center w-[4%]"></th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-zinc-800 bg-zinc-900/30">
+                  <tbody className="divide-y divide-[var(--notion-border)]">
                     {cart.map((item, index) => (
                       <tr
                         key={item._id || index}
-                        className="hover:bg-zinc-800/50 transition-colors"
+                        className="hover:bg-[var(--notion-hover)] transition-colors duration-100 group"
                       >
-                        <td className="px-5 py-4 font-medium text-zinc-200">
+                        <td className="px-4 py-2.5 border-r border-[var(--notion-border)] font-medium text-[var(--notion-text)]">
                           {item.name}
                         </td>
-                        <td className="px-5 py-4 text-center">
-                          <span className="bg-zinc-950/50 border border-zinc-800 px-3 py-1 rounded-lg text-zinc-300 font-bold">
+                        <td className="px-3 py-2.5 border-r border-[var(--notion-border)] text-center font-mono">
+                          <span className="px-1.5 py-0.5 rounded bg-[var(--notion-surface)] border border-[var(--notion-border)] text-[var(--notion-text)]">
                             {item.qty}
                           </span>
                         </td>
-                        <td className="px-5 py-4 text-right text-zinc-400">
+                        <td className="px-3 py-2.5 border-r border-[var(--notion-border)] text-right font-mono text-[var(--notion-text-muted)]">
                           ${item.price.toFixed(2)}
                         </td>
-                        <td className="px-5 py-4 text-right font-bold text-zinc-200">
+                        <td className="px-3 py-2.5 border-r border-[var(--notion-border)] text-right font-mono font-medium text-[var(--notion-text)]">
                           ${(item.qty * item.price).toFixed(2)}
                         </td>
-                        <td className="px-5 py-4 text-center">
+                        <td className="px-2 py-2.5 text-center">
                           <button
                             type="button"
                             onClick={() => removeMedicine(index)}
-                            className="p-2 text-zinc-500 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-all"
+                            className="p-1 rounded text-[var(--notion-text-light)] hover:text-red-500 hover:bg-[var(--tag-red-bg)] transition-colors"
+                            title="Remove item"
                           >
-                            <Trash2 size={18} />
+                            <Trash2 size={13} />
                           </button>
                         </td>
                       </tr>
@@ -551,42 +546,32 @@ function Billing() {
               )}
             </div>
 
-            {/* Checkout Footer */}
-            <div className="p-6 border-t border-zinc-800 bg-zinc-950/50 backdrop-blur-md relative z-20">
-              <div className="flex justify-between items-end mb-6">
+            {/* Bill Summary Footer (Notion clean totals) */}
+            <div className="p-4 border-t border-[var(--notion-border)] bg-[var(--notion-surface)] space-y-4">
+              <div className="flex items-baseline justify-between">
                 <div>
-                  <p className="text-sm text-zinc-400 mb-1 font-medium">
-                    Total Items
-                  </p>
-                  <p className="text-2xl font-bold text-zinc-200">
-                    {totalItems}
-                  </p>
+                  <span className="text-xs text-[var(--notion-text-muted)]">Total Items: </span>
+                  <span className="text-xs font-semibold text-[var(--notion-text)] font-mono">{totalItems}</span>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm text-zinc-400 mb-1 font-medium">
-                    Grand Total
-                  </p>
-                  <p className="text-4xl font-extrabold bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent drop-shadow-sm">
+                  <span className="text-xs text-[var(--notion-text-muted)] mr-2">Grand Total:</span>
+                  <span className="text-2xl font-bold tracking-tight text-[var(--notion-text)] font-mono">
                     ${total.toFixed(2)}
-                  </p>
+                  </span>
                 </div>
               </div>
 
-              <button
+              <NotionButton
                 type="button"
-                onClick={generateBill}
+                variant="primary"
+                size="lg"
+                className="w-full"
                 disabled={cart.length === 0 || submitting}
-                className="w-full bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 disabled:from-zinc-800 disabled:to-zinc-800 disabled:text-zinc-500 disabled:border-zinc-700 disabled:cursor-not-allowed text-zinc-950 py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(16,185,129,0.3)] hover:-translate-y-0.5 border border-emerald-400/50 disabled:shadow-none disabled:transform-none"
+                onClick={generateBill}
+                icon={submitting ? Loader2 : Receipt}
               >
-                {submitting ? (
-                  <Loader2 size={24} className="animate-spin" />
-                ) : (
-                  <Receipt size={24} />
-                )}
-                {submitting
-                  ? "Processing Transaction..."
-                  : "Complete Sale & Generate Bill"}
-              </button>
+                {submitting ? "Processing Transaction..." : "Complete Sale & Print Bill"}
+              </NotionButton>
             </div>
           </div>
         </div>

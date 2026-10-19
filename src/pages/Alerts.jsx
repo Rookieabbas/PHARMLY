@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { AlertTriangle, AlertOctagon, Trash2, Loader2, CheckCircle2 } from "lucide-react";
 import { api } from "../utils/api";
 import { invalidateMedicineCache } from "../utils/medicineCache";
+import { NotionButton } from "../components/ui/NotionButton";
+import { NotionTag } from "../components/ui/NotionTag";
 import toast from "react-hot-toast";
 
 function Alerts() {
@@ -60,124 +62,172 @@ function Alerts() {
   };
 
   return (
-    <div className="space-y-8 animate-in fade-in duration-500">
-      <div>
-        <h1 className="text-2xl font-bold text-zinc-100 tracking-tight">System Alerts</h1>
-        <p className="text-zinc-400 mt-1">Manage expired and low stock inventory</p>
+    <div className="space-y-6 max-w-5xl">
+      {/* Page Header (Notion standard) */}
+      <div className="pb-2 border-b border-[var(--notion-border)]">
+        <div className="text-3xl mb-2 select-none">🔔</div>
+        <h1 className="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--notion-text)]">
+          System Alerts
+        </h1>
+        <p className="text-sm text-[var(--notion-text-muted)] mt-1">
+          Review batches requiring disposal or inventory items nearing depletion.
+        </p>
       </div>
 
       {loading ? (
-        <div className="flex justify-center items-center h-64">
-          <Loader2 size={40} className="animate-spin text-emerald-500 drop-shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
+        <div className="flex flex-col items-center justify-center py-20 text-[var(--notion-text-muted)] gap-2">
+          <div className="w-5 h-5 border-2 border-[var(--notion-border)] border-t-[var(--notion-blue)] rounded-full animate-spin"></div>
+          <span className="text-xs">Checking inventory alerts...</span>
         </div>
       ) : (
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-          
-          {/* Expired Medicines Section */}
-          <div className="bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-red-500/20 shadow-lg overflow-hidden flex flex-col hover:border-red-500/40 transition-colors">
-            <div className="p-6 bg-red-500/10 border-b border-red-500/20 flex items-center gap-4">
-              <div className="p-3 bg-red-500/20 rounded-xl text-red-400 shadow-[0_0_15px_rgba(248,113,113,0.2)]">
-                <AlertOctagon size={24} />
+        <div className="space-y-8">
+          {/* Section 1: Expired Medicines Database */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <AlertOctagon size={16} className="text-[#EB5757]" />
+                <h2 className="text-sm font-semibold text-[var(--notion-text)]">
+                  Expired Medicines
+                </h2>
+                <NotionTag variant={expired.length > 0 ? "red" : "gray"}>
+                  {expired.length} {expired.length === 1 ? "item" : "items"}
+                </NotionTag>
               </div>
-              <div>
-                <h2 className="text-lg font-bold text-red-100">Expired Medicines</h2>
-                <p className="text-sm text-red-400 font-medium mt-0.5">{expired.length} items require immediate removal</p>
-              </div>
+              <span className="text-xs text-[var(--notion-text-muted)]">Action required: Dispose & remove</span>
             </div>
 
-            <div className="flex-1 overflow-auto custom-scrollbar">
+            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden">
               {expired.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-56 text-zinc-500 bg-zinc-950/30">
-                  <CheckCircle2 size={48} className="mb-3 text-emerald-500/50 drop-shadow-[0_0_8px_rgba(16,185,129,0.3)]" />
-                  <p className="font-medium text-zinc-400">No expired medicines</p>
+                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)]">
+                  <CheckCircle2 size={24} className="text-emerald-500 mb-2 opacity-80" />
+                  <p className="text-sm font-medium text-[var(--notion-text)]">No expired medicines</p>
+                  <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
+                    All stocked items are within valid shelf-life dates.
+                  </p>
                 </div>
               ) : (
-                <table className="w-full text-left border-collapse">
-                  <thead className="bg-zinc-950/50 border-b border-zinc-800 sticky top-0 z-10">
-                    <tr>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider">Medicine Name</th>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider">Expiry Date</th>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-center">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-zinc-800 bg-zinc-900/10">
-                    {expired.map((med) => (
-                      <tr key={med._id} className="hover:bg-red-500/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-zinc-200">{med.name}</td>
-                        <td className="px-6 py-4 text-red-400 font-medium">
-                          {med.expiryDate?.split("T")[0]}
-                        </td>
-                        <td className="px-6 py-4 text-center">
-                          <button
-                            onClick={() => removeExpiredMedicine(med._id)}
-                            disabled={deletingId === med._id}
-                            className="inline-flex items-center gap-2 px-4 py-2 bg-red-500/10 text-red-400 hover:bg-red-500/20 border border-red-500/20 hover:border-red-500/40 rounded-xl font-medium text-sm transition-all disabled:opacity-50 disabled:cursor-not-allowed"
-                          >
-                            {deletingId === med._id ? (
-                              <Loader2 size={16} className="animate-spin" />
-                            ) : (
-                              <Trash2 size={16} />
-                            )}
-                            Remove
-                          </button>
-                        </td>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse text-xs">
+                    <thead>
+                      <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
+                        <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[45%]">
+                          <span className="flex items-center gap-1 font-normal">
+                            <span className="text-[11px] opacity-70">Aa</span> Medicine Name
+                          </span>
+                        </th>
+                        <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[25%]">
+                          <span className="font-normal">Expiry Date</span>
+                        </th>
+                        <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[15%]">
+                          <span className="font-normal">Status</span>
+                        </th>
+                        <th className="px-4 py-2 text-right w-[15%]">
+                          <span className="font-normal">Action</span>
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-[var(--notion-border)]">
+                      {expired.map((med) => (
+                        <tr
+                          key={med._id}
+                          className="hover:bg-[var(--notion-hover)] transition-colors duration-100 group"
+                        >
+                          <td className="px-4 py-2.5 border-r border-[var(--notion-border)] font-medium text-[var(--notion-text)]">
+                            {med.name}
+                          </td>
+                          <td className="px-4 py-2.5 border-r border-[var(--notion-border)] font-mono text-[var(--notion-text-muted)]">
+                            {med.expiryDate?.split("T")[0]}
+                          </td>
+                          <td className="px-4 py-2.5 border-r border-[var(--notion-border)]">
+                            <NotionTag variant="red">Expired</NotionTag>
+                          </td>
+                          <td className="px-4 py-2.5 text-right">
+                            <NotionButton
+                              size="sm"
+                              variant="danger"
+                              disabled={deletingId === med._id}
+                              icon={deletingId === med._id ? Loader2 : Trash2}
+                              onClick={() => removeExpiredMedicine(med._id)}
+                            >
+                              Remove
+                            </NotionButton>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               )}
             </div>
           </div>
 
-          {/* Low Stock Section */}
-          <div className="bg-zinc-900/80 backdrop-blur-xl rounded-2xl border border-amber-500/20 shadow-lg overflow-hidden flex flex-col hover:border-amber-500/40 transition-colors">
-            <div className="p-6 bg-amber-500/10 border-b border-amber-500/20 flex items-center gap-4">
-              <div className="p-3 bg-amber-500/20 rounded-xl text-amber-400 shadow-[0_0_15px_rgba(251,191,36,0.2)]">
-                <AlertTriangle size={24} />
+          {/* Section 2: Low Stock Warnings Database */}
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <AlertTriangle size={16} className="text-[#E29A23]" />
+                <h2 className="text-sm font-semibold text-[var(--notion-text)]">
+                  Low Stock Warnings
+                </h2>
+                <NotionTag variant={lowStock.length > 0 ? "yellow" : "gray"}>
+                  {lowStock.length} {lowStock.length === 1 ? "item" : "items"}
+                </NotionTag>
               </div>
-              <div>
-                <h2 className="text-lg font-bold text-amber-100">Low Stock Warnings</h2>
-                <p className="text-sm text-amber-400 font-medium mt-0.5">{lowStock.length} items need restocking</p>
-              </div>
+              <span className="text-xs text-[var(--notion-text-muted)]">Threshold: Under 10 units</span>
             </div>
 
-            <div className="flex-1 overflow-auto custom-scrollbar">
+            <div className="border border-[var(--notion-border)] rounded bg-[var(--notion-bg)] overflow-hidden">
               {lowStock.length === 0 ? (
-                <div className="flex flex-col items-center justify-center h-56 text-zinc-500 bg-zinc-950/30">
-                  <CheckCircle2 size={48} className="mb-3 text-emerald-500/50 drop-shadow-[0_0_8px_rgba(16,185,129,0.3)]" />
-                  <p className="font-medium text-zinc-400">Stock levels are healthy</p>
+                <div className="flex flex-col items-center justify-center py-12 text-center text-[var(--notion-text-muted)]">
+                  <CheckCircle2 size={24} className="text-emerald-500 mb-2 opacity-80" />
+                  <p className="text-sm font-medium text-[var(--notion-text)]">Stock levels are healthy</p>
+                  <p className="text-xs text-[var(--notion-text-muted)] mt-0.5">
+                    All inventory items have sufficient units on hand.
+                  </p>
                 </div>
               ) : (
-                <table className="w-full text-left border-collapse">
-                  <thead className="bg-zinc-950/50 border-b border-zinc-800 sticky top-0 z-10">
-                    <tr>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider">Medicine Name</th>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-right">Quantity Left</th>
-                      <th className="px-6 py-4 text-xs font-semibold text-zinc-400 uppercase tracking-wider text-center">Status</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-zinc-800 bg-zinc-900/10">
-                    {lowStock.map((med) => (
-                      <tr key={med._id} className="hover:bg-amber-500/5 transition-colors">
-                        <td className="px-6 py-4 font-medium text-zinc-200">{med.name}</td>
-                        <td className="px-6 py-4 text-right">
-                          <span className="inline-block min-w-[2.5rem] text-center font-bold text-amber-400 bg-amber-500/10 border border-amber-500/20 px-3 py-1 rounded-lg shadow-inner">
-                            {med.quantity}
+                <div className="overflow-x-auto">
+                  <table className="w-full text-left border-collapse text-xs">
+                    <thead>
+                      <tr className="bg-[var(--notion-surface)] border-b border-[var(--notion-border)] text-[var(--notion-text-muted)] font-medium">
+                        <th className="px-4 py-2 border-r border-[var(--notion-border)] w-[50%]">
+                          <span className="flex items-center gap-1 font-normal">
+                            <span className="text-[11px] opacity-70">Aa</span> Medicine Name
                           </span>
-                        </td>
-                        <td className="px-6 py-4 text-center">
-                          <span className="text-xs font-bold text-amber-500 uppercase tracking-wider">
-                            {med.quantity === 0 ? "Out of Stock" : "Low Stock"}
-                          </span>
-                        </td>
+                        </th>
+                        <th className="px-4 py-2 border-r border-[var(--notion-border)] text-right w-[25%]">
+                          <span className="font-normal">Quantity Remaining</span>
+                        </th>
+                        <th className="px-4 py-2 w-[25%]">
+                          <span className="font-normal">Status</span>
+                        </th>
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
+                    </thead>
+                    <tbody className="divide-y divide-[var(--notion-border)]">
+                      {lowStock.map((med) => (
+                        <tr
+                          key={med._id}
+                          className="hover:bg-[var(--notion-hover)] transition-colors duration-100 group"
+                        >
+                          <td className="px-4 py-2.5 border-r border-[var(--notion-border)] font-medium text-[var(--notion-text)]">
+                            {med.name}
+                          </td>
+                          <td className="px-4 py-2.5 border-r border-[var(--notion-border)] text-right font-mono font-medium text-[var(--notion-text)]">
+                            {med.quantity}
+                          </td>
+                          <td className="px-4 py-2.5">
+                            <NotionTag variant={med.quantity === 0 ? "red" : "yellow"}>
+                              {med.quantity === 0 ? "Out of Stock" : `Low Stock (${med.quantity})`}
+                            </NotionTag>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               )}
             </div>
           </div>
-
         </div>
       )}
     </div>
